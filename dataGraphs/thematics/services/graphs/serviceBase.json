@@ -54,5 +54,5 @@
   },
   "sameAs": "URL",
   "subjectOf": "URL",
-  "url": "URL - the URL to the item described by this JSON-LD document"
+  "url": "URL"
 }
