@@ -3,7 +3,7 @@
     "@vocab": "https://schema.org/"
   },
   "@type": "Service",
-  "@id": "URL:  Optional. A URL that resolves to *this* JSON-LD document, NOT the URL of the Service that this JSON-LD document describes. To link to the Service itself, please use 'url' and/or 'identifier')",
+  "@id": "https://example.org/id/XYZ",
   "aggregateRating": {"@type": "https://schema.org/aggregateRating"},
   "areaServed": [
     "Text: The geographic area where the service is provided.",
