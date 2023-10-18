@@ -1,5 +1,8 @@
 # DRAWG schema.org mapping exploration
 
+: Note:  This is a work in prgress
+: The mapping and validation approaches are still actively being improved
+
 ## About
 
 This is a very quick take on mapping the properties identified in by the DRAWG
