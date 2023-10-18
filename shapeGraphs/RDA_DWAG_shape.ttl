@@ -30,7 +30,6 @@ oihval:DWARGLicenseShape
         ]
 .
 
-
 oihval:OrgCommonShape
     a sh:NodeShape ;
     sh:class schema:Organization ;
@@ -101,16 +100,16 @@ oihval:descriptionResourceProperty
 
 oihval:identifierProviderProperty
     a sh:PropertyShape ;
-    sh:path schema:name ;
+    sh:path schema:identifier ;
     sh:minCount 1 ;
     sh:nodeKind sh:IRIOrLiteral ;
-    sh:message "A provider must be noted"@en ;
+    sh:message "An identifier  must be noted"@en ;
     sh:description "https://www.rd-alliance.org/groups/data-repository-attributes-wg" ;
 .
 
 oihval:countryResourceProperty
     a sh:PropertyShape ;
-    sh:path schema:name ;
+    sh:path schema:address ;
     sh:minCount 1 ;
     sh:nodeKind sh:IRIOrLiteral ;
     sh:message "A country for the provider must be noted"@en ;
@@ -119,7 +118,7 @@ oihval:countryResourceProperty
 
 oihval:languageResourceProperty
     a sh:PropertyShape ;
-    sh:path schema:name ;
+    sh:path schema:language ;
     sh:minCount 1 ;
     sh:nodeKind sh:IRIOrLiteral ;
     sh:message "A country for the provider must be noted"@en ;
@@ -128,7 +127,7 @@ oihval:languageResourceProperty
 
 oihval:instutionalResourceProperty
     a sh:PropertyShape ;
-    sh:path schema:name ;
+    sh:path schema:member ;
     sh:minCount 1 ;
     sh:nodeKind sh:IRIOrLiteral ;
     sh:message "A country for the provider must be noted"@en ;
@@ -137,7 +136,7 @@ oihval:instutionalResourceProperty
 
 oihval:contactResourceProperty
     a sh:PropertyShape ;
-    sh:path schema:name ;
+    sh:path schema:contactPoint ;
     sh:minCount 1 ;
     sh:nodeKind sh:IRIOrLiteral ;
     sh:message "A country for the provider must be noted"@en ;
@@ -146,7 +145,7 @@ oihval:contactResourceProperty
 
 oihval:researchAreaResourceProperty
     a sh:PropertyShape ;
-    sh:path schema:name ;
+    sh:path schema:knowsAbout ;
     sh:minCount 1 ;
     sh:nodeKind sh:IRIOrLiteral ;
     sh:message "A country for the provider must be noted"@en ;
@@ -155,7 +154,7 @@ oihval:researchAreaResourceProperty
 
 oihval:machineInteroperabilityResourceProperty
     a sh:PropertyShape ;
-    sh:path schema:description ;
+    sh:path schema:publishingPrinciples ;
     sh:nodeKind sh:Literal ;
     sh:minCount 1 ;
     sh:message "Resource must have a description"@en ;
@@ -164,7 +163,7 @@ oihval:machineInteroperabilityResourceProperty
 
 oihval:metadataResourceProperty
     a sh:PropertyShape ;
-    sh:path schema:name ;
+    sh:path schema:publishingPrinciples ;
     sh:minCount 1 ;
     sh:nodeKind sh:IRIOrLiteral ;
     sh:message "A provider must be noted"@en ;
@@ -173,7 +172,7 @@ oihval:metadataResourceProperty
 
 oihval:curationResourceProperty
     a sh:PropertyShape ;
-    sh:path schema:name ;
+    sh:path schema:publishingPrinciples ;
     sh:minCount 1 ;
     sh:nodeKind sh:IRIOrLiteral ;
     sh:message "A country for the provider must be noted"@en ;
@@ -182,17 +181,16 @@ oihval:curationResourceProperty
 
 oihval:termsofDepositResourceProperty
     a sh:PropertyShape ;
-    sh:path schema:name ;
+    sh:path schema:publishingPrinciples ;
     sh:minCount 1 ;
     sh:nodeKind sh:IRIOrLiteral ;
     sh:message "A country for the provider must be noted"@en ;
     sh:description "https://www.rd-alliance.org/groups/data-repository-attributes-wg" ;
 .
 
-
 oihval:termsofAccessResourceProperty
     a sh:PropertyShape ;
-    sh:path schema:name ;
+    sh:path schema:publishingPrinciples ;
     sh:minCount 1 ;
     sh:nodeKind sh:IRIOrLiteral ;
     sh:message "A country for the provider must be noted"@en ;
@@ -201,7 +199,7 @@ oihval:termsofAccessResourceProperty
 
 oihval:certificationResourceProperty
     a sh:PropertyShape ;
-    sh:path schema:name ;
+    sh:path schema:hasCredentials ;
     sh:minCount 1 ;
     sh:nodeKind sh:IRIOrLiteral ;
     sh:message "A country for the provider must be noted"@en ;
@@ -217,10 +215,8 @@ oihval:preservationPolicyResourceProperty
             sh:targetClass schema:CreativeWork ;
             sh:property
                 [
+                    a sh:PropertyShape ;
                     sh:path schema:name ;
-                    sh:minCount 1 ;
-
-                    sh:datatype xsd:string ;
                 ]
         ]
 .

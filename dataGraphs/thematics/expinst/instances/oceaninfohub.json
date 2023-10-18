@@ -3,7 +3,7 @@
     "@vocab": "https://schema.org/",
     "drawg" : "https://example.org/voc/drawg/"
   },
-  "@id": "https://git.raw/x/id",
+  "@id": "https://git.raw/x/id/1",
   "@type": "Organization",
   "name": "Ocean InfoHub Project",
   "identifier": [
@@ -40,6 +40,7 @@
   "member": [
     {
       "@type": "Organization",
+  "@id": "https://git.raw/x/id/2",
       "keywords": [
         "data and information",
         "ocean sciences"
@@ -101,6 +102,7 @@
     },
     {
       "@type": "CreativeWork",
+      "additionalType" : "DRAWG Preservation Policy",
       "url": "https://book.oceaninfohub.org/index.html",
       "name": "OIH preservation policy",
       "description": "OIH is a project and may not have long term data access"
