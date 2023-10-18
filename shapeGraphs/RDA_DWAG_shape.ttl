@@ -32,14 +32,10 @@ oihval:DWARGLicenseShape
 
 oihval:OrgCommonShape
     a sh:NodeShape ;
-    sh:class schema:Organization ;
+    sh:targetClass schema:Organization ;
     sh:message "OIH Organization validation suite" ;
     sh:description "https://www.rd-alliance.org/groups/data-repository-attributes-wg" ;
     sh:property
-        [
-            sh:path schema:Organization ;
-            sh:maxCount 0 ;
-        ],
         oihval:nameResourceProperty,
         oihval:urlResourceProperty,
         oihval:descriptionResourceProperty,
@@ -50,11 +46,6 @@ oihval:OrgCommonShape
         oihval:instutionalResourceProperty,
         oihval:contactResourceProperty,
         oihval:researchAreaResourceProperty,
-        oihval:machineInteroperabilityResourceProperty,
-        oihval:metadataResourceProperty,
-        oihval:curationResourceProperty,
-        oihval:termsofDepositResourceProperty,
-        oihval:termsofAccessResourceProperty,
         oihval:certificationResourceProperty,
         oihval:preservationPolicyResourceProperty
 .
@@ -111,17 +102,15 @@ oihval:countryResourceProperty
     a sh:PropertyShape ;
     sh:path schema:address ;
     sh:minCount 1 ;
-    sh:nodeKind sh:IRIOrLiteral ;
     sh:message "A country for the provider must be noted"@en ;
     sh:description "https://www.rd-alliance.org/groups/data-repository-attributes-wg" ;
 .
 
 oihval:languageResourceProperty
     a sh:PropertyShape ;
-    sh:path schema:language ;
+    sh:path schema:knowsLanguage ;
     sh:minCount 1 ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:message "A country for the provider must be noted"@en ;
+    sh:message "A language for the provider must be noted"@en ;
     sh:description "https://www.rd-alliance.org/groups/data-repository-attributes-wg" ;
 .
 
@@ -138,8 +127,7 @@ oihval:contactResourceProperty
     a sh:PropertyShape ;
     sh:path schema:contactPoint ;
     sh:minCount 1 ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:message "A country for the provider must be noted"@en ;
+    sh:message "A contact point for the provider must be noted"@en ;
     sh:description "https://www.rd-alliance.org/groups/data-repository-attributes-wg" ;
 .
 
@@ -152,63 +140,20 @@ oihval:researchAreaResourceProperty
     sh:description "https://www.rd-alliance.org/groups/data-repository-attributes-wg" ;
 .
 
-oihval:machineInteroperabilityResourceProperty
-    a sh:PropertyShape ;
-    sh:path schema:publishingPrinciples ;
-    sh:nodeKind sh:Literal ;
-    sh:minCount 1 ;
-    sh:message "Resource must have a description"@en ;
-    sh:description "https://book.oceaninfohub.org/validation/README.html" ;
-.
-
-oihval:metadataResourceProperty
-    a sh:PropertyShape ;
-    sh:path schema:publishingPrinciples ;
-    sh:minCount 1 ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:message "A provider must be noted"@en ;
-    sh:description "https://book.oceaninfohub.org/validation/README.html" ;
-.
-
-oihval:curationResourceProperty
-    a sh:PropertyShape ;
-    sh:path schema:publishingPrinciples ;
-    sh:minCount 1 ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:message "A country for the provider must be noted"@en ;
-    sh:description "https://www.rd-alliance.org/groups/data-repository-attributes-wg" ;
-.
-
-oihval:termsofDepositResourceProperty
-    a sh:PropertyShape ;
-    sh:path schema:publishingPrinciples ;
-    sh:minCount 1 ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:message "A country for the provider must be noted"@en ;
-    sh:description "https://www.rd-alliance.org/groups/data-repository-attributes-wg" ;
-.
-
-oihval:termsofAccessResourceProperty
-    a sh:PropertyShape ;
-    sh:path schema:publishingPrinciples ;
-    sh:minCount 1 ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:message "A country for the provider must be noted"@en ;
-    sh:description "https://www.rd-alliance.org/groups/data-repository-attributes-wg" ;
-.
 
 oihval:certificationResourceProperty
     a sh:PropertyShape ;
-    sh:path schema:hasCredentials ;
+    sh:path schema:hasCredential ;
+    sh:severity sh:Info ;
     sh:minCount 1 ;
-    sh:nodeKind sh:IRIOrLiteral ;
-    sh:message "A country for the provider must be noted"@en ;
+    sh:message "Any credentials an organization has should be noted"@en ;
     sh:description "https://www.rd-alliance.org/groups/data-repository-attributes-wg" ;
 .
 
 oihval:preservationPolicyResourceProperty
     a sh:PropertyShape ;
     sh:path schema:publishingPrinciples ;
+    sh:message "Preservation policiy of  an organization has should be noted"@en ;
     sh:node
         [
             a sh:NodeShape ;
