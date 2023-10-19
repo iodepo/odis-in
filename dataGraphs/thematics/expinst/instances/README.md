@@ -1,7 +1,6 @@
 # DRAWG schema.org mapping exploration
 
-> [NOTE]
-> This is a work in prgress
+> NOTE: This is a work in prgress
 > The mapping and validation approaches are still actively being improved
 
 ## About
@@ -33,8 +32,8 @@ rather than a simple "see this link" approach.
 |------------------------|---------|
 | Repository Name        | schema:name                  |
 | URL                    | schema:url                   |
-| Country                | schema:address               |
-| Language               | schema:language              |
+| Country                | schema:addressCountry        |
+| Language               | schema:knowsLanguage         |
 | Institution            | schema:member                |
 | Contact                | schema:contactPoint          |
 | Description            | schema:description           |

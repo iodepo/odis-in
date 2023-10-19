@@ -100,7 +100,7 @@ oihval:identifierProviderProperty
 
 oihval:countryResourceProperty
     a sh:PropertyShape ;
-    sh:path schema:address ;
+    sh:path schema:addressCountry ;
     sh:minCount 1 ;
     sh:message "A country for the provider must be noted"@en ;
     sh:description "https://www.rd-alliance.org/groups/data-repository-attributes-wg" ;

@@ -27,10 +27,10 @@
     "description": "This contact point can have email and phone independent of the org itself",
     "email": "info@oceaninfohub.org "
   },
-  "address": {
-    "@type": "PostalAddress",
-    "description": " UNESCO / IOC Project Office for IODE ",
-    "addressLocality": "Oostende, Belgium"
+  "addressCountry": {
+    "@type": "Country",
+    "name": "Belgium",
+    "description": "UNESCO / IOC Project Office for IODE"
   },
   "knowsLanguage": {
     "@type": "Language",
@@ -40,7 +40,7 @@
   "member": [
     {
       "@type": "ResearchOrganization",
-  "@id": "https://git.raw/x/id/2",
+      "@id": "https://git.raw/x/id/2",
       "keywords": [
         "data and information",
         "ocean sciences"
