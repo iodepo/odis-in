@@ -18,7 +18,7 @@ type.  Many of the properties map director to those in that type.  Properties li
 name, url, description etc, can be easily mapped.  
 
 Some items are less obvious.  Items like _Terms of Deposit_ or _Curation_ are harder to 
-map.  In this simple version, the property _schema.org/publicationPrinciples_ has been 
+map.  In this simple version, the property _schema.org/publishingPrinciples_ has been 
 used to indicate a link to a document hosted by the organization to detail these
 approaches.
 
@@ -39,14 +39,14 @@ rather than a simple "see this link" approach.
 | Description            | schema:description           |
 | Research Area          | schema:keywords              |
 | Persistent Identifiers | schema:identifier            |
-| Machine Interoperability| schema:publicationPrinciples |
-| Metadata               | schema:publicationPrinciples |
-| Curation               | schema:publicationPrinciples |
-| Terms of Deposit       | schema:publicationPrinciples |
-| Terms of Access        | schema:publicationPrinciples |
-| Dataset Use License    | schema:publicationPrinciples |
+| Machine Interoperability| schema:publishingPrinciples |
+| Metadata               | schema:publishingPrinciples |
+| Curation               | schema:publishingPrinciples |
+| Terms of Deposit       | schema:publishingPrinciples |
+| Terms of Access        | schema:publishingPrinciples |
+| Dataset Use License    | schema:publishingPrinciples |
 | Certification          | schema:hasCertificate        |
-| Preservation Policy    | schema:publicationPrinciples |
+| Preservation Policy    | schema:publishingPrinciples |
 
 
 
