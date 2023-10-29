@@ -12,10 +12,10 @@ WHERE
         ?s a ?type .
     OPTIONAL { ?s schema:name ?name .   }
     OPTIONAL { ?s schema:description ?description .    }
-    OPTIONAL { ?s schema:hasCourseInstance ?hasCourseInstance . 
-             ?hasCourseInstance schema:name ?courseName
-
-    }
+    OPTIONAL { 
+                ?s schema:hasCourseInstance ?hasCourseInstance . 
+                ?hasCourseInstance schema:name ?courseName
+            }
     OPTIONAL { ?s schema:location ?location .    }
   }
 }

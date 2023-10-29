@@ -1,0 +1,141 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix shacl: <http://www.w3.org/ns/shacl#> .
+@prefix oihval: <https://oceans.collaborium.io/voc/validation/1.0.1/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+NEED ID
+
+oihval:OIHCoreShape
+    a shacl:NodeShape ;
+    shacl:targetClass schema:DataSet ;
+    shacl:message "OIH Search by Course validation" ;
+    shacl:description "OIH shape guidance" ;
+    shacl:property
+        oihval:coreName,
+        oihval:coreDescription,
+        oihval:coreContacts,
+        oihval:coreLicense,
+        oihval:coreCitation ; .
+
+oihval:coreName
+    a shacl:PropertyShape ;
+    shacl:path schema:name ;
+    shacl:severity shacl:Violation ;
+    shacl:message "Description of what this is should go here"@en ;
+    shacl:maxCount 1 ;
+    shacl:minCount 1 ;
+    shacl:description "https://foo.org" ; .
+
+oihval:coreDescription
+    a shacl:PropertyShape ;
+    shacl:path schema:description ;
+    shacl:severity shacl:Violation ;
+    shacl:message "Description of what this is should go here"@en ;
+    shacl:maxCount 1 ;
+    shacl:minCount 1 ;
+    shacl:description "https://foo.org" ; .
+
+oihval:coreContacts
+    a shacl:PropertyShape ;
+    shacl:path schema:contacts ;
+    shacl:severity shacl:Violation ;
+    shacl:message "Description of what this is should go here"@en ;
+    shacl:maxCount 1 ;
+    shacl:minCount 1 ;
+    shacl:description "https://foo.org" ; .
+
+oihval:coreLicense
+    a shacl:PropertyShape ;
+    shacl:path schema:license ;
+    shacl:severity shacl:Violation ;
+    shacl:message "Description of what this is should go here"@en ;
+    shacl:maxCount 1 ;
+    shacl:minCount 1 ;
+    shacl:description "https://foo.org" ; .
+
+oihval:coreCitation
+    a shacl:PropertyShape ;
+    shacl:path schema:citation ;
+    shacl:severity shacl:Violation ;
+    shacl:message "Description of what this is should go here"@en ;
+    shacl:maxCount 1 ;
+    shacl:minCount 1 ;
+    shacl:description "https://foo.org" ; .
+
+
+oihval:OIHRecommendedShape
+    a shacl:NodeShape ;
+    shacl:targetClass schema:DataSet ;
+    shacl:message "OIH Search by Course validation" ;
+    shacl:description "OIH shape guidance" ;
+    shacl:property
+        oihval:recTemporal,
+        oihval:recTaxon,
+        oihval:recMesType,
+        oihval:recMesMethod ; .
+
+oihval:recTemporal
+    a shacl:PropertyShape ;
+    shacl:path schema:temporalCoverage ;
+    shacl:severity shacl:Warning ;
+    shacl:message "Description of what this is should go here"@en ;
+    shacl:maxCount 1 ;
+    shacl:minCount 1 ;
+    shacl:description "https://foo.org" ; .
+
+oihval:recTaxon
+    a shacl:PropertyShape ;
+    shacl:path schema:taxonomicRange ;
+    shacl:severity shacl:Warning ;
+    shacl:message "Description of what this is should go here"@en ;
+    shacl:maxCount 1 ;
+    shacl:minCount 1 ;
+    shacl:description "https://foo.org" ; .
+
+oihval:recMesType
+    a shacl:PropertyShape ;
+    shacl:path schema:variableMeasured ;
+    shacl:severity shacl:Warning ;
+    shacl:message "Description of what this is should go here"@en ;
+    shacl:maxCount 1 ;
+    shacl:minCount 1 ;
+    shacl:description "https://foo.org" ; .
+
+oihval:recMesMethod
+    a shacl:PropertyShape ;
+    shacl:path schema:measurementMethod ;
+    shacl:severity shacl:Warning ;
+    shacl:message "Description of what this is should go here"@en ;
+    shacl:maxCount 1 ;
+    shacl:minCount 1 ;
+    shacl:description "https://foo.org" ; .
+
+
+oihval:OIHSpatialShape
+    a shacl:NodeShape ;
+    shacl:targetClass schema:GeoShape ;
+    shacl:message "OIH Resource to Query validation" ;
+    shacl:description "OIH shape guidance" ;
+    shacl:property
+        oihval:polygonStringProperty,
+        oihval:polygonCloseProperty ;
+.
+
+oihval:polygonStringProperty
+    a shacl:PropertyShape ;
+    shacl:path schema:polygon ;
+    shacl:message "The string must consists of numeric, space-separated items."@en ;
+    shacl:maxCount 1 ;
+    shacl:description "https://foo.org" ;
+    shacl:pattern "^(?:\\d+\\s+)*\\d+$" ; .
+
+
+oihval:polygonCloseProperty
+    a shacl:PropertyShape ;
+    shacl:path schema:polygon ;
+    shacl:message "The polygon string must have the first and last items are the same"@en ;
+    shacl:maxCount 1 ;
+    shacl:description "https://foo.org" ;
+    shacl:pattern "^(\\d+)\\s+(\\d+)(?:\\s+\\d+)+\\s+\\1$" ;
+.

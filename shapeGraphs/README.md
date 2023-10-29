@@ -38,3 +38,22 @@ local exmaple
   pyshacl -s typesAreURI.ttl -sf turtle -df nt -f table data.nt 
 
 ```
+
+
+### BioDiversity topics
+
+Must have: 
+
+* Title
+* Abstract
+* Contacts
+* License
+* Citation
+
+Nice to have:
+
+* Spatial coverage
+* Temporal coverage
+* Taxonomic scope (I guess schema:taxonomicRange)
+* Measurement types (schema:variableMeasured)
+* Measurement methods (schema: measurementMethod)
