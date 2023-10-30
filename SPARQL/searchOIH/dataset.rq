@@ -26,4 +26,3 @@ WHERE {
         OPTIONAL { ?s schema:provider ?provider . }
     }
 }
-LIMIT 1000
