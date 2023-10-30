@@ -1,4 +1,4 @@
-@prefix schema: <http://schema.org/> .
+@prefix schema: <https://schema.org/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix shacl: <http://www.w3.org/ns/shacl#> .
 @prefix oihval: <https://oceans.collaborium.io/voc/validation/1.0.1/shacl#> .
@@ -15,7 +15,7 @@ oihval:IDShape
 
 oihval:OIHCoreShape
     a shacl:NodeShape ;
-    shacl:targetClass schema:DataSet ;
+    shacl:targetClass schema:Dataset ;
     shacl:message "OIH Search by Course validation" ;
     shacl:description "OIH shape guidance" ;
     shacl:property
@@ -30,8 +30,8 @@ oihval:coreName
     shacl:path schema:name ;
     shacl:severity shacl:Violation ;
     shacl:message "Description of what this is should go here"@en ;
-    shacl:maxCount 1 ;
-    shacl:minCount 1 ;
+    shacl:maxCount 3 ;
+    shacl:minCount 2 ;
     shacl:description "https://foo.org" ; .
 
 oihval:coreDescription
