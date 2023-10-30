@@ -4,7 +4,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix prov: <http://www.w3.org/ns/prov#>
 PREFIX schema: <https://schema.org/>
 
-SELECT DISTINCT ?s ?type ?name ?headline ?url ?description ?sameAs ?license ?citation ?keywords ?inCatalog ?distribution
+SELECT DISTINCT (?s as ?id) ?type ?name ?headline ?url ?description ?sameAs ?license ?citation ?keywords ?inCatalog ?distribution
     ?region ?provider
 WHERE {
     graph ?g {
