@@ -4,7 +4,14 @@
 @prefix oihval: <https://oceans.collaborium.io/voc/validation/1.0.1/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-NEED ID
+
+oihval:IDShape
+    a shacl:NodeShape ;
+    shacl:targetClass schema:Dataset ;
+    shacl:message "Graph requires ID"@en ;
+    shacl:description "URL OIH shape guidance" ;
+    shacl:nodeKind shacl:IRI ;
+.
 
 oihval:OIHCoreShape
     a shacl:NodeShape ;

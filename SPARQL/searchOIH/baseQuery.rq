@@ -10,9 +10,10 @@ WHERE {
     graph ?g {
         ?s rdf:type ?type .
         OPTIONAL { ?s schema:name ?name . }
-        OPTIONAL { ?s schema:headline ?headline . }
-        OPTIONAL { ?s schema:url ?url . }
         OPTIONAL { ?s schema:description ?description . }
+        OPTIONAL { ?s schema:url ?url . }
+        OPTIONAL { ?s schema:headline ?headline . }
+
     }
 }
 LIMIT 10000

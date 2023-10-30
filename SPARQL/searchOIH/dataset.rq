@@ -4,18 +4,26 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix prov: <http://www.w3.org/ns/prov#>
 PREFIX schema: <https://schema.org/>
 
-SELECT DISTINCT ?s ?type ?name ?description ?courseName ?location
+SELECT DISTINCT ?s ?type ?name ?headline ?url ?description ?sameAs ?license ?citation ?keywords ?inCatalog ?distribution
+    ?region ?provider
 WHERE {
     graph ?g {
         BIND(schema:Dataset AS ?type)
         ?s rdf:type ?type .
+
         OPTIONAL { ?s schema:name ?name . }
         OPTIONAL { ?s schema:description ?description . }
-        OPTIONAL {
-            ?s schema:hasCourseInstance ?hasCourseInstance .
-            ?hasCourseInstance schema:name ?courseName
-        }
-        OPTIONAL { ?s schema:location ?location . }
+        OPTIONAL { ?s schema:url ?url . }
+        OPTIONAL { ?s schema:headline ?headline . }
+
+        OPTIONAL { ?s schema:sameAs ?sameAs . }
+        OPTIONAL { ?s schema:license ?license . }
+        OPTIONAL { ?s schema:citation ?citation . }
+        OPTIONAL { ?s schema:keywords ?keywords . }
+        OPTIONAL { ?s schema:includedInDataCatalog ?inCatalog . }
+        OPTIONAL { ?s schema:distribution ?distribution . }
+        OPTIONAL { ?s schema:region ?region . }
+        OPTIONAL { ?s schema:provider ?provider . }
     }
 }
 LIMIT 1000
