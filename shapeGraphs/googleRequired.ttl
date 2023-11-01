@@ -14,13 +14,13 @@
 ex:URLShape
     a sh:NodeShape ;
     sh:property [
-        sh:path <http://schema.org/url> ;
+        sh:path <https://schema.org/url> ;
         sh:maxCount 1 ;
         sh:minCount 1 ;
         sh:nodeKind sh:IRIOrLiteral ;
       ] ;
     sh:message "This needs to be a schema:URL"@en ;
-    sh:targetClass <http://schema.org/Dataset> .
+    sh:targetClass <https://schema.org/Dataset> .
     
 ex:DescriptionShape
     a sh:NodeShape ;
@@ -32,15 +32,15 @@ ex:DescriptionShape
         sh:maxLength 5000 ;
     ] ;
     sh:message "Needs to be Text between 50 and 5000 characters"@en ;
-    sh:targetClass <http://schema.org/Dataset> .
+    sh:targetClass <https://schema.org/Dataset> .
 
 ex:NameShape
     a sh:NodeShape ;
     sh:property [
-        sh:path <http://schema.org/name> ;
+        sh:path <https://schema.org/name> ;
         sh:nodeKind sh:Literal ;
         sh:minCount 1 ;
     ] ;
     sh:message "Needs to be Text"@en ;
-    sh:targetClass <http://schema.org/Dataset> .
+    sh:targetClass <https://schema.org/Dataset> .
 

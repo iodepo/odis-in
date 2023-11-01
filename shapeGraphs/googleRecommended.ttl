@@ -2,7 +2,7 @@
 @prefix ex: <http://www.example.org/schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix schema: <http://schema.org/> .
+@prefix schema: <https://schema.org/> .
 
 
 ex:AltNameShape
