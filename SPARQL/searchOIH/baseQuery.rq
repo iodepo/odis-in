@@ -13,7 +13,6 @@ WHERE {
         OPTIONAL { ?s schema:description ?description . }
         OPTIONAL { ?s schema:url ?url . }
         OPTIONAL { ?s schema:headline ?headline . }
-
     }
 }
 LIMIT 10000
