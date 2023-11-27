@@ -4,7 +4,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX schema: <https://schema.org/>
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 
-SELECT (?s as ?id) ?type ?name ?geotype ?geompred ?geom ?lat ?long
+SELECT (?s as ?id) ?type  ?address ?addressCountry
 WHERE {
     ?s rdf:type ?type .
     FILTER (?type IN (schema:ResearchProject, schema:Project, schema:Organization,
@@ -13,18 +13,11 @@ WHERE {
     )
     ?s schema:spatialCoverage ?sc .
     ?sc a schema:Place .
-    OPTIONAL { ?sc schema:name ?name } .
+    ?sc schema:geo ?geo .
     OPTIONAL {
-        ?sc schema:latitude ?lat .
-        ?sc schema:longitude ?long .
+        ?geo ?address ?address .
     }
     OPTIONAL {
-        ?sc schema:geo ?geo .
-        ?geo a ?geotype .
-        ?geo ?geompred ?geom .
-        FILTER (!isIRI(?geom))
-    }
-    OPTIONAL {
-        ?gs geosparql:asWKT ?wkt
+        ?geo ?addressCountry ?addressCountry .
     }
 }
