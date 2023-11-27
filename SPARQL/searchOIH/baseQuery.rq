@@ -5,13 +5,11 @@ prefix prov: <http://www.w3.org/ns/prov#>
 PREFIX schema: <https://schema.org/>
 
 
-SELECT DISTINCT ?g ?s ?type ?name ?url ?description ?headline
+SELECT DISTINCT (?s as ?id)  ?type ?name ?url ?description ?headline
 WHERE {
-    graph ?g {
-        ?s rdf:type ?type .
+         ?s rdf:type ?type .
         OPTIONAL { ?s schema:name ?name . }
         OPTIONAL { ?s schema:description ?description . }
         OPTIONAL { ?s schema:url ?url . }
         OPTIONAL { ?s schema:headline ?headline . }
-    }
-}
+ }
