@@ -14,4 +14,3 @@ WHERE {
         OPTIONAL { ?s schema:description ?description . }
     }
 }
-LIMIT 10000

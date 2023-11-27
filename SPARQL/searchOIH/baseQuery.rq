@@ -15,4 +15,3 @@ WHERE {
         OPTIONAL { ?s schema:headline ?headline . }
     }
 }
-LIMIT 10000
