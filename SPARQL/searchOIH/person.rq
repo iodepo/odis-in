@@ -4,7 +4,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix prov: <http://www.w3.org/ns/prov#>
 PREFIX schema: <https://schema.org/>
 
-SELECT DISTINCT ?s ?type ?name ?url ?address ?description
+SELECT DISTINCT (?s as ?id) ?type ?name ?url ?address ?description
 WHERE {
     graph ?g {
         BIND(schema:Person AS ?type)
