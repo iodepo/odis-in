@@ -2,45 +2,67 @@
     "@context": {
         "@vocab": "https://schema.org/"
     },
-    "@id": "https://myPIDs.org/pidToThisJsonDocument/",
+    "@id": "URL:  Optional. A URL that resolves to *this* JSON-LD document, NOT the URL of the CreativeWork that this JSON-LD document describes. To link to the CreativeWork itself, please use 'url' and/or 'identifier')",
     "@type": "Action",
-    "actionStatus": "",
+    "actionStatus":  {"@type": "ActionStatusType"},
     "agent": [
-        {
-            "@type": "Organization"
-        },
-        {
-            "@type": "Person"
-        }
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
     ],
-    "description": "Text: Description of Action which this Thing could potentially participate in",
-    "endTime": {
-        "@type": "DateTime"
-    },
-    "error": "",
-    "instrument": "",
-    "location": "",
-    "object": "Text or typed array of outcomes this Action produces (e.g. Datasets, physical objects)",
+    "endTime": {"@type": "https://schema.org/DateTime"},
+    "error":  {"@type": "https://schema.org/Thing"},
+    "instrument":  {"@type": "https://schema.org/Thing"},
+    "location":   [
+      "Text:textual description of this Thing's location",
+      {"@type": "https://schema.org/Place"},
+      {"@type": "https://schema.org/PostalAddress"},
+      {"@type": "https://schema.org/VirtualLocation"}
+    ],
+    "object": [
+        "Text or typed array of outcomes this Action produces (e.g. Datasets, physical objects)",
+        {"@type": "https://schema.org/Thing"}
+    ],
     "participant": [
-        {
-            "@type": "Organization"
-        },
-        {
-            "@type": "Person"
-        }
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
     ],
     "provider": [
-        {
-            "@type": "Organization"
-        },
-        {
-            "@type": "Person"
-        }
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
     ],
-    "name": "Text: Name of Action that this Thing could potentially participate in",
-    "result": "Text or typed array of outcomes this Action produces (e.g. Datasets, physical objects)",
-    "startTime": {
-        "@type": "DateTime"
-    },
-    "target": "Text or typed array of outcomes this Action produces (e.g. Datasets, physical objects)"
+    "result": [
+        "Text or typed array of outcomes this Action produces (e.g. Datasets, physical objects)",
+        {"@type": "https://schema.org/Thing"}
+    ],
+    "startTime": {"@type": "https://schema.org/DateTime"},
+    "target": [
+        "URL",
+        {"@type": "https://schema.org/EntryPoint"}
+    ],
+    
+    "additionalType": [
+      "Text: An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax.",
+      "URL"
+    ],
+    "alternateName": "Text: An alternative name for this Thing.",
+    "description": "Text: Free text which describes this Thing.",
+    "disambiguatingDescription": "Text: A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation",
+    "identifier": [
+        {"@type": "https://schema.org/PropertyValue"},
+        "Text - The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.",
+        "URL"
+    ],
+    "image": [
+        "URL",
+        {"@type": "https://schema.org/ImageObject"}
+    ],
+    "mainEntityOfPage": [
+      "URL",
+      {"@type": "https://schema.org/CreativeWork"}
+    ],
+    "name": "Text: The name of the item.",
+    "potentialAction": {"@type": "https://schema.org/Action"},
+    "sameAs": "URL",
+    "subjectOf": "URL",
+    "url": "URL - the URL to the item described by this JSON-LD document"
 }
