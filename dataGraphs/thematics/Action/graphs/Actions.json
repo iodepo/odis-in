@@ -13,12 +13,11 @@
     "error":  {"@type": "https://schema.org/Thing"},
     "instrument":  {"@type": "https://schema.org/Thing"},
     "location":   [
-      "Text:textual description of this Thing's location"
+      "Text:textual description of this Thing's location",
       {"@type": "https://schema.org/Place"},
       {"@type": "https://schema.org/PostalAddress"},
       {"@type": "https://schema.org/VirtualLocation"}
-        
-	],
+    ],
     "object": [
         "Text or typed array of outcomes this Action produces (e.g. Datasets, physical objects)",
         {"@type": "https://schema.org/Thing"}
