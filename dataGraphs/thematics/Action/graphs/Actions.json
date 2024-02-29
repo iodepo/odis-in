@@ -2,7 +2,7 @@
     "@context": {
         "@vocab": "https://schema.org/"
     },
-    "@id": "https://myPIDs.org/pidToThisJsonDocument/",
+    "@id": "URL:  Optional. A URL that resolves to *this* JSON-LD document, NOT the URL of the CreativeWork that this JSON-LD document describes. To link to the CreativeWork itself, please use 'url' and/or 'identifier')",
     "@type": "Action",
     "actionStatus":  {"@type": "ActionStatusType"},
     "agent": [
