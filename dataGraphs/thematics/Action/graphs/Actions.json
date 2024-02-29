@@ -4,44 +4,43 @@
     },
     "@id": "https://myPIDs.org/pidToThisJsonDocument/",
     "@type": "Action",
-    "actionStatus": "",
+    "actionStatus":  {"@type": "ActionStatusType"},
     "agent": [
-        {
-            "@type": "Organization"
-        },
-        {
-            "@type": "Person"
-        }
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
     ],
-    "endTime": {
-        "@type": "DateTime"
-    },
-    "error": "",
-    "instrument": "",
-    "location": "",
-    "object": "Text or typed array of outcomes this Action produces (e.g. Datasets, physical objects)",
+    "endTime": {"@type": "https://schema.org/DateTime"},
+    "error":  {"@type": "https://schema.org/Thing"},
+    "instrument":  {"@type": "https://schema.org/Thing"},
+    "location":   [
+      "Text:textual description of this Thing's location"
+      {"@type": "https://schema.org/Place"},
+      {"@type": "https://schema.org/PostalAddress"},
+      {"@type": "https://schema.org/VirtualLocation"}
+        
+	],
+    "object": [
+        "Text or typed array of outcomes this Action produces (e.g. Datasets, physical objects)",
+        {"@type": "https://schema.org/Thing"}
+    ],
     "participant": [
-        {
-            "@type": "Organization"
-        },
-        {
-            "@type": "Person"
-        }
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
     ],
     "provider": [
-        {
-            "@type": "Organization"
-        },
-        {
-            "@type": "Person"
-        }
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
     ],
-    "result": "Text or typed array of outcomes this Action produces (e.g. Datasets, physical objects)",
-    "startTime": {
-        "@type": "DateTime"
-    },
-    "target": "Text or typed array of outcomes this Action produces (e.g. Datasets, physical objects)",
-
+    "result": [
+        "Text or typed array of outcomes this Action produces (e.g. Datasets, physical objects)",
+        {"@type": "https://schema.org/Thing"}
+    ],
+    "startTime": {"@type": "https://schema.org/DateTime"},
+    "target": [
+        "URL",
+        {"@type": "https://schema.org/EntryPoint"}
+    ],
+    
     "additionalType": [
       "Text: An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax.",
       "URL"
