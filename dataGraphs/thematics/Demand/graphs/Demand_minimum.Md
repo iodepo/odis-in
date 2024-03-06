@@ -1,0 +1,64 @@
+{
+    "@context": {
+      "@vocab": "https://schema.org/"
+    },
+    "@type": "Demand",
+    "@id": "URL:  Optional. A URL that resolves to *this* JSON-LD document, NOT the URL of the Thing that this JSON-LD document describes. To link to the Thing itself, please use 'url' and/or 'identifier')",
+    "areaServed": [
+      {"@type": "https://schema.org/AdministrativeArea"},
+      {"@type": "https://schema.org/GeoShape"},
+      {"@type": "https://schema.org/Place"},
+      "Text: The geographic area where a service or offered item is provided. Supersedes serviceArea."
+    ],
+    "availability": {"@type": "https://schema.org/ItemAvailability"},  
+    "availabilityEnds": [
+      {"@type": "https://schema.org/Date"},
+      {"@type": "https://schema.org/DateTime"},
+      {"@type": "https://schema.org/Time"}
+    ],
+    "availabilityStarts": [
+      {"@type": "https://schema.org/Date"},
+      {"@type": "https://schema.org/DateTime"},
+      {"@type": "https://schema.org/Time"}
+    ],
+    "eligibleRegion": [
+      {"@type": "https://schema.org/GeoShape"},
+      {"@type": "https://schema.org/Place"},
+      "Text: The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid."
+    ],
+    "itemOffered": [
+      {"@type": "https://schema.org/AggregateOffer"},
+      {"@type": "https://schema.org/CreativeWork"},
+      {"@type": "https://schema.org/Event"},
+      {"@type": "https://schema.org/MenuItem"},
+      {"@type": "https://schema.org/Product"},
+      {"@type": "https://schema.org/Service"},
+      {"@type": "https://schema.org/Trip"}
+    ],
+    "priceSpecification": {"@type": "https://schema.org/PriceSpecification"},
+    "validFrom": [
+      {"@type": "https://schema.org/Date"},
+      {"@type": "https://schema.org/DateTime"}
+    ],
+    "validThrough": [
+      {"@type": "https://schema.org/Date"},
+      {"@type": "https://schema.org/DateTime"}
+    ],
+    "description": "Text: Free text which describes this Thing.",
+    "disambiguatingDescription": "Text: A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation",
+    "identifier": [
+        {"@type": "https://schema.org/PropertyValue"},
+        "Text - The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.",
+        "URL"
+    ],
+    "image": [
+        "URL",
+        {"@type": "https://schema.org/ImageObject"}
+    ],
+    "mainEntityOfPage": [
+      "URL",
+      {"@type": "https://schema.org/CreativeWork"}
+    ],
+    "name": "Text: The name of the item.",
+    "url": "URL - the URL to the item described by this JSON-LD document"
+  }
