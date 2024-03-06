@@ -17,10 +17,10 @@
       {"@type": "https://schema.org/AdministrativeArea"},
       {"@type": "https://schema.org/GeoShape"},
       {"@type": "https://schema.org/Place"},
-      "Text": "The geographic area where a service or offered item is provided. Supersedes serviceArea."
+      "Text: The geographic area where a service or offered item is provided. Supersedes serviceArea."
     ],
     "asin": [
-      "Text": "An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazon organization (summary from Wikipedia's article).",
+      "Text: An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazon organization (summary from Wikipedia's article).",
       "URL"
     ],
     "availability": {"@type": "https://schema.org/ItemAvailability"},  
@@ -41,17 +41,42 @@
       {"@type": "https://schema.org/CategoryCode"},
       {"@type": "https://schema.org/PhysicalActivityCategory"},
       {"@type": "https://schema.org/Thing"},
-      "Text": "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
+      "Text: A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
       "URL"
     ],
   
-    "checkoutPageURLTemplate": "Text": "A URL template (RFC 6570) for a checkout page for an offer. This approach allows merchants to specify a URL for online checkout of the offered product, by interpolating parameters such as the logged in user ID, product ID, quantity, discount code etc. Parameter naming and standardization are not specified here.",
-    "property": {"@type": "https://schema.org/TypeOrProp"},  
+    "checkoutPageURLTemplate": "Text: A URL template (RFC 6570) for a checkout page for an offer. This approach allows merchants to specify a URL for online checkout of the offered product, by interpolating parameters such as the logged in user ID, product ID, quantity, discount code etc. Parameter naming and standardization are not specified here.",
+    "deliveryLeadTime": {"@type": "https://schema.org/QuantitativeValue"},  
+    "eligibleCustomerType": {"@type": "https://schema.org/BusinessEntityType"},  
+    "eligibleDuration": {"@type": "https://schema.org/QuantitativeValue"},  
+    "eligibleQuantity": {"@type": "https://schema.org/QuantitativeValue"},  
+    "eligibleRegion": [
+      {"@type": "https://schema.org/GeoShape"},
+      {"@type": "https://schema.org/Place"},
+      "Text: The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.",
+    ],
+    "eligibleTransactionVolume": {"@type": "https://schema.org/PriceSpecification"},
+    "gtin": [
+      "Text: A Global Trade Item Number (GTIN). GTINs identify trade items, including products and services, using numeric identification codes. The GS1 digital link specifications express GTINs as URLs (URIs, IRIs, etc.). Details including regular expression examples can be found in, Section 6 of the GS1 URI Syntax specification; see also schema.org tracking issue for schema.org-specific discussion. A correct gtin value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a 'GS1 Digital Link' URL based on such a string. The numeric component should also have a valid GS1 check digit and meet the other rules for valid GTINs. See also GS1's GTIN Summary and Wikipedia for more details. Left-padding of the gtin values is not required or encouraged. The gtin property generalizes the earlier gtin8, gtin12, gtin13, and gtin14 properties. Note also that this is a definition for how to include GTINs in Schema.org data, and not a definition of GTINs in general - see the GS1 documentation for authoritative details.",
+      "URL"
+    ],
+    "gtin12": "Text: The GTIN-12 code of the product, or the product to which the offer refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C. Company Prefix, Item Reference, and Check Digit used to identify trade items. See GS1 GTIN Summary for more details.", 
+    "gtin13": "Text: The GTIN-13 code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceding zero. See GS1 GTIN Summary for more details.", 
+    "gtin14": "Text: The GTIN-14 code of the product, or the product to which the offer refers. See GS1 GTIN Summary for more details.", 
+    "gtin8": "Text: The GTIN-8 code of the product, or the product to which the offer refers. This code is also known as EAN/UCC-8 or 8-digit EAN. See GS1 GTIN Summary for more details.", 
+    "hasAdultConsideration": {"@type": "https://schema.org/AdultOrientedEnumeration"},
+    "hasMeasurement": {"@type": "https://schema.org/QuantitativeValue"},  
+    "hasMerchantReturnPolicy": {"@type": "https://schema.org/MerchantReturnPolicy"},     
+
+    
+    "property": {"@type": "https://schema.org/Type"},      
+    "property": "Text: ",  
+    "property": "URL",  
 
     "property": [
       {"@type": "https://schema.org/TypeOrProp"},
       {"@type": "https://schema.org/TypeOrProp"},
-      "Text": "",
+      "Text: ",
       "URL"
     ],
 
