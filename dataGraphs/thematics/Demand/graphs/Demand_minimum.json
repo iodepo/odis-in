@@ -26,11 +26,14 @@
       {"@type": "https://schema.org/Place"},
       "Text: The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid."
     ],
-    "itemOffered": [
+   "itemOffered": [
+      {"@type": "https://schema.org/AggregateOffer"},
       {"@type": "https://schema.org/CreativeWork"},
       {"@type": "https://schema.org/Event"},
+      {"@type": "https://schema.org/MenuItem"},
       {"@type": "https://schema.org/Product"},
-      {"@type": "https://schema.org/Service"}
+      {"@type": "https://schema.org/Service"},
+      {"@type": "https://schema.org/Trip"}
     ],
     "priceSpecification": {"@type": "https://schema.org/PriceSpecification"},
     "validFrom": [
