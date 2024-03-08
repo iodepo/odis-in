@@ -1,0 +1,115 @@
+{
+    "@context": {
+      "@vocab": "https://schema.org/"
+    },
+    "@type": "Demand",
+    "@id": "URL:  Optional. A URL that resolves to *this* JSON-LD document, NOT the URL of the Thing that this JSON-LD document describes. To link to the Thing itself, please use 'url' and/or 'identifier')",
+    
+    "acceptedPaymentMethod": [
+      {"@type": "https://schema.org/LoanOrCredit"},
+      {"@type": "https://schema.org/PaymentMethod"}
+    ],
+    "additionalProperty": {"@type": "https://schema.org/PropertyValue"},
+    "advanceBookingRequirement": {"@type": "https://schema.org/QuantitativeValue"},
+    "areaServed": [
+      {"@type": "https://schema.org/AdministrativeArea"},
+      {"@type": "https://schema.org/GeoShape"},
+      {"@type": "https://schema.org/Place"},
+      "Text: The geographic area where a service or offered item is provided. Supersedes serviceArea."
+    ],
+    "asin": [
+      "Text: An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazon organization (summary from Wikipedia's article).",
+      "URL"
+    ],
+    "availability": {"@type": "https://schema.org/ItemAvailability"},  
+    "availabilityEnds": [
+      {"@type": "https://schema.org/Date"},
+      {"@type": "https://schema.org/DateTime"},
+      {"@type": "https://schema.org/Time"}
+    ],
+    "availabilityStarts": [
+      {"@type": "https://schema.org/Date"},
+      {"@type": "https://schema.org/DateTime"},
+      {"@type": "https://schema.org/Time"}
+    ],
+    "availableAtOrFrom": {"@type": "https://schema.org/Place"},  
+    "availableDeliveryMethod": {"@type": "https://schema.org/DeliveryMethod"},  
+    "businessFunction": {"@type": "https://schema.org/BusinessFunction"},
+    "deliveryLeadTime": {"@type": "https://schema.org/QuantitativeValue"},  
+    "eligibleCustomerType": {"@type": "https://schema.org/BusinessEntityType"},  
+    "eligibleDuration": {"@type": "https://schema.org/QuantitativeValue"},  
+    "eligibleQuantity": {"@type": "https://schema.org/QuantitativeValue"},  
+    "eligibleRegion": [
+      {"@type": "https://schema.org/GeoShape"},
+      {"@type": "https://schema.org/Place"},
+      "Text: The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid."
+    ],
+    "eligibleTransactionVolume": {"@type": "https://schema.org/PriceSpecification"},
+    "gtin": [
+      "Text: A Global Trade Item Number (GTIN). GTINs identify trade items, including products and services, using numeric identification codes. The GS1 digital link specifications express GTINs as URLs (URIs, IRIs, etc.). Details including regular expression examples can be found in, Section 6 of the GS1 URI Syntax specification; see also schema.org tracking issue for schema.org-specific discussion. A correct gtin value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a 'GS1 Digital Link' URL based on such a string. The numeric component should also have a valid GS1 check digit and meet the other rules for valid GTINs. See also GS1's GTIN Summary and Wikipedia for more details. Left-padding of the gtin values is not required or encouraged. The gtin property generalizes the earlier gtin8, gtin12, gtin13, and gtin14 properties. Note also that this is a definition for how to include GTINs in Schema.org data, and not a definition of GTINs in general - see the GS1 documentation for authoritative details.",
+      "URL"
+    ],
+    "gtin12": "Text: The GTIN-12 code of the product, or the product to which the offer refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C. Company Prefix, Item Reference, and Check Digit used to identify trade items. See GS1 GTIN Summary for more details.", 
+    "gtin13": "Text: The GTIN-13 code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceding zero. See GS1 GTIN Summary for more details.", 
+    "gtin14": "Text: The GTIN-14 code of the product, or the product to which the offer refers. See GS1 GTIN Summary for more details.", 
+    "gtin8": "Text: The GTIN-8 code of the product, or the product to which the offer refers. This code is also known as EAN/UCC-8 or 8-digit EAN. See GS1 GTIN Summary for more details.", 
+    "includesObject": {"@type": "https://schema.org/TypeAndQuantityNode"},   
+    "ineligibleRegion": [
+      {"@type": "https://schema.org/GeoShape"},
+      {"@type": "https://schema.org/Place"},
+      "Text: The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid."
+    ],
+    "inventoryLevel": {"@type": "https://schema.org/QuantitativeValue"},
+    "itemCondition": {"@type": "https://schema.org/OfferItemCondition"},
+    "itemOffered": [
+      {"@type": "https://schema.org/AggregateOffer"},
+      {"@type": "https://schema.org/CreativeWork"},
+      {"@type": "https://schema.org/Event"},
+      {"@type": "https://schema.org/MenuItem"},
+      {"@type": "https://schema.org/Product"},
+      {"@type": "https://schema.org/Service"},
+      {"@type": "https://schema.org/Trip"}
+    ],
+    "mpn": "Text: The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.",
+    "priceSpecification": {"@type": "https://schema.org/PriceSpecification"},
+    "seller": [
+      {"@type": "https://schema.org/Organization"},
+      {"@type": "https://schema.org/Person"}
+    ],
+    "serialNumber": "Text: The serial number or any alphanumeric identifier of a particular product. When attached to an offer, it is a shortcut for the serial number of the product included in the offer.",
+    "sku": "Text: The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers.",
+    "validFrom": [
+      {"@type": "https://schema.org/Date"},
+      {"@type": "https://schema.org/DateTime"}
+    ],
+    "validThrough": [
+      {"@type": "https://schema.org/Date"},
+      {"@type": "https://schema.org/DateTime"}
+    ],
+    "warranty": {"@type": "https://schema.org/WarrantyPromise"},
+    "additionalType": [
+      "Text: An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax.",
+      "URL"
+    ],
+    "alternateName": "Text: An alternative name for this Thing.",
+    "description": "Text: Free text which describes this Thing.",
+    "disambiguatingDescription": "Text: A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation",
+    "identifier": [
+        {"@type": "https://schema.org/PropertyValue"},
+        "Text - The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.",
+        "URL"
+    ],
+    "image": [
+        "URL",
+        {"@type": "https://schema.org/ImageObject"}
+    ],
+    "mainEntityOfPage": [
+      "URL",
+      {"@type": "https://schema.org/CreativeWork"}
+    ],
+    "name": "Text: The name of the item.",
+    "potentialAction": {"@type": "https://schema.org/Action"},
+    "sameAs": "URL",
+    "subjectOf": "URL",
+    "url": "URL - the URL to the item described by this JSON-LD document"
+  }

@@ -1,0 +1,109 @@
+{
+    "@context": {
+      "@vocab": "https://schema.org/"
+    },
+    "@type": "Offer",
+    "@id": "URL:  Optional. A URL that resolves to *this* JSON-LD document, NOT the URL of the Thing that this JSON-LD document describes. To link to the Thing itself, please use 'url' and/or 'identifier')",
+    
+    "acceptedPaymentMethod": [
+      {"@type": "https://schema.org/LoanOrCredit"},
+      {"@type": "https://schema.org/PaymentMethod"}
+    ],
+    "areaServed": [
+      {"@type": "https://schema.org/AdministrativeArea"},
+      {"@type": "https://schema.org/GeoShape"},
+      {"@type": "https://schema.org/Place"},
+      "Text: The geographic area where a service or offered item is provided. Supersedes serviceArea."
+    ],
+    "availability": {"@type": "https://schema.org/ItemAvailability"},  
+    "availabilityEnds": [
+      {"@type": "https://schema.org/Date"},
+      {"@type": "https://schema.org/DateTime"},
+      {"@type": "https://schema.org/Time"}
+    ],
+    "availabilityStarts": [
+      {"@type": "https://schema.org/Date"},
+      {"@type": "https://schema.org/DateTime"},
+      {"@type": "https://schema.org/Time"}
+    ],
+    "category": [
+      {"@type": "https://schema.org/CategoryCode"},
+      {"@type": "https://schema.org/PhysicalActivityCategory"},
+      {"@type": "https://schema.org/Thing"},
+      "Text: A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
+      "URL"
+    ],
+    "eligibleCustomerType": {"@type": "https://schema.org/BusinessEntityType"},  
+    "eligibleDuration": {"@type": "https://schema.org/QuantitativeValue"},  
+    "eligibleRegion": [
+      {"@type": "https://schema.org/GeoShape"},
+      {"@type": "https://schema.org/Place"},
+      "Text: The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid."
+    ],
+    "eligibleTransactionVolume": {"@type": "https://schema.org/PriceSpecification"},
+    "gtin": [
+      "Text: A Global Trade Item Number (GTIN). GTINs identify trade items, including products and services, using numeric identification codes. The GS1 digital link specifications express GTINs as URLs (URIs, IRIs, etc.). Details including regular expression examples can be found in, Section 6 of the GS1 URI Syntax specification; see also schema.org tracking issue for schema.org-specific discussion. A correct gtin value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a 'GS1 Digital Link' URL based on such a string. The numeric component should also have a valid GS1 check digit and meet the other rules for valid GTINs. See also GS1's GTIN Summary and Wikipedia for more details. Left-padding of the gtin values is not required or encouraged. The gtin property generalizes the earlier gtin8, gtin12, gtin13, and gtin14 properties. Note also that this is a definition for how to include GTINs in Schema.org data, and not a definition of GTINs in general - see the GS1 documentation for authoritative details.",
+      "URL"
+    ],
+    "hasMerchantReturnPolicy": {"@type": "https://schema.org/MerchantReturnPolicy"},
+    "includesObject": {"@type": "https://schema.org/TypeAndQuantityNode"},   
+    "ineligibleRegion": [
+      {"@type": "https://schema.org/GeoShape"},
+      {"@type": "https://schema.org/Place"},
+      "Text: The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid."
+    ],
+    "itemOffered": [
+      {"@type": "https://schema.org/AggregateOffer"},
+      {"@type": "https://schema.org/CreativeWork"},
+      {"@type": "https://schema.org/Event"},
+      {"@type": "https://schema.org/MenuItem"},
+      {"@type": "https://schema.org/Product"},
+      {"@type": "https://schema.org/Service"},
+      {"@type": "https://schema.org/Trip"}
+    ],
+    "mpn": "Text: The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.",
+    "offeredBy": [
+      {"@type": "https://schema.org/Organization"},
+      {"@type": "https://schema.org/Person"}
+    ],
+    "price": [
+      {"@type": "https://schema.org/Number"},
+      "Text: The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes. Usage guidelines: 1) Use the priceCurrency property (with standard formats: ISO 4217 currency format, e.g. 'USD'; Ticker symbol for cryptocurrencies, e.g. 'BTC'; well known names for Local Exchange Trading Systems (LETS) and other currency types, e.g. 'Ithaca HOUR') instead of including ambiguous symbols such as '$' in the value. 2) Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator. Note that both RDFa and Microdata syntax allow the use of a 'content=' attribute for publishing simple machine-readable values alongside more human-friendly formatting. 3) Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols."
+    ],
+    "priceCurrency": "Text: The currency of the price, or a price component when attached to PriceSpecification and its subtypes. Use standard formats: ISO 4217 currency format, e.g. 'USD'; Ticker symbol for cryptocurrencies, e.g. 'BTC'; well known names for Local Exchange Trading Systems (LETS) and other currency types, e.g. 'Ithaca HOUR'.",
+    "priceSpecification": {"@type": "https://schema.org/PriceSpecification"},
+    "priceValidUntil": {"@type": "https://schema.org/Date"},
+    "seller": [
+      {"@type": "https://schema.org/Organization"},
+      {"@type": "https://schema.org/Person"}
+    ],
+    "serialNumber": "Text: The serial number or any alphanumeric identifier of a particular product. When attached to an offer, it is a shortcut for the serial number of the product included in the offer.",
+    "shippingDetails": {"@type": "https://schema.org/OfferShippingDetails"},
+    "validFrom": [
+      {"@type": "https://schema.org/Date"},
+      {"@type": "https://schema.org/DateTime"}
+    ],
+    "validThrough": [
+      {"@type": "https://schema.org/Date"},
+      {"@type": "https://schema.org/DateTime"}
+    ],
+    "warranty": {"@type": "https://schema.org/WarrantyPromise"},
+
+    "description": "Text: Free text which describes this Thing.",
+    "disambiguatingDescription": "Text: A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation",
+    "identifier": [
+        {"@type": "https://schema.org/PropertyValue"},
+        "Text - The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.",
+        "URL"
+    ],
+    "image": [
+        "URL",
+        {"@type": "https://schema.org/ImageObject"}
+    ],
+    "mainEntityOfPage": [
+      "URL",
+      {"@type": "https://schema.org/CreativeWork"}
+    ],
+    "name": "Text: The name of the item.",
+    "url": "URL - the URL to the item described by this JSON-LD document"
+  }
