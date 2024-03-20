@@ -1,1 +1,443 @@
-init
+{
+    "@context": {
+        "@vocab": "https://schema.org/"
+    },
+    "@id": "https://example.org/dataset/12345",
+    "@type": "Dataset",
+    "name": "",
+    "description": "",
+    "url": "(4)",
+    "sameAs": "(62/63)",
+    "version": "",
+    "license": "https://spdx.org/licenses/CC-BY-4.0",
+    "citation": "(61)",
+    "keywords": [
+        "Oxygen"
+    ],
+    "isAccessibleForFree": true,
+    "datePublished": "(1)",
+    "dateModified":"(1)",
+    "identifier": {
+        "@type": "PropertyValue",
+        "name": "DOI:",
+        "propertyID": "https://registry.identifiers.org/registry/doi",
+        "value": "(5)",
+        "url": "https://doi.org/"
+    },
+    "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "",
+        "encodingFormat": "comma-seperated"
+    },
+    "temporalCoverage": [
+        {
+        "@type": "time:ProperInterval",
+        "time:hasBeginning": 
+            {
+             "@type": "time:Instant",
+             "time:inXSDDateTimeStamp": "(41)"
+            },
+         "time:hasEnd": 
+            {
+            "@type": "time:Instant",
+            "time:inXSDDateTimeStamp": "(42)"
+            }
+        }
+    ],
+    "location": {
+        "@type": "Place",
+        "geo": {
+            "@type": "GeoShape",
+            "polygon": [
+                "(43-48)"
+            ]
+        },
+        "additionalProperty": [
+            {
+                "@type": "PropertyValue",
+                "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
+                "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+            }
+        ]
+    },
+    "provider": [
+        {
+            "@id":"(8)",
+            "@type": "Organization",
+            "legalName": "(7)",
+            "name": "(7)",
+            "url": "(8)"
+        },
+        {
+            "@id":"(12)",
+            "@type": "Person",
+            "legalName": "(6)",
+            "name": "(6)",
+            "url":"(12)"
+        }
+    ],
+    "funding": [
+        {
+            "@type": "MonetaryGrant",
+            "identifier": [
+                "(51)"
+            ],
+            "name": [
+                "(50)"
+            ],
+            "funder": {
+                "@type": "Organization",
+                "name": "(49)"
+            }
+        }
+    ],
+    "isBasedOn": [
+        {
+            "@type": "Dataset",
+            "name": "",
+            "publisher": "",
+            "identifier": "(2)"
+        }
+    ],
+    "MeasurementTechnique":"(40)",
+    "about": [
+        {
+        "@type": "Project",
+        "name": "(38)",
+        "description": "(39)",
+        "potentialAction": [
+            {
+                "@type": "Action",
+                "name": "Research Cruise number 06MT20121212",
+                "identifier": "06MT20121212 (58)",
+                "actionStatus": "CompletedActionStatus",
+                "instrument":
+                {
+                   "@type": "Vehicle",
+                   "name":" METEOR (52)",
+                   "category": [
+                        "Ocean-going ship (53)",
+                        {
+                            "@type": "DefinedTerm",
+                            "description": "Ship (from some vocab)",
+                            "identifier": "https://my",
+                            "inDefinedTermSet": "https://vocab.ices.dk",
+                            "termCode": "06MT (54)"
+                        }],
+                    "additionalProperty": {
+                        "@type": "PropertyValue",
+                        "name": "owner",
+                        "propertyID": "find one",
+                        "value": [
+                            @Person 56 57
+                            @Organization (56,57)
+
+                        ]
+                    },
+                    "identifier": {
+                        "@type": "PropertyValue",
+                        "name": "SeaDataNet Ship and Platform Codes (SHIPC)",
+                        "propertyID": "https://vocab.ices.dk/?codetypeguid=7f9a91e1-fb57-464a-8eb0-697e4b0235b5",
+                        "value": 
+                        {
+                            "@type": "DefinedTerm",
+                            "description": "METEOR (comes from ices)",
+                            "identifier": "https://vocab.ices.dk/?codeguid=0e73a1c2-6a38-408b-bfdf-0e13157d4f59",
+                            "inDefinedTermSet": "https://vocab.ices.dk",
+                            "termCode": "06MT (54)"
+                        }
+                    }
+                }
+            },
+              {
+                "@type": "Action",
+                "name": "Collection of water samples",
+                "actionStatus": "CompletedActionStatus",
+                "instrument":
+                {
+                    "@type": "Thing",
+                    "description":"Instument used to collect water sample(s)",
+                    "name":"(204/.../230)",
+                    "additionalProperty": 
+                    {
+                        "@type": "PropertyValue",
+                        "name": "(204/230)",
+                        "propertyID": "Link to nerc",
+                        "value": 
+                        {
+                            "@type": "DefinedTerm",
+                            "name": "(204/.../230)",
+                            "identifier": "exact link link to nerc term",
+                            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/L05/current/",
+                            "termCode": ""
+                        }
+                    }
+                },
+                "result": "Water Sample"
+            },
+            {
+                "@type": "Action",
+                "name": "Measuring water temperature",
+                "actionStatus": "CompletedActionStatus",
+                "instrument":
+                {
+                    "@type": "Thing",
+                    "description":"Sensor used to measure temperature",
+                    "name":"(205)",
+                    "additionalProperty": [{
+                        "@type": "PropertyValue",
+                        "name": "(205)",
+                        "propertyID": "Link to nerc",
+                        "value": 
+                        {
+                            "@type": "DefinedTerm",
+                            "name": "(205)",
+                            "identifier": "link to nerc",
+                            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/L05/current/",
+                            "termCode": ""
+                        }
+                    },
+                    {
+                        "@type": "HowTo",
+                        "url": "(206/212)"
+                    }]
+                },
+                "result": [
+                    "Column title (201) in https://example.org/dataset/12345"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Quality Control of Temperture of water column",
+                "actionStatus": "CompletedActionStatus",
+                "object": [
+                    "(201) in https://example.org/dataset/12345"
+                ],
+                "result": [
+                    "Quality Flag of Temperture of water column",
+                    "(208) in https://example.org/dataset/12345"
+                ]
+            },
+            {
+                "@type": "Action",
+                "name": "Determination of oxygen",
+                "actionStatus": "CompletedActionStatus",
+                "subjectOf": "URL (232/249)",
+                "instrument":
+                {
+                    "@type": "Thing",
+                    "description":"Analysing instrument used to measure oxygen",
+                    "name":"(231)",
+                   
+                    "additionalProperty": [
+                        {
+                        "@type": "PropertyValue",
+                        "name": "(231)",
+                        "propertyID": "Link to nerc",
+                        "value": 
+                        {
+                            "@type": "DefinedTerm",
+                            "name": "",
+                            "identifier": "link to nerc",
+                            "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/L05/current/",
+                            "termCode": ""
+                        }
+                        }
+                    ]
+                },
+                "object": "Water Sample",
+                "result": [
+                    "Oxygen concentration of water column",
+                    "(227) in https://example.org/dataset/12345"
+                ]
+            }    
+    ]}],
+    "variableMeasured": [
+        {
+            "@type": "PropertyValue",
+            "name": "(64)",
+            "description": "Gives Sample ID (e.g. station and bottle number, sampno, ....)"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "DATE",
+            "identifier": [
+                {
+                    "@type": "DefinedTerm",
+                    "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+                    "termCode": "ADATAA01",
+                    "name": "Date",
+                    "url": "http://vocab.nerc.ac.uk/collection/P01/current/ADATAA01"
+                }
+            ],
+            "description": "Date of sample in ####"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "LATITUDE",
+            "identifier": [
+                {
+                    "@type": "DefinedTerm",
+                    "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+                    "termCode": "ALATAA01",
+                    "name": "Latitude north",
+                    "url": "http://vocab.nerc.ac.uk/collection/P01/current/ALATAA01"
+                }
+            ],
+            "unitText": "decimal degrees"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "LONGITUDE",
+            "identifier": [
+                {
+                    "@type": "DefinedTerm",
+                    "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+                    "termCode": "ALONZZ01",
+                    "name": "Longitude east",
+                    "url": "http://vocab.nerc.ac.uk/collection/P01/current/ALONZZ01"
+                }
+            ],
+            "unitText": "decimal degrees"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "(65)",
+            "alternateName":[
+              {
+                "@type": "DefinedTerm",
+                  "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+                  "termCode": "PRESPR01",
+                  "name": "Pres_Z",
+                  "url": "http://vocab.nerc.ac.uk/collection/P01/current/PRESPR01"
+              }
+            ],
+            "unitText": "(66)"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "(201)",
+            "alternateName":[
+              {
+                "@type": "DefinedTerm",
+                  "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P01/current",
+                  "termCode": "TEMPP901",
+                  "name": "WC_temp90",
+                  "url": "http://vocab.nerc.ac.uk/collection/P01/current/TEMPP901"
+              }
+            ],
+            "unitText": "(203)",
+            "additionalProperty": [
+                {
+                "@type": "PropertyValue",
+                "name":"Uncertainty",
+                "value": "(210)"
+                }
+            ]
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "(208)",
+            "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#ctdsal",
+            "description": "WOCE quality flag of (201).",
+            "additionalProperty": [
+                {
+                    "@type": "PropertyValue",
+                    "name": "(209)",
+                    "propertyID": "link to flagging scheme"
+                }
+            ]
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "(227)",
+            "alternateName":[
+              {
+                "@type": "DefinedTerm",
+                  "inDefinedTermSet": "http://vocab.nerc.ac.uk/collection/P02/current",
+                  "termCode": "DOXY",
+                  "name": "WC_O2",
+                  "url": "http://vocab.nerc.ac.uk/collection/P02/current/DOXY"
+              }
+            ],
+            "unitText": "(229)",
+            "additionalProperty": [
+                {
+                "@type": "PropertyValue",
+                "name":"Uncertainty",
+                "value": "(236)"
+                }],
+            "MeasurementMethod":[    
+                {
+                "@type": "PropertyValue",
+                "name":"Calibration Method Summary",
+                "value": "(242)",
+                "additionalProperty":
+                    {
+                    "@type": "PropertyValue",
+                    "name":"frequency of execution",
+                    "value":"(243)"
+                    }
+                },
+                "@type": "PropertyValue",
+                "name":"Calibration Method",
+                "value": "(242)"
+                }]
+            ],
+
+            
+            "subjectOf": [{
+
+                "@type": "Dataset",
+                "name": "Metadata for DOXY measurments",
+                "description": "..."
+                "variableMeasured": [
+
+                    {
+             "@type": "PropertyValue",
+            "name": "Temperature of Measurement",
+            "description": "The 2-dimensional horizontal vector Ocean Surface Stress is the rate per unit area at which momentum is transferred from the atmosphere to the ocean.",
+            "propertyID": "http://purl.obolibrary.org/obo/ENVO_01001844",
+            "value": 0.2,
+            "unitCode": "http://qudt.org/vocab/unit/N-PER-M2"
+        }
+
+                    {
+                "@type": "PropertyValue",
+                "name":"Temperature of Measurement",
+                "value": "(237)"
+                },
+                {
+                "@type": "PropertyValue",
+                "name":"Salinty of Measurement",
+                "value": "(238)"
+                },
+                {
+                "@type": "PropertyValue",
+                "name":"Pressure of Measurement",
+                "value": "(239)"
+                },
+                {
+                "@type": "PropertyValue",
+                "name":"Time-stamp of Measurement",
+                "value": "(240)"
+                }
+            ]
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "(234)",
+            "url":"https://exchange-format.readthedocs.io/en/latest/parameters.html#ctdsal",
+            "description": "WOCE quality flag of (227).",
+            "additionalProperty": [
+                {
+                    "@type": "PropertyValue",
+                    "name": "(235)",
+                    "propertyID": "link to flagging scheme"
+                }
+            ]
+        }
+
+    ]
+}
+
