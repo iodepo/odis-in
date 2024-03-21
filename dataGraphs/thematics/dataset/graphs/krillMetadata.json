@@ -130,7 +130,7 @@
     {
       "@type": "PropertyValue",
       "name": "Name of a variable in the dataset",
-      "url": "http://ontology.org/uriToSemanticDescriptorOfThisVariable",      
+      "url": "http://ontology.org/uriToSemanticDescriptorOfThisVariable",
       "description": "Extended description of this variable"
     },
     {
