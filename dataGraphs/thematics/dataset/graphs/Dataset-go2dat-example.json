@@ -224,37 +224,37 @@
     "variableMeasured": [
         {
             "@type": "PropertyValue",
-            "name": "(64)",
+            "alternateName": "(64)",
             "description": "Gives Sample ID (e.g. station and bottle number, sampno, ....)"
         },
         {
             "@type": "PropertyValue",
-            "name": "DATE",
-            "identifier": "http://vocab.nerc.ac.uk/collection/P01/current/ADATAA01",
+            "alternateName": "DATE",
+            "propertyID": "http://vocab.nerc.ac.uk/collection/P01/current/ADATAA01",
             "description": "Date of sample in ####"
         },
         {
             "@type": "PropertyValue",
-            "name": "LATITUDE",
-            "identifier": "http://vocab.nerc.ac.uk/collection/P01/current/ALATAA01",
+            "alternateName": "LATITUDE",
+            "propertyID": "http://vocab.nerc.ac.uk/collection/P01/current/ALATAA01",
             "unitText": "decimal degrees"
         },
         {
             "@type": "PropertyValue",
-            "name": "LONGITUDE",
-            "identifier": "http://vocab.nerc.ac.uk/collection/P01/current/ALONZZ01",
+            "alternateName": "LONGITUDE",
+            "propertyID": "http://vocab.nerc.ac.uk/collection/P01/current/ALONZZ01",
             "unitText": "decimal degrees"
         },
         {
             "@type": "PropertyValue",
-            "name": "(65)",
-            "identifier":"http://vocab.nerc.ac.uk/collection/P01/current/PRESPR01",
+            "alternateName": "(65)",
+            "propertyID":"http://vocab.nerc.ac.uk/collection/P01/current/PRESPR01",
             "unitText": "(66)"
         },
         {
             "@type": "PropertyValue",
-            "name": "(201)",
-            "identifier":"http://vocab.nerc.ac.uk/collection/P01/current/TEMPP901",
+            "alternateName": "(201)",
+            "propertyID":"http://vocab.nerc.ac.uk/collection/P01/current/TEMPP901",
             "unitText": "(203)",
             "additionalProperty": [
                 {
@@ -266,7 +266,7 @@
         },
         {
             "@type": "PropertyValue",
-            "name": "(208)",
+            "alternateName": "(208)",
             "propertyID":"https://exchange-format.readthedocs.io/en/latest/parameters.html#ctdsal",
             "description": "WOCE quality flag of (201).",
             "additionalProperty": [
