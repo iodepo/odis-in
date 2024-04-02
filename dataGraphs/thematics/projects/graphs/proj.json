@@ -54,7 +54,7 @@
             "propertyID": "https://registry.identifiers.org/registry/doi",
             "value": "DOI value expressed as doi:{doi}",
             "url": "https://dio.org/id/XYZ"
-          }          
+          }
         }
       ]
     }
@@ -79,6 +79,7 @@
         "latitude": 39.3280,
         "longitude": 120.1633
       },
+      "name": "Textual name of the area served",
       "description": "Description of the area served"
     },
     {
