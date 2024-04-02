@@ -13,14 +13,12 @@
     "url": "https://www.example-data-repository.org/logo.jpg"
   },
   "identifier": {
-    "@id": "https://grid.ac/institutes/grid.475727.4",
     "@type": "PropertyValue",
     "description": "UN Department of Economic and Social Affairs Sustainable Development",
     "propertyID": "https://registry.identifiers.org/registry/grid",
     "url": "https://grid.ac/institutes/grid.475727.4"
   },
   "contactPoint": {
-    "@id": "https://www.example-data-repository.org/about-us",
     "@type": "ContactPoint",
     "name": "Support",
     "email": "info@example-data-repository.org",
@@ -29,13 +27,11 @@
   },
   "funder": {
     "@type": "FundingAgency",
-    "@id": "https://dx.doi.org/10.13039/10000001",
     "name": "National Science Foundation",
     "legalName": "National Science Foundation",
     "alternateName": "NSF",
     "url": "https://www.nsf.gov/",
     "identifier": {
-      "@id": "https://example.org/id/resproj/X",
       "@type": "PropertyValue",
       "propertyID": "https://registry.identifiers.org/registry/doi",
       "value": "DOI value expressed as doi:{doi}",
@@ -44,7 +40,6 @@
   },
   "funding": [
     {
-      "@id": "{odo:hasAward -> odo:osprey_page}",
       "@type": "MonetaryGrant",
       "url": "http://www.someinstitute.edu",
       "name": "{odo:hasAward -> odo:hasAwardNumber}",
@@ -63,14 +58,12 @@
   ],
   "ethicsPolicy": {
     "@type": "CreativeWork",
-    "@id": "https://example.org/id/XYZ",
     "name": "Name or title of the document",
     "description": "Description of the creative work ",
     "url": "https://www.foo.org/creativework/ethicsPolicy.pdf"
   },
   "diversityPolicy": {
     "@type": "CreativeWork",
-    "@id": "https://example.org/id/ABC",
     "name": "Name or title of the document",
     "description": "Description of the creative work",
     "url": "https://www.foo.org/creativework/diversityPolicy.pdf"
@@ -101,7 +94,6 @@
   ],
   "parentOrganization": {
     "@type": "Organization",
-    "@id": "http://www.someinstitute.edu",
     "legalName": "Some Institute",
     "name": "SI",
     "url": "http://www.someinstitute.edu",
