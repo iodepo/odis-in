@@ -1,0 +1,81 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Project",
+  "@id": "The URL of this JSON-LD file, if present",
+  "name": "Project Title",
+  "foundingDate": "2022-11-25",
+  "url": "https://localcontextshub.org/projects/{PROJECT_ID}]",
+  "description": "Project Description",
+  "identifier": [
+      "{PROJECT_ID}]",
+      "provider_id_wr2=52dgtw"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "name": "Community C",
+    "email": "info@example-data-repository.org",
+    "url": "https://www.example-data-repository.org/about-us",
+    "contactType": "Community contact point"
+  },
+  "publishingPrinciples": [
+        {
+          "@type": "CreativeWork",
+          "name": [
+              {
+                    "@language": "en",
+                    "@value": "Label/Notice Title"
+              },
+              {
+                    "@language": "es",
+                    "@value": "Label/Notice Title"
+              }              
+              ],
+          "author": "{AUTHOR}",
+          "sourceOrganization": "{ORGANIZATION}", 
+          "text": [
+              {
+                   "@language": "en",
+                   "@value": "Label/Notice Text"
+              },
+              {
+                "@language": "es",
+                "@value": "Label/Notice Text"
+              }              
+              ],
+          "url": "https://localcontextshub.org/projects/{PROJECT_ID}",
+          "image": [
+            {
+                "@type": "ImageObject",
+                "url": "https://urlTomyImage.org/346oosgsd-w45.png",
+                "encodingFormat": "image/png"
+            },
+            {
+                "@type": "ImageObject",
+                "url": "https://urlTomyImage.org/346oosgsd-w45.svg",
+                "encodingFormat": "image/svg"
+            }
+            ]
+        }    
+  ],
+  "areaServed": [
+    {
+      "@type": "Place",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.3280,
+        "longitude": 120.1633
+      },
+      "name": "Textual name of the area served",
+      "description": "Description of the area served"
+    },
+    {
+      "@type": "Place",
+      "name": "Textual name of the area served",
+      "description": "Description of the area served, and measures needed to request access.",
+      "publicAccess": "False",
+      "isAccessibleForFree": "False"
+    }
+  ]
+}
