@@ -132,7 +132,7 @@
           },
     "sourceOrganization":  {"@type": "https://schema.org/Organization"},
     "spatialCoverage": "{odis-spatial-extent}",
-    "temporalCoverage": "{odis-temporal-extent}",,
+    "temporalCoverage": "{odis-temporal-extent}",
     "usageInfo":[
         {"@type": "https://schema.org/CreativeWork"},
         {"@type": "https://schema.org/URL"}
