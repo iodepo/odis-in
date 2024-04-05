@@ -51,14 +51,14 @@
         {"@type": "https://schema.org/DefinedTerm"}
     ],
     "creator": [
-        {odis-fed-orgs}
+        "{odis-fed-orgs}"
     ],
     "creditText": "Text: Text used to credit person(s) and/or organization(s) associated with this CreativeWork",
     "dateCreated": [
         {"@type": "https://schema.org/Date"},
         {"@type": "https://schema.org/DateTime"}
     ],
-    "dateModified": {date-modified},
+    "dateModified": "{date-modified}",
     "datePublished": [
         {"@type": "https://schema.org/Date"},
         {"@type": "https://schema.org/DateTime"}
@@ -82,7 +82,7 @@
         "encodingFormat": "application/vnd.apache.parquet",
         "contentSize": "{odis-kg-parquet-size-megabytes}"
         }
-    ]
+    ],
     "funder": [
         {"@type": "https://schema.org/Organization"},
         {"@type": "https://schema.org/Person"}
@@ -128,7 +128,7 @@
               "@type": "Organization",
               "name": "The International Oceanographic Data and Information Exchange",
               "url": "https://www.iode.org",
-              "identifer": "https://oceanexpert.org/institution/10171"
+              "identifier": "https://oceanexpert.org/institution/10171"
           },
     "sourceOrganization":  {"@type": "https://schema.org/Organization"},
     "spatialCoverage": "{odis-spatial-extent}",
@@ -138,19 +138,20 @@
         {"@type": "https://schema.org/URL"}
     ],
       "potentialAction": [
+         {
           "@type": "AskAction",
           "agent": {
               "@type": "ResearchProject",
               "name": "Global cooperation on FAIR data policy and practice",
               "alternateName": "The WorldFAIR Project",
               "url": "https://worldfair-project.eu/",
-              "identifer": "https://cordis.europa.eu/project/id/101058393"
+              "identifier": "https://cordis.europa.eu/project/id/101058393"
           },
           "recipient": {
               "@type": "Organization",
               "name": "The International Oceanographic Data and Information Exchange",
               "url": "https://www.iode.org",
-              "identifer": "https://oceanexpert.org/institution/10171"
+              "identifier": "https://oceanexpert.org/institution/10171"
           },
           "question":[
               {
@@ -280,5 +281,6 @@
               "acceptedAnswer": "{odis-Q-}"
             }
           ]
+        } 
       ]
 }
