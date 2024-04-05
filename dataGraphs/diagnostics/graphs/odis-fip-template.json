@@ -2,11 +2,20 @@
     "@context": {
         "@vocab": "https://schema.org/"
     },
-    "@type": "Claim",
+    "@type": "CreativeWork",
     "@id": "URL:  Optional. A URL that resolves to *this* JSON-LD document, NOT the URL of the CreativeWork that this JSON-LD document describes. To link to the CreativeWork itself, please use 'url' and/or 'identifier')",
-   
-    "about": "The Ocean Data and Information System (ODIS) Knowledge Graph FAIR Implementation Profile",
-    "abstract": "Text: A descriptive summary of a CreativeWork",
+    "name": "The Ocean Data and Information System (ODIS) Knowledge Graph",
+        "version": "{odis-kg-version}",
+    "alternateName": "The ODIS KG.",
+    "description": "The Ocean Data and Information System (ODIS) Knowledge Graph is the synthesis of (meta)data catalogues shared by the partners of the ODIS Federation. These files are harvested and merged to create a collective knowledge base of the ODIS Federation's digital holdings. These products are maintained and released by the IODE of IOC-UNESCO.",
+    "url": "https://odis.org",
+    "identifier": [
+          {"@type": "https://schema.org/PropertyValue"},
+          "Text - The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.",
+          "URL"
+      ],
+    "about": "The Ocean Data and Information System (ODIS) Federation",
+    "abstract": "The Ocean Data and Information System (ODIS) Knowledge Graph is the synthesis of (meta)data catalogues shared by the partners of the ODIS Federation. These files are harvested and merged to create a collective knowledge base of the ODIS Federation's digital holdings. These products are maintained and released by the IODE of IOC-UNESCO.",
     "accessMode": [
       "textual",
       "visual"
@@ -36,52 +45,50 @@
         {"@type": "https://schema.org/Person"}
     ],
     "copyrightNotice": "Text. Text of a notice appropriate for describing the copyright aspects of this Creative Work",
-    "copyrightYear": {"@type": "https://schema.org/Number"},
+    "copyrightYear": "2024",
     "creativeWorkStatus": [
         "Text: Description of the status of this CreativeWork in terms of its stage in a lifecycle",
         {"@type": "https://schema.org/DefinedTerm"}
     ],
     "creator": [
-        {"@type": "https://schema.org/Organization"},
-        {"@type": "https://schema.org/Person"}
+        {odis-fed-orgs}
     ],
     "creditText": "Text: Text used to credit person(s) and/or organization(s) associated with this CreativeWork",
     "dateCreated": [
         {"@type": "https://schema.org/Date"},
         {"@type": "https://schema.org/DateTime"}
     ],
-    "dateModified": [
-        {"@type": "https://schema.org/Date"},
-        {"@type": "https://schema.org/DateTime"}
-    ],
+    "dateModified": {date-modified},
     "datePublished": [
         {"@type": "https://schema.org/Date"},
         {"@type": "https://schema.org/DateTime"}
     ],
-    "discussionUrl": "URL",
+    "discussionUrl": "https://github.com/iodepo/odis-arch/issues/",
     "educationalLevel": [
         "intermediate",
         "advanced"
     ],
     "educationalUse": "This Creative Work may be used as a reference implementation of a FAIR Implementation Profile in JSON-LD/schema.org",
-    "encoding": {"@type": "https://schema.org/MediaObject"},
-    "encodingFormat": [
-        "Text: Textual description of the media type typically expressed using a MIME format (see IANA site [http://www.iana.org/assignments/media-types/media-types.xhtml] and MDN reference [https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types]), e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc. ",
-        "URL"
-    ],
-    "expires": [
-        {"@type": "https://schema.org/Date"},
-        {"@type": "https://schema.org/DateTime"}
-    ],
+    "encoding": [
+        {
+        "@type": "DataDownload",
+        "contentUrl": "{odis-kg-download-ttl}",
+        "encodingFormat": "text/turtle",
+        "contentSize": "{odis-kg-ttl-size-megabytes}"
+        },
+        {
+        "@type": "DataDownload",
+        "contentUrl": "{odis-kg-download-parquet}",
+        "encodingFormat": "application/vnd.apache.parquet",
+        "contentSize": "{odis-kg-parquet-size-megabytes}"
+        }
+    ]
     "funder": [
         {"@type": "https://schema.org/Organization"},
         {"@type": "https://schema.org/Person"}
     ],
     "funding": {"@type": "https://schema.org/Grant"},
-    "inLanguage": [
-        "Text: The language of the content or performance or used in an action.",
-        {"@type": "https://schema.org/Language"}
-    ],
+    "inLanguage": "en",
     "interpretedAsClaim": {"@type": "https://schema.org/Claim"},
     "isAccessibleForFree": "true",
     "isBasedOn": [
@@ -115,69 +122,163 @@
         {"@type": "https://schema.org/CreativeWork"},
         {"@type": "https://schema.org/URL"}
     ],
-    "schemaVersion": [
-        "Text",
-        "URL"
-    ],
     "sdDatePublished": {"@type": "https://schema.org/Date"},
-    "sdLicense": [
-        {"@type": "https://schema.org/CreativeWork"},
-        {"@type": "https://schema.org/URL"}
-    ],
-    "sdPublisher": [
-        {"@type": "https://schema.org/Organization"},
-        {"@type": "https://schema.org/Person"}
-    ],
-    "size": "Text: Text indicating the phyiscal size of the CreativeWork (if appropriate). DefinedTerm or QuantitativeValue or SizeSpecification are also valid Types",
+    "sdLicense": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.en",
+    "sdPublisher": {
+              "@type": "Organization",
+              "name": "The International Oceanographic Data and Information Exchange",
+              "url": "https://www.iode.org",
+              "identifer": "https://oceanexpert.org/institution/10171"
+          },
     "sourceOrganization":  {"@type": "https://schema.org/Organization"},
-    "spatial":  {"@type": "https://schema.org/Place"},
-    "spatialCoverage": {"@type": "https://schema.org/Place"},
-    "temporal": "A more general property for any time-related information about this CreativeWork. This can be expressed as text or using the properties associated with the DateTime Type",
-    "temporalCoverage": [
-        {"@type": "https://schema.org/DateTime"},
-        "Text",
-        "URL"
-    ],
-    "text": "Text: The textual content of this CreativeWork.",
+    "spatialCoverage": "{odis-spatial-extent}",
+    "temporalCoverage": "{odis-temporal-extent}",,
     "usageInfo":[
         {"@type": "https://schema.org/CreativeWork"},
         {"@type": "https://schema.org/URL"}
     ],
-    "version": ["https://schema.org/Text", "https://schema.org/Number"],
-  
-    "additionalType": [
-        "Text: An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax.",
-        "URL"
-      ],
-      "alternateName": "The ODIS KG FIP.",
-      "description": "Text: Free text which describes this Thing.",
-      "identifier": [
-          {"@type": "https://schema.org/PropertyValue"},
-          "Text - The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.",
-          "URL"
-      ],
-      "name": "A FAIR Implementation Profile for the Ocean Data and Information System (ODIS) Knowledge Graph",
       "potentialAction": [
           "@type": "AskAction",
           "agent": {
-              "@type": "Person",
-              "name": "John"
+              "@type": "ResearchProject",
+              "name": "Global cooperation on FAIR data policy and practice",
+              "alternateName": "The WorldFAIR Project",
+              "url": "https://worldfair-project.eu/",
+              "identifer": "https://cordis.europa.eu/project/id/101058393"
           },
           "recipient": {
-              "@type": "Person",
-              "name": "Steve"
+              "@type": "Organization",
+              "name": "The International Oceanographic Data and Information Exchange",
+              "url": "https://www.iode.org",
+              "identifer": "https://oceanexpert.org/institution/10171"
           },
-          "question": {
+          "question":[
+              {
               "@type": "Question",
               "text": "Which standardized communication protocol do you use for datasets?",
-              "identifier": "https://w3id.org/fair/fip/latest/FIP-Question-A1.1-D",
-              "acceptedAnswer": "{{Q-A1-1-D}}"
-          },
-      
-      ],
-      "subjectOf": [
-        {"@type": "https://schema.org/CreativeWork"},
-        {"@type": "https://schema.org/Event"}
-      ],
-      "url": "URL - the URL to the item described by this JSON-LD document"
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-A1.1-D",
+              "acceptedAnswer": "{odis-Q-A1-1-D}"
+            },
+            {
+              "@type": "Question",
+              "text": "Which standardized communication protocol do you use for metadata records?",
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-A1.1-MD",
+              "acceptedAnswer": "{odis-Q-}"
+            },  
+            {
+              "@type": "Question",
+              "text": "Which authentication & authorisation technique do you use for datasets?",
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-A1.2-D",
+              "acceptedAnswer": "{odis-Q-}"
+            }, 
+            {
+              "@type": "Question",
+              "text": "Which authentication & authorisation technique do you use for metadata records?",
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-A1.2-MD",
+              "acceptedAnswer": "{odis-Q-}"
+            },  
+            {
+              "@type": "Question",
+              "text": "Which metadata longevity plan do you use?",
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-A2",
+              "acceptedAnswer": "{odis-Q-}"
+            }, 
+                {
+              "@type": "Question",
+              "text": "What globally unique, persistent, resolvable identifiers do you use for datasets?",
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-F1-D",
+              "acceptedAnswer": "{odis-Q-}"
+            },  
+            {
+              "@type": "Question",
+              "text": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-F1-MD",
+              "acceptedAnswer": "{odis-Q-}"
+            },
+                {
+              "@type": "Question",
+              "text": "Which metadata schemas do you use for findability?",
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-F2",
+              "acceptedAnswer": "{odis-Q-}"
+            },  
+            {
+              "@type": "Question",
+              "text": "What is the technology that links the persistent identifiers of your data to the metadata description?",
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-F3",
+              "acceptedAnswer": "{odis-Q-}"
+            }, 
+            {
+              "@type": "Question",
+              "text": "In which search engines are your datasets indexed?",
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-F4-D",
+              "acceptedAnswer": "{odis-Q-}"
+            },  
+            {
+              "@type": "Question",
+              "text": "In which search engines are your metadata records indexed?",
+              "identifier": "ttps://w3id.org/fair/fip/terms/FIP-Question-F4-MD",
+              "acceptedAnswer": "{odis-Q-}"
+            }, 
+            {
+              "@type": "Question",
+              "text": "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?",
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-I1-D",
+              "acceptedAnswer": "{odis-Q-}"
+            },
+            {
+              "@type": "Question",
+              "text": "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?",
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-I1-MD",
+              "acceptedAnswer": "{odis-Q-}"
+            },  
+            {
+              "@type": "Question",
+              "text": "Which structured vocabularies do you use to encode your datasets?",
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-I2-D",
+              "acceptedAnswer": "{odis-Q-}"
+            }, 
+                {
+              "@type": "Question",
+              "text": "Which structured vocabularies do you use to annotate your metadata records?",
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-I2-MD",
+              "acceptedAnswer": "{odis-Q-}"
+            },  
+            {
+              "@type": "Question",
+              "text": "Which models, schema(s) do you use for your datasets?",
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-I3-D",
+              "acceptedAnswer": "{odis-Q-}"
+            }, 
+                          {
+              "@type": "Question",
+              "text": "Which models, schema(s) do you use for your metadata records?",
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-I3-MD",
+              "acceptedAnswer": "{odis-Q-}"
+            },  
+            {
+              "@type": "Question",
+              "text": "Which usage license do you use for your datasets?",
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-D",
+              "acceptedAnswer": "{odis-Q-}"
+            }, 
+                {
+              "@type": "Question",
+              "text": "Which usage license do you use for your metadata records?",
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-MD",
+              "acceptedAnswer": "{odis-Q-}"
+            },  
+            {
+              "@type": "Question",
+              "text": "Which metadata schemas do you use for describing the provenance of your datasets?",
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-R1.2-D",
+              "acceptedAnswer": "{odis-Q-}"
+            }, 
+                          {
+              "@type": "Question",
+              "text": "Which metadata schemas do you use for describing the provenance of your metadata records?",
+              "identifier": "https://w3id.org/fair/fip/terms/FIP-Question-R1.2-MD",
+              "acceptedAnswer": "{odis-Q-}"
+            }
+          ]
+      ]
 }
