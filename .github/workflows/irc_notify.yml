@@ -5,10 +5,10 @@ name: "IRC Push Notification"
 on: 
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   irc_notify:
