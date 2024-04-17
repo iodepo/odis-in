@@ -9,8 +9,8 @@
   "url": "https://localcontextshub.org/projects/{PROJECT_ID}]",
   "description": "Project Description",
   "identifier": [
-      "{PROJECT_ID}]",
-      "provider_id_wr2=52dgtw"
+    "{PROJECT_ID}]",
+    "provider_id_wr2=52dgtw"
   ],
   "contactPoint": {
     "@type": "ContactPoint",
@@ -20,44 +20,44 @@
     "contactType": "Community contact point"
   },
   "publishingPrinciples": [
+    {
+      "@type": "CreativeWork",
+      "name": [
         {
-          "@type": "CreativeWork",
-          "name": [
-              {
-                    "@language": "en",
-                    "@value": "Label/Notice Title"
-              },
-              {
-                    "@language": "es",
-                    "@value": "Label/Notice Title"
-              }              
-              ],
-          "author": "{AUTHOR}",
-          "sourceOrganization": "{ORGANIZATION}", 
-          "text": [
-              {
-                   "@language": "en",
-                   "@value": "Label/Notice Text"
-              },
-              {
-                "@language": "es",
-                "@value": "Label/Notice Text"
-              }              
-              ],
-          "url": "https://localcontextshub.org/projects/{PROJECT_ID}",
-          "image": [
-            {
-                "@type": "ImageObject",
-                "url": "https://urlTomyImage.org/346oosgsd-w45.png",
-                "encodingFormat": "image/png"
-            },
-            {
-                "@type": "ImageObject",
-                "url": "https://urlTomyImage.org/346oosgsd-w45.svg",
-                "encodingFormat": "image/svg"
-            }
-            ]
-        }    
+          "@language": "en",
+          "@value": "Label/Notice Title"
+        },
+        {
+          "@language": "es",
+          "@value": "Label/Notice Title"
+        }
+      ],
+      "author": "{AUTHOR}",
+      "sourceOrganization": "{ORGANIZATION}",
+      "text": [
+        {
+          "@language": "en",
+          "@value": "Label/Notice Text"
+        },
+        {
+          "@language": "es",
+          "@value": "Label/Notice Text"
+        }
+      ],
+      "url": "https://localcontextshub.org/projects/{PROJECT_ID}",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://urlTomyImage.org/346oosgsd-w45.png",
+          "encodingFormat": "image/png"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://urlTomyImage.org/346oosgsd-w45.svg",
+          "encodingFormat": "image/svg"
+        }
+      ]
+    }
   ],
   "areaServed": [
     {
