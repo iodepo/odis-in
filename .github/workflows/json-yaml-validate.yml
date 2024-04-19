@@ -7,7 +7,7 @@ on: [push, pull_request]
 
 jobs:
   json-yaml-validate:
-    name: validate JSON and YAML files
+    name: json-yaml-validate
     runs-on: ubuntu-latest
 
     steps:
