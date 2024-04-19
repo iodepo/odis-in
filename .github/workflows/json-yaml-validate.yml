@@ -1,0 +1,23 @@
+# validate JSON and YAML files
+# homepage: https://github.com/GrantBirki/json-yaml-validate
+
+name: Validate JSON and YAML files
+
+on: [push, pull_request]
+
+jobs:
+  json-yaml-validate:
+    name: json-yaml-validate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository contents
+        uses: actions/checkout@v4
+
+      - name: json-yaml-validate
+        uses: GrantBirki/json-yaml-validate@v2.7.1
+        with:
+          base_dir: "./dataGraphs/thematics"        
+
+
+            
