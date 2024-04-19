@@ -44,7 +44,6 @@
                 },
                 "address": {
                     "@type": "PostalAddress",
-                    ,
                     "addressLocality": "Vasco-da-Gama",
                     "addressRegion": "Goa",
                     "postalCode": "403804",
