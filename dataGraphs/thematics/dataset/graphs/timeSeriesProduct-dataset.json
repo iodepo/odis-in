@@ -55,10 +55,10 @@
   "location": {
 		"name": "Station locations worldwide",
         "@type": "Place",
-		"description": "Gloabl",
+		"description": "Global",
         "geo": {
-            "@type": "GeoShape",
-            "polygon": "-180 -90, -180 90, 180 90, 180 -90, -180 -90"
+            "@type": "box",
+            "polygon": "-90 -180 90 -180"
         },
 		"additionalProperty":[ {
             "@type": "PropertyValue",
