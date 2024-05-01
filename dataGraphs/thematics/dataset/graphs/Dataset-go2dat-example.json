@@ -38,6 +38,7 @@
         "@type": "Place",
         "geo": {
             "@type": "GeoShape",
+            "description": "schema.org expects lat long (Y X) coordinate order",           
             "polygon": [
                 "(43-48)"
             ]
