@@ -1,0 +1,150 @@
+{
+    "@context": {
+        "@vocab": "https://schema.org/"
+    },
+    "@type": "Claim",
+    "@id": "https://linkToThisJsonFile.org/id_string34534w",
+    "description": "Text: Free text which describes this Thing.",
+    "disambiguatingDescription": "Text: A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation",
+    "identifier": "https://url-to-the-QC,
+      "name": "Text: The name of the item.",
+      "potentialAction": {"@type": "https://schema.org/Action"},
+      "sameAs": "URL",
+      "subjectOf": [
+        {"@type": "https://schema.org/CreativeWork"},
+        {"@type": "https://schema.org/Event"}
+      ],
+      "url": "URL - the URL to the item described by this JSON-LD document"
+
+  
+   "appearance": {
+     "@type": "https://schema.org/CreativeWork",
+      },
+   "claimInterpreter": [
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
+    ],
+   "firstAppearance": {"@type": "https://schema.org/CreativeWork"},
+
+    "about": "Text or controlled vocabulary/ontology, singly or as an array: The subject matter of this CreativeWork",
+
+    "assesses": [
+        "Text: Text to describe what (if anything) the CreativeWork described by this template assesses.",
+        {"@type": "https://schema.org/DefinedTerm"}
+    ],
+    "audience": {"@type": "https://schema.org/Audience"},
+    "author": {"@type": "https://schema.org/Person"},
+    "citation": [
+        "Text: A textual citation to other work relevant to this CreativeWork",
+        {"@type": "https://schema.org/CreativeWork"}
+    ],
+    "comment": "Text: A textual comment on the CreativeWork",
+    "contributor": [
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
+    ],
+    "copyrightNotice": "Text. Text of a notice appropriate for describing the copyright aspects of this Creative Work",
+    "copyrightYear": {"@type": "https://schema.org/Number"},
+    "correction": [
+        "Text:  description of a correction to the CreativeWork",
+        "URL",
+        {"@type": "https://schema.org/CorrectionComment"}
+    ],
+    "countryOfOrigin": {"@type": "https://schema.org/Country"},
+    "creativeWorkStatus": [
+        "Text: Description of the status of this CreativeWork in terms of its stage in a lifecycle",
+        {"@type": "https://schema.org/DefinedTerm"}
+    ],
+    "creator": [
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
+    ],
+    "creditText": "Text: Text used to credit person(s) and/or organization(s) associated with this CreativeWork",
+    "dateCreated": [
+        {"@type": "https://schema.org/Date"},
+        {"@type": "https://schema.org/DateTime"}
+    ],
+    "dateModified": [
+        {"@type": "https://schema.org/Date"},
+        {"@type": "https://schema.org/DateTime"}
+    ],
+    "datePublished": [
+        {"@type": "https://schema.org/Date"},
+        {"@type": "https://schema.org/DateTime"}
+    ],
+    "discussionUrl": "URL",
+    "encoding": {"@type": "https://schema.org/MediaObject"},
+    "expires": [
+        {"@type": "https://schema.org/Date"},
+        {"@type": "https://schema.org/DateTime"}
+    ],
+    "funder": [
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
+    ],
+    "funding": {"@type": "https://schema.org/Grant"},
+    "inLanguage": [
+        "Text: The language of the content or performance or used in an action.",
+        {"@type": "https://schema.org/Language"}
+    ],
+    "isBasedOn": [
+        {"@type": "https://schema.org/CreativeWork"},
+        {"@type": "https://schema.org/Product"},
+        "URL"
+    ],
+    "keywords": [
+        "Text: Keywords or tags used to describe the CreativeWork.",
+        {"@type": "https://schema.org/DefinedTerm"},
+        "URL"
+    ],
+    "license": [
+        "URL",
+        {"@type": "https://schema.org/CreativeWork"}
+    ],
+    "maintainer":  [
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
+    ],
+    "mentions": {"@type": "https://schema.org/Thing"},
+    "offers": [
+        {"@type": "https://schema.org/Offer"},
+        {"@type": "https://schema.org/Demand"}
+    ],
+    "provider": [
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
+    ],
+    "publisher": [
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
+    ],
+    "publishingPrinciples": [
+        {"@type": "https://schema.org/CreativeWork"},
+        {"@type": "https://schema.org/URL"}
+    ],
+    "sdDatePublished": {"@type": "https://schema.org/Date"},
+    "sdLicense": [
+        {"@type": "https://schema.org/CreativeWork"},
+        {"@type": "https://schema.org/URL"}
+    ],
+    "sdPublisher": [
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
+    ],
+    "sourceOrganization":  {"@type": "https://schema.org/Organization"},
+    "temporal": "A more general property for any time-related information about this CreativeWork. This can be expressed as text or using the properties associated with the DateTime Type",
+    "temporalCoverage": [
+        {"@type": "https://schema.org/DateTime"},
+        "Text",
+        "URL"
+    ],
+    "text": "Text: The textual content of this CreativeWork.",
+    "usageInfo":[
+        {"@type": "https://schema.org/CreativeWork"},
+        {"@type": "https://schema.org/URL"}
+    ],
+    "version": ["https://schema.org/Text", "https://schema.org/Number"],
+
+
+
+}
