@@ -1,0 +1,56 @@
+{
+    "@context": {
+        "@vocab": "http://www.w3.org/ns/csvw",
+        "schema": "https://schema.org/"
+    },
+  "url": "myData.csv",
+  "schema:url": "https://myWebSite.org/data/myData.csv",
+  "schema:name": "Unemployment in Europe (monthly)",
+  "schema:description": "Harmonized unemployment data for European countries.",
+  "schema:creator": { // you can use "schema:contributor" instead of or in addition to "schema:creator", this can be an array for multiple Person entries
+      "@type": "schema:Person",
+      "schema:name": "Carbon McCarbon",
+      "schema:familyName": "McCarbon",
+      "schema:givenName": "Cabon",
+      "identifier": "https://somethingLikeOrcidOrOceanExpert.org/0040202-2523532-352"
+      },
+  "schema:subjectOf" : "www.linkToMoreMetadata.org/metadata/moreMetadataAboutMyData.json", // This is where you can link off to a more comprehensive JSON-LD file with much more metadata
+  "schema:license": "https://spdx.org/licenses/CC-BY-4.0.html",
+  "schema:isBasedOn": "...", // Link or array to any datasets this dataset is based on (e.g. if it's a synthesis product)
+
+"tableSchema": {
+    "columns": [{
+      "titles": "EXPOCODE",
+      "schema:description": "A human readable description of the column content"
+    },{
+      "titles": "CRUISE_ID",
+      "schema:description": "A human readable description of the column content"
+    },{
+      "titles": "Section_ID",
+      "schema:description": "A human readable description of the column content"
+    },{
+      "titles": "Station_ID",
+      "schema:description": "A human readable description of the column content"
+    },{
+      "titles": "pCO2w",
+      "schema:description": "A human readable description of the column content",
+      "schema:variableMeasured": { // perhaps schema:about is a better property here, have to think
+          "@type": "PropertyValue",
+          "name": "Partial pressure of carbon dioxide {CO2 CAS 124-38-9} {pCO2} in the water body",
+          "alternateName": "pCO2w",
+          "propertyID": "https://vocab.nerc.ac.uk/collection/P01/current/PCO2XXXX/",
+          "measurementMethod": "https://doiOfMyMeasurementMethod.org/", // can link to JSON-LD with data about technique, instrument, etc, can also link to a semantic resource that describes a method or step
+        "schema:unitText": "Microatmospheres",
+        "schema:unitCode": "http://vocab.nerc.ac.uk/collection/P06/current/UATM/",
+        "schema:identifier": "SDN:P01::PCO2XXXX",
+        "schema:valueReference": "" // This is where you can add uncertainty in a PropertyValue block, with full semantic markup if you want it 
+      }
+    },{
+      "titles": "latitude",
+      "schema:description": "A human readable description of the column content"
+    },{
+      "titles": "longitude",
+      "schema:description": "A human readable description of the column content"
+    }]
+  }
+}
