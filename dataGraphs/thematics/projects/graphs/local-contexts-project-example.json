@@ -9,7 +9,7 @@
   "url": "https://localcontextshub.org/projects/{PROJECT_ID}]",
   "description": "Project Description",
   "identifier": [
-    "{PROJECT_ID}]",
+    "{PROJECT_ID}",
     "provider_id_wr2=52dgtw"
   ],
   "contactPoint": {
