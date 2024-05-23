@@ -58,8 +58,8 @@
     "actionStatus": "ActiveActionStatus",
     "object": {
       "@type": "person or organization",
-      "name": "",
-      "description": ""
+      "name": "name of person or org",
+      "description": "description of person or org"
     }
   },
   "correction": {
