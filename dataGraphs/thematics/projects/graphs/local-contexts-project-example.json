@@ -32,63 +32,147 @@
       }
     ]
   },
+  "potentialAction": {
+    "@type": "InviteAction",
+    "agent": "Org or person making invitation",
+    "name": [
+      {
+        "@language": "{language_tag}",
+        "@value": "{Label Title}"
+      },
+      {
+        "@language": "{language_tag}",
+        "@value": "{Label Title}"
+      }
+    ],
+    "description": [
+      {
+        "@language": "{language_tag}",
+        "@value": "{Label Text}"
+      },
+      {
+        "@language": "{language_tag}",
+        "@value": "{Label Text}"
+      }
+    ],
+    "actionStatus": "ActiveActionStatus",
+    "object": {
+      "@type": "person or organization",
+      "name": "",
+      "description": ""
+    }
+  },
+  "correction": {
+    "@type": "CorrectionComment",
+    "name": [
+      {
+        "@language": "{language_tag}",
+        "@value": "{Label Title}"
+      },
+      {
+        "@language": "{language_tag}",
+        "@value": "{Label Title}"
+      }
+    ],
+    "author": "{Author Name}",
+    "text": [
+      {
+        "@language": "{language_tag}",
+        "@value": "{Label Text}"
+      },
+      {
+        "@language": "{language_tag}",
+        "@value": "{Label Text}"
+      }
+    ],
+    "url": "{PROJECT_PAGE_URL}",
+    "image": [
+      {
+        "@type": "ImageObject",
+        "url": "{ICON_IMG}",
+        "encodingFormat": "image/png"
+      },
+      {
+        "@type": "ImageObject",
+        "url": "{ICON_SVG}",
+        "encodingFormat": "image/svg"
+      }
+    ],
+    "audio": [
+      {
+        "@type": "AudioObject",
+        "url": "{AUDIO_URL}",
+        "encodingFormat": "audio/mpeg"
+      }
+    ],
+    "dateCreated": "{date Label created}",
+    "dateModified": "{date Label modified}"
+  },
   "publishingPrinciples": [
     {
       "@type": "CreativeWork",
       "name": [
         {
-          "@language": "en",
-          "@value": "Label/Notice Title"
+          "@language": "{language_tag}",
+          "@value": "{Notice Title}"
         },
         {
-          "@language": "es",
-          "@value": "Label/Notice Title"
+          "@language": "{language_tag}",
+          "@value": "{Notice Title}"
         }
       ],
-      "author": "{AUTHOR}",
-      "sourceOrganization": "{ORGANIZATION}",
+      "author": {
+        "@type": "Organization",
+        "identifier": "https://oceanexpert.org/institution/xxxxxxx",
+        "legalName": "Local Contexts Inc.",
+        "name": "Local Contexts",
+        "url": "https://localcontexts.org/"
+      },
+      "sourceOrganization": "{Instituion that applied Notice}",
       "text": [
         {
-          "@language": "en",
-          "@value": "Label/Notice Text"
+          "@language": "{language_tag}",
+          "@value": "{Notice Text}"
         },
         {
-          "@language": "es",
-          "@value": "Label/Notice Text"
+          "@language": "{language_tag}",
+          "@value": "{Notice Text}"
         }
       ],
-      "url": "https://localcontextshub.org/projects/{PROJECT_ID}",
+      "url": "{PROJECT_PAGE_URL}",
       "image": [
         {
           "@type": "ImageObject",
-          "url": "https://urlTomyImage.org/346oosgsd-w45.png",
+          "url": "{ICON_IMG}",
           "encodingFormat": "image/png"
         },
         {
           "@type": "ImageObject",
-          "url": "https://urlTomyImage.org/346oosgsd-w45.svg",
+          "url": "{ICON_SVG}",
           "encodingFormat": "image/svg"
         }
       ]
     }
-  ],
-  "areaServed": [
-    {
-      "@type": "Place",
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 39.3280,
-        "longitude": 120.1633
-      },
-      "name": "Textual name of the area served",
-      "description": "Description of the area served"
-    },
-    {
-      "@type": "Place",
-      "name": "Textual name of the area served",
-      "description": "Description of the area served, and measures needed to request access.",
-      "publicAccess": "False",
-      "isAccessibleForFree": "False"
-    }
   ]
+}
+],
+"areaServed": [
+{
+  "@type": "Place",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.3280,
+    "longitude": 120.1633
+  },
+  "name": "Textual name of the area served",
+  "description": "Description of the area served"
+},
+{
+  "@type": "Place",
+  "name": "Textual name of the area served",
+  "description": "Description of the area served, and measures needed to request access.",
+  "publicAccess": "False",
+  "isAccessibleForFree": "False"
+}
+]
 }
