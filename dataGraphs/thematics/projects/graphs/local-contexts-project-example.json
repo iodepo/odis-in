@@ -62,7 +62,7 @@
       "description": "description of person or org"
     }
   },
-  "correction": {
+  "subjectOf": {
     "@type": "CorrectionComment",
     "name": [
       {
