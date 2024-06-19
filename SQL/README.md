@@ -39,14 +39,16 @@ Console commands 2
 ```
 CREATE TABLE base (id VARCHAR, type VARCHAR, name VARCHAR, url VARCHAR, description VARCHAR, headline VARCHAR, g VARCHAR );
 CREATE TABLE dataset (id VARCHAR, type VARCHAR, sameAs VARCHAR, license VARCHAR, citation VARCHAR, keyword VARCHAR, includedInDataCatalog VARCHAR, distribution VARCHAR, region VARCHAR, provider VARCHAR, publisher VARCHAR, creator VARCHAR);
+CREATE TABLE sup_time (id VARCHAR, type VARCHAR, time VARCHAR, temporalCoverage VARCHAR, dateModified VARCHAR, datePublished VARCHAR, );
 
 COPY base FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_baseQuery.parquet';
 COPY dataset FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_dataset.parquet';
+COPY sup_time FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_sup_temporal.parquet';
 
 CREATE TABLE course AS SELECT * FROM read_parquet('/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_course.parquet',  union_by_name=true);
 CREATE TABLE person AS SELECT * FROM read_parquet('/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_person.parquet',  union_by_name=true);
 CREATE TABLE sup_geo AS SELECT * FROM read_parquet('/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_sup_geo.parquet',  union_by_name=true);
-CREATE TABLE sup_time AS SELECT * FROM read_parquet('/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_sup_temporal.parquet',  union_by_name=true);
+
 
 ```
 
@@ -76,6 +78,7 @@ CREATE TABLE sup_time.data AS SELECT * FROM read_parquet('/home/fils/src/Project
 
 ## Columns we need
 
+```
 "id",
 "type",
 "txt_creator",
@@ -108,3 +111,5 @@ CREATE TABLE sup_time.data AS SELECT * FROM read_parquet('/home/fils/src/Project
 "txt_url",
 "txt_variableMeasured",
 "txt_version"
+```
+
