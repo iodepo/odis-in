@@ -40,5 +40,16 @@
             "url": "{ICON_SVG}",
             "encodingFormat": "image/svg"
         }
-    ]
+    ],
+    "dateCreated" : "{date Label created}",
+    "sdDatePublished": {"@type": "https://schema.org/Date"},
+    "sdLicense": [
+        {"@type": "https://schema.org/CreativeWork"},
+        {"@type": "https://schema.org/URL"}
+    ],
+    "sdPublisher": [
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
+    ],
+    "creditText": "text: recommended citation"
 }
