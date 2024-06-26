@@ -1,45 +1,65 @@
 {
-            "@type": "CreativeWork",
-            "identifier": "{Customized Label ID}",
-            "isBasedOn": "{LC Label Page URL}",
-            "name": [
-                {
-                    "@language": "{language_tag}",
-                    "@value": "{Notice Title}"
-                },
-                {
-                    "@language": "{language_tag}",
-                    "@value": "{Notice Title}"
-                }
-            ],
-            "author": {
-                "@type": "Organization",
-                "identifier": "https://oceanexpert.org/institution/xxxxxxx",
-                "legalName": "Local Contexts Inc.",
-                "name": "Local Contexts",
-                "url": "https://localcontexts.org/"
-            },
-            "text": [
-                {
-                    "@language": "{language_tag}",
-                    "@value": "{Notice Text}"
-                },
-                {
-                    "@language": "{language_tag}",
-                    "@value": "{Notice Text}"
-                }
-            ],
-            "url": "{PROJECT_PAGE_URL}",
-            "image": [
-                {
-                    "@type": "ImageObject",
-                    "url": "{ICON_IMG}",
-                    "encodingFormat": "image/png"
-                },
-                {
-                    "@type": "ImageObject",
-                    "url": "{ICON_SVG}",
-                    "encodingFormat": "image/svg"
-                }
-            ]
+    "@type": "CreativeWork",
+    "identifier": "{Customized Label ID}",
+    "isBasedOn": "{LC Label Page URL}",
+    "name": [
+        {
+            "@language": "{language_tag}",
+            "@value": "{Label Title}"
+        },
+        {
+            "@language": "{language_tag}",
+            "@value": "{Label Title}"
         }
+    ],
+    "license": "?",
+    "author": {
+        "@type": "Organization",
+        "identifier": "https://oceanexpert.org/institution/xxxxxxx",
+        "legalName": "{Community Name}",
+        "name": "{Community Name}",
+        "url": "{Community Website}"
+    },
+    "text": [
+        {
+            "@language": "{language_tag}",
+            "@value": "{Label Text}"
+        },
+        {
+            "@language": "{language_tag}",
+            "@value": "{Label Text}"
+        }
+    ],
+    "url": "{URL_TO_THE_LABEL_SECTION}",
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "{ICON_IMG}",
+            "encodingFormat": "image/png"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "{ICON_SVG}",
+            "encodingFormat": "image/svg"
+        }
+    ],
+    "audio" : [
+        {
+            "@type": "AudioObject",
+            "url": "{AUDIO_URL}",
+            "encodingFormat": "audio/mpeg"
+        }
+    ],
+    "dateCreated" : "{date Label created}",
+    "dateModified" : "{date Label modified}",
+    "sdDatePublished": {"@type": "https://schema.org/Date"},
+    "sdLicense": [
+        {"@type": "https://schema.org/CreativeWork"},
+        {"@type": "https://schema.org/URL"}
+    ],
+    "sdPublisher": [
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
+    ],
+    "creditText": "text: recommended citation of this label"
+}
