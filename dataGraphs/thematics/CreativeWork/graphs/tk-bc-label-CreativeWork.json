@@ -1,0 +1,45 @@
+{
+            "@type": "CreativeWork",
+            "identifier": "{Customized Label ID}",
+            "isBasedOn": "{LC Label Page URL}",
+            "name": [
+                {
+                    "@language": "{language_tag}",
+                    "@value": "{Notice Title}"
+                },
+                {
+                    "@language": "{language_tag}",
+                    "@value": "{Notice Title}"
+                }
+            ],
+            "author": {
+                "@type": "Organization",
+                "identifier": "https://oceanexpert.org/institution/xxxxxxx",
+                "legalName": "Local Contexts Inc.",
+                "name": "Local Contexts",
+                "url": "https://localcontexts.org/"
+            },
+            "text": [
+                {
+                    "@language": "{language_tag}",
+                    "@value": "{Notice Text}"
+                },
+                {
+                    "@language": "{language_tag}",
+                    "@value": "{Notice Text}"
+                }
+            ],
+            "url": "{PROJECT_PAGE_URL}",
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "{ICON_IMG}",
+                    "encodingFormat": "image/png"
+                },
+                {
+                    "@type": "ImageObject",
+                    "url": "{ICON_SVG}",
+                    "encodingFormat": "image/svg"
+                }
+            ]
+        }
