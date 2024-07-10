@@ -4,27 +4,93 @@
     },
     "@type": "Dataset",
     "@id": "URL:  Optional. A URL that resolves to *this* JSON-LD document, NOT the URL of the Dataset that this JSON-LD document describes. To link to the Dataset itself, please use 'url' and/or 'identifier')",
- 
+   "url": "https://treatment.plazi.org/id/423BD146-4079-EE78-44C5-FE28FE592E10"
+    "identifier": [
+      {
+        "@type": "PropertyValue",
+        "name": "UUID",
+        "propertyID": "https://www.wikidata.org/wiki/Q195284",
+        "value": "423bd146-4079-ee78-44c5-fe28fe592e10"
+       },
+      {
+        "@type": "PropertyValue",
+        "name": "LSID",
+        "propertyID": "https://www.wikidata.org/wiki/Q6459954",
+        "value": "urn:lsid:plazi:treatment:423BD146-4079-EE78-44C5-FE28FE592E10"
+       }
+    ],
    "includedInDataCatalog": {"@type": "https://schema.org/DataCatalog"},
-   "issn": "Text: The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L) for, this serial publication.",
-   "measurementMethod": [
-    "Text: A subproperty of https://schema.org/measurementTechnique that can be used for specifying specific methods, in particular via https://schema.org/MeasurementMethodEnum.",
-    "URL",
-    {"@type": "https://schema.org/MeasurementMethodEnum"}
-   ],
-   "measurementTechnique": [
-    "Text: A technique, method or technology used in an Observation, StatisticalVariable or Dataset (or DataDownload, DataCatalog), corresponding to the method used for measuring the corresponding variable(s) (for datasets, described using variableMeasured; for Observation, a StatisticalVariable).",
-    "URL",
-    {"@type": "https://schema.org/MeasurementMethodEnum"}
-   ],
-   "variableMeasured": [
-    "Text: A technique, method or technology used in an Observation, StatisticalVariable or Dataset (or DataDownload, DataCatalog), corresponding to the method used for measuring the corresponding variable(s) (for datasets, described using variableMeasured; for Observation, a StatisticalVariable).",
-    {"@type": "https://schema.org/Property"},
-    {"@type": "https://schema.org/PropertyValue"},
-    {"@type": "https://schema.org/StatisticalVariable"}
-   ],
+
   
-    "about": "Text or controlled vocabulary/ontology, singly or as an array: The subject matter of this CreativeWork",
+    "about": {
+        "@type": "Taxon",
+        "name": "Maera gujaratensis",
+        "additonalProperty": [	
+         {
+          "@type": "PropertyValue",
+          "name": "scientificName",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/scientificName",
+          "value": "Maera gujaratensis"
+        },      
+        {
+          "@type": "PropertyValue",
+          "name": "kingdom",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/kingdom",
+          "value": "Animalia"
+        },           
+        {
+          "@type": "PropertyValue",
+          "name": "phylum",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/phylum",
+          "value": "Arthropoda"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "class",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/class",
+          "value": "Malacostraca"
+         },
+         {
+          "@type": "PropertyValue",
+          "name": "order",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/order",
+          "value": "Amphipoda"
+         },       
+        {
+          "@type": "PropertyValue",
+          "name": "family",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/family",
+          "value": "Maeridae"
+         },
+        {
+          "@type": "PropertyValue",
+          "name": "genus",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/genus",
+          "value": "Maera"
+         },
+        {
+          "@type": "PropertyValue",
+          "name": "species",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/species",
+          "value": "gujaratensis"
+         },
+        {
+          "@type": "PropertyValue",
+          "name": "taxonomicStatus",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/taxonomicStatus",
+          "value": "sp. nov."
+         },
+        {
+          "@type": "PropertyValue",
+          "name": "verbatimTaxonRank",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/verbatimTaxonRank",
+          "value": "species"
+         }
+            
+        ]
+        
+    },
+    
     "abstract": "Text: A descriptive summary of a CreativeWork",
 
     "acquireLicensePage": [
@@ -140,7 +206,27 @@
     "isBasedOn": [
         "@type": "Document",
         "name": "On a small collection of Maeridae Krapp-Schickel, 2008 (Crustacea: Amphipoda) from Gujarat, India",
-        "author" [
+        "alternateName": "zootaxa.5474.5.7.pdf",
+        "dateCreated": "2024",
+        "datePublished": "2024-07-02",
+        "url": "https://dx.doi.org/10.11646/zootaxa.5474.5.7",
+        "license": "CLOSED",
+        "creditText": "Zootaxa 5474 (5)",
+        "additionalProperty": [
+           {
+                "@type": "PropertyValue",
+                "name": "lastPageNumber",
+                "value": "583"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "pageNumber",
+                "value": "563"
+            }        
+        ],
+    
+   
+        "author": [
           {
             "@type": "Person",
             "givenName": "Dimple",
@@ -160,6 +246,7 @@
           }
         ],
         "identifier": [
+            "BE02A93E4072EE764452FF82FFA9296F",
             {
                 "@type": "PropertyValue",
                 "name": "Digital Object Identifier",
@@ -178,8 +265,8 @@
                 "@type": "PropertyValue",
                 "name": "GBIF UUID",
                 "propertyID": "https://www.wikidata.org/wiki/Q195284",
-                "url": "https://www.checklistbank.org/dataset/299601",
-                "value": "299601"
+                "url": "https://www.gbif.org/dataset/0adc191b-8f3d-4270-8c14-c08f43b4619d",
+                "value": "0adc191b-8f3d-4270-8c14-c08f43b4619d"
             },
             {
                 "@type": "PropertyValue",
@@ -188,28 +275,23 @@
                 "url": "https://portal.issn.org/resource/ISSN/1175-5326",
                 "value": "1175-5326"
             },
+            {
+                "@type": "PropertyValue",
+                "name": "Zenodo ID",
+                "propertyID": "",
+                "url": "https://zenodo.org/records/12682122",
+                "value": "12682122"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "ZooBank ID",
+                "propertyID": "",
+                "url": "https://zoobank.org/References/7DAFD532-8FE8-4755-B664-57A7102E7E00",
+                "value": "7DAFD532-8FE8-4755-B664-57A7102E7E00"
+            }
 
-                 "ID-Zenodo-Dep": "12682122",
-                "ID-ZooBank": "7DAFD532-8FE8-4755-B664-57A7102E7E00",
-
-        ],
-        
-        
-
-            
-
-
-    "docDate": "2024",
-    "docPubDate": "2024-07-02",
-    "docName": "zootaxa.5474.5.7.pdf",
-    "docOrigin": "Zootaxa 5474 (5)",
-    "docSource": "https://dx.doi.org/10.11646/zootaxa.5474.5.7",
-    "docId": "BE02A93E4072EE764452FF82FFA9296F",
-    "lastPageNumber": "583",
-    "pageNumber": "563",
-    "zenodo-license-document": "CLOSED"
-            
-        ]
+        ], 
+    ]
     ],
     "isPartOf": [
         {"@type": "https://schema.org/CreativeWork"},
@@ -356,5 +438,4 @@
       "potentialAction": {"@type": "https://schema.org/Action"},
       "sameAs": "URL",
       "subjectOf": "URL",
-      "url": "URL - the URL to the item described by this JSON-LD document"
 }
