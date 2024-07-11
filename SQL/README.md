@@ -3,6 +3,40 @@
 
 ## Notes
 
+### July 9
+
+Focus on oihv2 since it has the fuller set of tables in it.  However, we really need to have the 
+ability to set that up from the s3 store.  
+
+```sql
+
+CREATE TABLE base (id VARCHAR, type VARCHAR, name VARCHAR, url VARCHAR, description VARCHAR, headline VARCHAR, g VARCHAR );
+CREATE TABLE dataset (id VARCHAR, type VARCHAR, sameAs VARCHAR, license VARCHAR, citation VARCHAR, keyword VARCHAR, includedInDataCatalog VARCHAR, distribution VARCHAR, region VARCHAR, provider VARCHAR, publisher VARCHAR, creator VARCHAR);
+CREATE TABLE sup_time (id VARCHAR, type VARCHAR, time VARCHAR, temporalCoverage VARCHAR, dateModified VARCHAR, datePublished VARCHAR, );
+CREATE TABLE course (id VARCHAR, type VARCHAR, txt_location VARCHAR);
+CREATE TABLE person (id VARCHAR, type VARCHAR, address VARCHAR, txt_knowsAbout VARCHAR, txt_knowsLanguage VARCHAR);
+CREATE TABLE sup_geo (id VARCHAR, type VARCHAR, placename VARCHAR, geotype VARCHAR, geompred VARCHAR, geom VARCHAR, lat VARCHAR, long VARCHAR, g VARCHAR );
+
+COPY base FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_baseQuery.parquet';
+COPY dataset FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_dataset.parquet';
+COPY sup_time FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_sup_temporal.parquet';
+COPY course FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_course.parquet';
+COPY person FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_person.parquet';
+COPY sup_geo FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_sup_geo.parquet';
+
+
+```
+
+The old examples had union_by_name, but I am not sure what the value of these is.  
+
+```sql
+CREATE TABLE sup_geo AS SELECT * FROM read_parquet('/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_sup_geo.parquet',  union_by_name=true);
+```
+
+
+
+### Older
+
 Need to get to: [solrExample.json](solrExample.json)
 
 This SQL statement will return all columns where there's a matching id in both table1 and table2.
