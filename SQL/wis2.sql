@@ -6,6 +6,8 @@ SELECT base_agg.id,
        base_agg.b_desc,
        base_agg.b_headline,
        geo_agg.geom_list,
+       geo_agg.wkt_list,
+       geo_agg.geojson,
        temporal_agg.tc_list,
        temporal_agg.dp_list
 FROM (SELECT id,
@@ -20,7 +22,9 @@ FROM (SELECT id,
                FROM dataset
                GROUP BY id) AS dataset_agg
               ON base_agg.id = dataset_agg.id
-         JOIN (SELECT id, STRING_AGG(DISTINCT geom, ', ') AS geom_list
+         JOIN (SELECT id, STRING_AGG(DISTINCT geom, ', ') AS geom_list,
+                      STRING_AGG(DISTINCT wkt, ', ') AS wkt_list,
+                      STRING_AGG(DISTINCT geojson, ', ') AS geojson
                FROM sup_geo
                GROUP BY id) AS geo_agg
               ON base_agg.id = geo_agg.id

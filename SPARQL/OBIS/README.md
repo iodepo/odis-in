@@ -105,3 +105,25 @@ core_df['maximumDepthInMeters'].max()  # 353.5 meters
 
 is straightforward to process.  
 
+## OBIS API leveraging
+
+There's no way currently to get depth statistics by dataset from the API except by going through all records
+but I wouldn't recommend that.
+One thing you could do is get dataset lists for depth slices,
+eg https://api.obis.org/dataset?startdepth=5000&enddepth=6000
+This is not the best approach since you have to query by ranges and get the related resources it seems.
+However, there is a parquet (and csv) export from https://obis.org/data/access/ .  Pieter said
+that the parquet has depth in the form of the darwin
+core fields minimumDepthInMeters and maximumDepthInMeters.   So this might be the best route.
+Pieter doesn't have time to work on this right away, but it might be easy for us to make an
+"auxiliary" graph that we can test with and also share with Pieter.  In the hopes it helps
+him integrate the values into the production service eventually.
+I am hoping that id in the parquet is the JSON-LD @id like https://obis.org/dataset/24e96d02-8909-4431-bc61-8cf8eadc9b7a
+If that is the case this will be very easy!  I am currently pulling down the parquet (18 Gb)  and
+will report what I find.
+
+
+## References
+
+* https://github.com/iodepo/odis-arch/blob/master/book/thematics/depth/index.md
+* https://github.com/iodepo/odis-in/tree/master/SPARQL/OBIS (this document)

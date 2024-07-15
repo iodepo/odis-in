@@ -17,12 +17,12 @@ CREATE TABLE course (id VARCHAR, type VARCHAR, txt_location VARCHAR);
 CREATE TABLE person (id VARCHAR, type VARCHAR, address VARCHAR, txt_knowsAbout VARCHAR, txt_knowsLanguage VARCHAR);
 CREATE TABLE sup_geo (id VARCHAR, type VARCHAR, placename VARCHAR, geotype VARCHAR, geompred VARCHAR, geom VARCHAR, lat VARCHAR, long VARCHAR, g VARCHAR );
 
-COPY base FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_baseQuery.parquet';
-COPY dataset FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_dataset.parquet';
-COPY sup_time FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_sup_temporal.parquet';
-COPY course FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_course.parquet';
-COPY person FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_person.parquet';
-COPY sup_geo FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/*_sup_geo.parquet';
+COPY base FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/active/*_baseQuery.parquet';
+COPY dataset FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/active/*_dataset.parquet';
+COPY sup_time FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/active/*_sup_temporal.parquet';
+COPY course FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/active/*_course.parquet';
+COPY person FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/active/*_person.parquet';
+COPY sup_geo FROM '/home/fils/src/Projects/OIH/odis-arch/graphOps/extraction/mdp/output/active/*_sup_geo.parquet';
 
 
 ```
