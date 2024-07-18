@@ -4,7 +4,9 @@
     },
     "@type": "Dataset",
     "@id": "URL:  Optional. A URL that resolves to *this* JSON-LD document, NOT the URL of the Dataset that this JSON-LD document describes. To link to the Dataset itself, please use 'url' and/or 'identifier')",
-   "url": "https://treatment.plazi.org/id/423BD146-4079-EE78-44C5-FE28FE592E10"
+    "name": "Maera gujaratensis, Thacker & Myers & Trivedi, 2024",
+    "description": "A dataset representing a TreamentBank Treatment record of Maera gujaratensis, see https://plazi.org/treatmentbank/what-treatment/",
+    "url": "https://treatment.plazi.org/id/423BD146-4079-EE78-44C5-FE28FE592E10",
     "identifier": [
       {
         "@type": "PropertyValue",
@@ -20,12 +22,11 @@
        }
     ],
    "includedInDataCatalog": {"@type": "https://schema.org/DataCatalog"},
-
   
     "about": {
         "@type": "Taxon",
         "name": "Maera gujaratensis",
-        "additonalProperty": [	
+        "additionalProperty": [	
          {
           "@type": "PropertyValue",
           "name": "scientificName",
@@ -87,40 +88,39 @@
           "value": "species"
          }
             
-        ]
-        
+        ]  
     },
-    
     "abstract": "Text: A descriptive summary of a CreativeWork",
-
-    "acquireLicensePage": [
-        "URL",
-        {"@type": "https://schema.org/CreativeWork"}
-    ],
     "archivedAt": "https://plazi.org/treatmentbank/",
-    "associatedMedia": {"@type": "https://schema.org/MediaObject"},
-    "audience": {"@type": "https://schema.org/Audience"},
-    "audio": [
-        {"@type": "https://schema.org/AudioObject"},
-        {"@type": "https://schema.org/Clip"},
-        {"@type": "https://schema.org/MusicRecording"}
-    ],
-    "author": {"@type": "https://schema.org/Person"},
-    "award": "Text: A description of an award won for this CreativeWork",
-    "character": {"@type": "https://schema.org/Person"},
     "citation": [
-        "Text: A textual citation to other work relevant to this CreativeWork",
-        {"@type": "https://schema.org/CreativeWork"}
+        {
+        "@type": "Article",
+        "name": "Amphipodes provenant des campagnes de l'Hirondelle 1885 - 1888",
+        "datePublished": "1900",
+        "author": {
+            "@type": "Person",
+            "familyName": "Chevreux",
+            "givenName": "E."
+            
+        },
+        "creditText": "Chevreux, E. (1900) Amphipodes provenant des campagnes de l'Hirondelle 1885 - 1888. Resultats des campagnes scientifiques du Prince Albert I de Monaco, 1900, 1 - 195."
+        },
+        
+        {
+        "@type": "ImageObject",
+        "name": "FIGURE 1",
+        "caption": "FIGURE 1. (A) Ceradocus (Denticeradocus) alama Myers & Nithyanandan, 2016 male, (LFSC.ZRC-214): 10 mm, Shivrajpur; (B) Ceradomaera plumosa Ledoyer, 1973, male (LFSC.ZRC-215): 10 mm, Zanzmer; (C) Maera gujaratensis sp. nov., male paratype, (LFSC.ZRC-210): 7 mm, Gopnath; (D) Quadrimaera okha sp. nov., male paratype, (LFSC.ZRC-213): 4.5 mm, Shivrajpur, Gujarat, India.",
+        "identifier": "https://doi.org/10.5281/zenodo.12682132",
+        "url": "https://zenodo.org/record/12682132/files/figure.png"
+        },
+        {
+        
+        "@type": "CreativeWork",
+        "name": "TABLE 1. Comparison of character states of Maera gujaratensis sp. nov. and Maera hirondellei Chevreux, 1900."
+        }
     ],
     "comment": "Text: A textual comment on the CreativeWork",
-    "commentCount": {"@type": "https://schema.org/Integer"},
-    "conditionsOfAccess": "Text: Description of conditions that affect the availability of, or method(s) of access to, an item.",
-    "contentLocation": {"@type": "https://schema.org/Place"},
-    "contentRating": [
-        "Text: Text stating the official rating for this CreativeWork",
-        {"@type": "https://schema.org/Rating"}
-    ],
-    "contentReferenceTime": {"@type": "https://schema.org/DateTime"},
+    "conditionsOfAccess": "No known copyright restrictions apply. See Agosti, D., Egloff, W., 2009. Taxonomic information exchange and copyright: the Plazi approach. BMC Research Notes 2009, 2:53 for further explanation.",
     "contributor": [
         {"@type": "https://schema.org/Organization"},
         {"@type": "https://schema.org/Person"}
@@ -129,18 +129,14 @@
         {"@type": "https://schema.org/Organization"},
         {"@type": "https://schema.org/Person"}
     ],
-    "copyrightNotice": "Text. Text of a notice appropriate for describing the copyright aspects of this Creative Work",
-    "copyrightYear": {"@type": "https://schema.org/Number"},
+    "copyrightNotice": "No known copyright restrictions apply. See Agosti, D., Egloff, W., 2009. Taxonomic information exchange and copyright: the Plazi approach. BMC Research Notes 2009, 2:53 for further explanation.",
+    "copyrightYear": "",
     "correction": [
         "Text:  description of a correction to the CreativeWork",
         "URL",
         {"@type": "https://schema.org/CorrectionComment"}
     ],
     "countryOfOrigin": {"@type": "https://schema.org/Country"},
-    "creativeWorkStatus": [
-        "Text: Description of the status of this CreativeWork in terms of its stage in a lifecycle",
-        {"@type": "https://schema.org/DefinedTerm"}
-    ],
     "creator": [
         {"@type": "https://schema.org/Organization"},
         {"@type": "https://schema.org/Person"}
@@ -158,53 +154,26 @@
         {"@type": "https://schema.org/Date"},
         {"@type": "https://schema.org/DateTime"}
     ],
-    "discussionUrl": "URL",
-    "editEIDR": [
-        "Text:  A statement on the EIDR (Entertainment Identifier Registry) identifier representing a specific edit / edition for a work of film or television.",
-        "URL"
-    ],
     "editor": {"@type": "https://schema.org/Person"},
-    "educationalAlignment": {"@type": "https://schema.org/AlignmentObject"},
-    "educationalLevel": [
-        "Text: The level in terms of progression through an educational or training context. Examples of educational levels include 'beginner', 'intermediate' or 'advanced', and formal sets of level indicators.",
-        "URL",
-        {"@type": "https://schema.org/DefinedTerm"}
-    ],
-    "educationalUse": [
-        "Text:  Description of the purpose of this CreativeWork in the context of education",
-        {"@type": "https://schema.org/DefinedTerm"}
-    ],
-    "encoding": {"@type": "https://schema.org/MediaObject"},
     "encodingFormat": [
         "Text: Textual description of the media type typically expressed using a MIME format (see IANA site [http://www.iana.org/assignments/media-types/media-types.xhtml] and MDN reference [https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types]), e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc. ",
         "URL"
-    ],
-    "exampleOfWork": {"@type": "https://schema.org/CreativeWork"},
-    "expires": [
-        {"@type": "https://schema.org/Date"},
-        {"@type": "https://schema.org/DateTime"}
     ],
     "funder": [
         {"@type": "https://schema.org/Organization"},
         {"@type": "https://schema.org/Person"}
     ],
     "funding": {"@type": "https://schema.org/Grant"},
-    "genre": [
-        "Text: Genre of the creative work, broadcast channel or group.",
-        "URL"
-    ],
     "hasPart": {"@type": "https://schema.org/CreativeWork"},
-    "headline": "Text: Headline of the article",
     "inLanguage": [
         "Text: The language of the content or performance or used in an action.",
         {"@type": "https://schema.org/Language"}
     ],
-    "interactionStatistic": {"@type": "https://schema.org/InteractionCounter"},
-    "interactivityType": "Text: The predominant mode of learning supported by the learning resource",
     "interpretedAsClaim": {"@type": "https://schema.org/Claim"},
-    "isAccessibleForFree": {"@type": "https://schema.org/Boolean"},
+    "isAccessibleForFree": "True",
     "isBasedOn": [
-        "@type": "Document",
+      {
+        "@type": "Article",
         "name": "On a small collection of Maeridae Krapp-Schickel, 2008 (Crustacea: Amphipoda) from Gujarat, India",
         "alternateName": "zootaxa.5474.5.7.pdf",
         "dateCreated": "2024",
@@ -222,26 +191,29 @@
                 "@type": "PropertyValue",
                 "name": "pageNumber",
                 "value": "563"
-            }        
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "pageNumber",
+                "value": "563"
+            }
         ],
-    
-   
         "author": [
           {
             "@type": "Person",
             "givenName": "Dimple",
-            "familyName" "Thacker"
+            "familyName": "Thacker"
           },
           {
             "@type": "Person",
             "givenName": "Alan",
-            "familyName" "Myers",
+            "familyName": "Myers",
             "additionalName": "A."
           },
           {
             "@type": "Person",
             "givenName": "Jigneshkumar",
-            "familyName" "Trivedi",
+            "familyName": "Trivedi",
             "additionalName": "N."
           }
         ],
@@ -289,9 +261,8 @@
                 "url": "https://zoobank.org/References/7DAFD532-8FE8-4755-B664-57A7102E7E00",
                 "value": "7DAFD532-8FE8-4755-B664-57A7102E7E00"
             }
-
-        ], 
-    ]
+        ] 
+      }
     ],
     "isPartOf": [
         {"@type": "https://schema.org/CreativeWork"},
@@ -302,89 +273,41 @@
         {"@type": "https://schema.org/DefinedTerm"},
         "URL"
     ],
-    "learningResourceType": [
-        "Text: The predominant type or kind characterizing the learning resource.",
-        {"@type": "https://schema.org/DefinedTerm"}
-    ],
-    "license": [
-        "URL",
-        {"@type": "https://schema.org/CreativeWork"}
-    ],
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "locationCreated": {"@type": "https://schema.org/Place"},
     "mainEntity": {"@type": "https://schema.org/Thing"},
-    "maintainer":  [
-        {"@type": "https://schema.org/Organization"},
-        {"@type": "https://schema.org/Person"}
-    ],
-    "material": [
-        {"@type": "https://schema.org/Product"},
-        "Text: A material that something is made from, e.g. leather, wool, cotton, paper.",
-        "URL"
-    ],
-    "materialExtent": [
-        {"@type": "https://schema.org/QuantitativeValue"},
-        "Text: The quantity of the materials being described or an expression of the physical space they occupy"
-    ],
+    "maintainer":  {
+        "@type": "Organization",
+        "name": "Plazi"
+    },
     "mentions": {"@type": "https://schema.org/Thing"},
-    "offers": [
-        {"@type": "https://schema.org/Offer"},
-        {"@type": "https://schema.org/Demand"}
-    ],
-    "pattern": [
-        "Text: Text which states the pattern that the CreativeWork has, for example 'polka dot', 'striped', 'Canadian flag'",
-        {"@type": "https://schema.org/DefinedTerm"}
-    ],
-    "position": [
-        "Integer: An integer which expresses the position of an item in a series or sequence of items.",
-        "Text: A textual description of the position of an item in a series or sequence of items."
-    ],
-    "producer": [
-        {"@type": "https://schema.org/Organization"},
-        {"@type": "https://schema.org/Person"}
-    ],
-    "provider": [
-        {"@type": "https://schema.org/Organization"},
-        {"@type": "https://schema.org/Person"}
-    ],
+    "provider": {
+        "@type": "Organization",
+        "name": "Plazi",
+        "url": "https://plazi.org/about/"
+    },
     "publication": {"@type": "https://schema.org/PublicationEvent"},
     "publisher": [
         {"@type": "https://schema.org/Organization"},
         {"@type": "https://schema.org/Person"}
     ],
-    "publisherImprint": {"@type": "https://schema.org/Organization"},
+    "publisherImprint": {
+        "@type": "Organization",
+        "name": "Plazi",
+        "url": "https://plazi.org/about/"
+    },
     "publishingPrinciples": [
         {"@type": "https://schema.org/CreativeWork"},
         {"@type": "https://schema.org/URL"}
     ],
-    "recordedAt": {"@type": "https://schema.org/Event"},
-    "releasedEvent": {"@type": "https://schema.org/PublicationEvent"},
-    "review": {"@type": "https://schema.org/Review"},
-    "schemaVersion": [
-        "Text",
-        "URL"
-    ],
-    "sdDatePublished": {"@type": "https://schema.org/Date"},
-    "sdLicense": [
-        {"@type": "https://schema.org/CreativeWork"},
-        {"@type": "https://schema.org/URL"}
-    ],
-    "sdPublisher": [
-        {"@type": "https://schema.org/Organization"},
-        {"@type": "https://schema.org/Person"}
-    ],
-    "size": "Text: Text indicating the phyiscal size of the CreativeWork (if appropriate). DefinedTerm or QuantitativeValue or SizeSpecification are also valid Types",
+    "sdDatePublished": "2024-07-07T19:49:58.394Z",
+    "sdLicense": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sdPublisher": {
+        "@type": "Organization",
+        "name": "Plazi"
+    },
     "sourceOrganization":  {"@type": "https://schema.org/Organization"},
-    "spatial":  {"@type": "https://schema.org/Place"},
     "spatialCoverage": {"@type": "https://schema.org/Place"},
-    "sponsor": [
-        {"@type": "https://schema.org/Organization"},
-        {"@type": "https://schema.org/Person"}
-    ],
-    "teaches": [
-        {"@type": "https://schema.org/DefinedTerm"},
-        "Text"
-    ],
-    "temporal": "A more general property for any time-related information about this CreativeWork. This can be expressed as text or using the properties associated with the DateTime Type",
     "temporalCoverage": [
         {"@type": "https://schema.org/DateTime"},
         "Text",
@@ -393,49 +316,17 @@
     "text": "Text: The textual content of this CreativeWork.",
     "thumbnail": {"@type": "https://schema.org/ImageObject"},
     "thumbnailUrl": "URL",
-    "timeRequired": {"@type": "https://schema.org/Duration"},
-    "translationOfWork": {"@type": "https://schema.org/CreativeWork"},
-    "translator":[
-        {"@type": "https://schema.org/Organization"},
-        {"@type": "https://schema.org/Person"}
-    ],
-    "typicalAgeRange": "Text: The typical expected age range, e.g. '7-9', '11-'.",
     "usageInfo":[
         {"@type": "https://schema.org/CreativeWork"},
         {"@type": "https://schema.org/URL"}
     ],
     "version": ["https://schema.org/Text", "https://schema.org/Number"],
-    "video": [
-        {"@type": "https://schema.org/Clip"},
-        {"@type": "https://schema.org/VideoObject"}
-    ],
-    "workExample": {"@type": "https://schema.org/CreativeWork"},
-    "workTranslation": {"@type": "https://schema.org/CreativeWork"},
-
-
     
     "additionalType": [
         "Text: An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax.",
         "URL"
       ],
-      "alternateName": "Text: An alternative name for this Thing.",
-      "description": "Text: Free text which describes this Thing.",
       "disambiguatingDescription": "Text: A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation",
-      "identifier": [
-          {"@type": "https://schema.org/PropertyValue"},
-          "Text - The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.",
-          "URL"
-      ],
-      "image": [
-          "URL",
-          {"@type": "https://schema.org/ImageObject"}
-      ],
-      "mainEntityOfPage": [
-        "URL",
-        {"@type": "https://schema.org/CreativeWork"}
-      ],
-      "name": "Text: The name of the item.",
-      "potentialAction": {"@type": "https://schema.org/Action"},
-      "sameAs": "URL",
-      "subjectOf": "URL",
+      "mainEntityOfPage": "https://treatment.plazi.org/id/423BD146-4079-EE78-44C5-FE28FE592E10",
+      "subjectOf": "URL"
 }
