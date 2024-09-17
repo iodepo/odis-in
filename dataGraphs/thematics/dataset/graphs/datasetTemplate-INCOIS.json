@@ -1,0 +1,56 @@
+{
+    "@context": "https://schema.org/",
+    "@type": "Dataset",
+    "@id": "https://incois.gov.in/essdp/ViewMetadata?fileid=524fd72e-6b2f-4025-94ea-361dce0e9165",
+    "name": "Role of Antarctic krills in the biogeochemical cycle in the Indian Ocean sector of Southern Ocean",
+    "description": "The Antarctic krill is the largest euphausiid, widely distributed in the Southern Ocean and is a key species in the Antarctic ecosystem, being the major food item for a large number of top predators such as whales, seals and sea birds. Three Species of krills namely Euphausia lucens Hansen, 1905, E. frigida Hansen, 1911 and Thysanoessa sp., were collected during the expedition. The absence of any stage of E. superba in the surface layers suggests that this species may not be migrating up to the surface while performing the vertical migration. E. frigida was the abundant species in the study area.",
+    "url": "http://npdc.ncaor.gov.in/npdc/search_mf_data.action?search=freeText&amp;expedition_type=all&amp;parameter=MF946521606&amp;userType=user&amp;freeTextValue=Role+of+Antarctic+krills+in+the+biogeochemical+cycle+in+the+Indian+Ocean+sector+of+Southern+Ocean",
+    "keywords": [
+        {
+            "@type": "DefinedTerm",
+            "name": "Oceans",
+            "inDefinedTermSet": "https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords"
+        },
+        "Indian Ocean Sector",
+        "Southern Ocean",
+        "Role of Antarctic krills in the biogeochemical cycle in the Indian Ocean sector of Southern Ocean"
+    ],
+    "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "http://npdc.ncaor.gov.in/npdc/search_mf_data.action?search=freeText&amp;expedition_type=all&amp;parameter=MF946521606&amp;userType=user&amp;freeTextValue=Role+of+Antarctic+krills+in+the+biogeochemical+cycle+in+the+Indian+Ocean+sector+of+Southern+Ocean",
+        "encodingFormat": "unknown"
+    },
+    "dateCreated": "2013-10-11",
+    "temporalCoverage": "2009-01-01/2010-12-31",
+    "spatialCoverage": {
+        "@type": "Place",
+        "geo": {
+            "@type": "GeoShape",
+            "description": "schema.org expects lat long (Y X) coordinate order",            
+            "box": "-90 20 30 140"
+        }
+    },
+    "creator": [
+        {
+            "@type": "Role",
+            "roleName": "PrincipalInvestigator",
+            "creator": {
+                "@type": "Person",
+                "name": "Mr. Hashim Manjebrayakath",
+                "email": "anil [ at ] ncaor.gov.in",
+                "telephone": "+91-832-2525513",
+                "affiliation": {
+                    "@type": "Organization",
+                    "name": "National Centre for Polar and Ocean Research (NCPOR)"
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Vasco-da-Gama",
+                    "addressRegion": "Goa",
+                    "postalCode": "403804",
+                    "addressCountry": "IND"
+                }
+            }
+        }
+    ]
+}
