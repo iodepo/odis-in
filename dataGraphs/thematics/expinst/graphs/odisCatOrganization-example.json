@@ -11,13 +11,19 @@
             "description": "The list of machine-to-machine interactions (e.g. APIs) that this ODISCat entry has reported.",
             "itemOffered": [
                 {
-                    "@type": "WebAPI",
+                    "@type": "CreativeWork",
+                    "additionalType": "sitemap",
+                    "additionalProperty": {
+                        "@type": "PropertyValue",
+                        "propertyID": "iode-approved",
+                        "value": "true"
+                    },
                     "audience": "The Ocean Data and Information System (ODIS) Federation and all users",
                     "name": "ODIS endpoint",
                     "description": "This field contains the URL which connects this ODISCat entry to the Ocean Data and Information System (ODIS). For more information, see: https://book.odis.org/",
                     "documentation": "https://book.odis.org/",
                     "serviceType": "sitemap or sitegraph",
-                    "url": "www.url-to-odis-endpoint.org"
+                    "url": "www.url-to-odis-endpoint-sitemap-or-sitegraph.org"
                 },
                 {
                     "@type": "WebAPI",
