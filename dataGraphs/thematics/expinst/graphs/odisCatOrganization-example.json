@@ -22,7 +22,6 @@
                     "name": "ODIS endpoint",
                     "description": "This field contains the URL which connects this ODISCat entry to the Ocean Data and Information System (ODIS). For more information, see: https://book.odis.org/",
                     "documentation": "https://book.odis.org/",
-                    "serviceType": "sitemap or sitegraph",
                     "url": "www.url-to-odis-endpoint-sitemap-or-sitegraph.org"
                 },
                 {
