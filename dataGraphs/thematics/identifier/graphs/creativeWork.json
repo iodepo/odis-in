@@ -2,7 +2,7 @@
     "@context": {
         "@vocab": "https://schema.org/"
     },
-    "@id": "https://example.org/id/XYZ",
+    "@id": "https://example.org/permanentUrlToThisJsonDoc",
     "@type": "CreativeWork",
     "url": "https://example.org/url/of/the/item",
     "sameAs": "https://doi.org/10.5066/F7VX0DMQ",

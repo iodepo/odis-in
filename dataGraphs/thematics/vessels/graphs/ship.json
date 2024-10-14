@@ -2,7 +2,7 @@
     "@context": {
         "@vocab": "https://schema.org/"
     },
-    "@id": "https://example.org/id/X",
+    "@id": "https://example.org/permanentUrlToThisJsonDoc",
     "@type": "Vehicle",
     "name": "JOIDES Resolution",
     "identifier": {
