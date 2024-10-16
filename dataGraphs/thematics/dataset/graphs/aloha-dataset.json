@@ -38,12 +38,12 @@
 		"description": "North Pacific subtropical gyre",
         "geo": {
             "@type": "GeoShape",
-            "polygon": "-158.8575 23.4375, -158.8575 21.2283, -157.4567 21.2283, -157.4567 23.4375, -158.8575 23.4375"
+            "polygon": "23.4375 -158.8575, 21.2283 -158.8575, 21.2283 -157.4567, 23.4375 -157.4567, 23.4375 -158.8575"
         },
 		"additionalProperty":[ {
             "@type": "PropertyValue",
-            "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
-            "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+            "propertyID": "https://dbpedia.org/page/Spatial_reference_system",
+            "value": "https://www.w3.org/2003/01/geo/wgs84_pos"
         },
        {
             "@type": "PropertyValue",

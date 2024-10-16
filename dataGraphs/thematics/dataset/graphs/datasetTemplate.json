@@ -3,7 +3,7 @@
         "@vocab": "https://schema.org/"
     },
     "@type": "Dataset",
-    "@id": "https://registry.org/permanentUrlToThisJsonDoc",
+    "@id": "https://example.org/permanentUrlToThisJsonDoc",
     "name": "A concise but descriptive name of the dataset",
     "description": "An extended, free-text description of what's in the dataset, who created it, and other attributes",
     "url": "https://urlToTheDatasetOrLandingPage.org/",
@@ -57,12 +57,13 @@
         "@type": "Place",
         "geo": {
             "@type": "GeoShape",
-            "polygon": "142.014 10.161667,142.014 18.033833,147.997833 18.033833,147.997833 10.161667,142.014 10.161667"
+            "description": "schema.org expects lat long (Y X) coordinate order",
+            "polygon": "10.161667 142.014,18.033833 142.014,18.033833 147.997833,10.161667 147.997833,10.161667 142.014"
         },
         "additionalProperty": {
             "@type": "PropertyValue",
-            "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
-            "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+            "propertyID": "https://dbpedia.org/page/Spatial_reference_system",
+            "value": "https://www.w3.org/2003/01/geo/wgs84_pos"
         }
     },
     "provider": [

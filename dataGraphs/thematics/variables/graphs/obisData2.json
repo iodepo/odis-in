@@ -3,7 +3,7 @@
         "@vocab": "https://schema.org/"
     },
     "@type": "Dataset",
-    "@id": "https://example.org/dataset/12345",
+    "@id": "https://example.org/permanentUrlToThisJsonDoc",
     "name": "Example Vessel Surveys Jan-Apr 2007",
     "description": "Original provider: HDR Environmental, Operations and Construction, Inc. Dataset credits: The U.S. Navy Marine Species Monitoring Program Abstract:Features in this feature class represent sightings from the NAVFAC MISTCS Vessel Surveys Jan-Apr 2007.",
     "url": "https://obis.org/dataset/dcbb8f12-c869-4d31-aa8b-23abb27898ce",
@@ -68,12 +68,13 @@
         "@type": "Place",
         "geo": {
             "@type": "GeoShape",
-            "polygon": "142.014 10.161667,142.014 18.033833,147.997833 18.033833,147.997833 10.161667,142.014 10.161667"
+            "description": "schema.org expects lat long (Y X) coordinate order",
+            "polygon": "10.161667 142.014,18.033833 142.014,18.033833 147.997833,10.161667 147.997833,10.161667 142.014"
         },
         "additionalProperty": {
             "@type": "PropertyValue",
-            "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
-            "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+            "propertyID": "https://dbpedia.org/page/Spatial_reference_system",
+            "value": "https://www.w3.org/2003/01/geo/wgs84_pos"
         }
     },
     "provider": [

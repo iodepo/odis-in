@@ -27,8 +27,8 @@
         "additionalProperty": [
             {
                 "@type": "PropertyValue",
-                "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
-                "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                "propertyID": "https://dbpedia.org/page/Spatial_reference_system",
+                "value": "https://www.w3.org/2003/01/geo/wgs84_pos"
             },
             {
                 "@type": "PropertyValue",
@@ -113,8 +113,8 @@
                 "additionalProperty": [
                     {
                         "@type": "PropertyValue",
-                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
-                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                        "propertyID": "https://dbpedia.org/page/Spatial_reference_system",
+                        "value": "https://www.w3.org/2003/01/geo/wgs84_pos"
                     },
                     {
                         "@type": "PropertyValue",
@@ -141,13 +141,13 @@
                 "@type": "Place",
                 "geo": {
                     "@type": "GeoShape",
-                    "polygon": "-158.13 22.90, -158.12 22.75, -157.92 22.75, -157.92 22.90, -158.12 22.90"
+                    "polygon": "22.90 -158.13, 22.75 -158.12, 22.75 -157.92, 22.90 -157.92, 22.90 -158.12"
                 },
                 "additionalProperty": [
                     {
                         "@type": "PropertyValue",
-                        "propertyID": "http://dbpedia.org/resource/Spatial_reference_system",
-                        "value": "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long"
+                        "propertyID": "https://dbpedia.org/page/Spatial_reference_system",
+                        "value": "https://www.w3.org/2003/01/geo/wgs84_pos"
                     },
                     {
                         "@type": "PropertyValue",

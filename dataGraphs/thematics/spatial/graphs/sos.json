@@ -2,7 +2,7 @@
   "@context": {
     "@vocab": "https://schema.org/"
   },
-  "@id": "https://example.org/id/XYZ",
+  "@id": "https://example.org/permanentUrlToThisJsonDoc",
   "@type": "Dataset",
   "name": "Data set name",
   "spatialCoverage": {

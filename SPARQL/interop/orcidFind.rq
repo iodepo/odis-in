@@ -10,7 +10,6 @@ PREFIX schemax: <http://schema.org/>
 PREFIX bds: <http://www.bigdata.com/rdf/search#>
 
 
-
 SELECT  ( COUNT (?obj) as ?count)
 WHERE {
   ?s schema:identifier ?obj .

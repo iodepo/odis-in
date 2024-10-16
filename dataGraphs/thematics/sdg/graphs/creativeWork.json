@@ -2,11 +2,8 @@
     "@context": {
         "@vocab": "https://schema.org/"
     },
-    "@id": "https://example.org/id/XYZ",
+    "@id": "https://example.org/permanentUrlToThisJsonDoc",
     "@type": "CreativeWork",
-    "url": "https://example.org/url/of/the/item",
-    "sameAs": "https://doi.org/10.5066/F7VX0DMQ",
-    "isBasedOn": "https://example.org/id/xyz",
     "identifier": {
         "@id": "https://doi.org/10.5066/F7VX0DMQ",
         "@type": "PropertyValue",
@@ -15,6 +12,20 @@
         "value": "doi:10.5066/F7VX0DMQ"
     },
     "subjectOf": {
+        "@type": "CreativeWork",
+        "@id": "http://purl.unep.org/sdg/SDGIO_00020173",
+        "url": "http://www.ontobee.org/ontology/SDGIO?iri=http://purl.unep.org/sdg/SDGIO_00020173",
+        "name": "UNSD SDG indicator code:C140c01",
+        "description": "Number of countries making progress ... the oceans and their resources"
+    },
+    "publishingPrinciples": {
+        "@type": "CreativeWork",
+        "@id": "http://purl.unep.org/sdg/SDGIO_00020173",
+        "url": "http://www.ontobee.org/ontology/SDGIO?iri=http://purl.unep.org/sdg/SDGIO_00020173",
+        "name": "FAIR data principles",
+        "description": "Number of countries making progress ... the oceans and their resources"
+    },
+    "citation": {
         "@type": "CreativeWork",
         "@id": "http://purl.unep.org/sdg/SDGIO_00020173",
         "url": "http://www.ontobee.org/ontology/SDGIO?iri=http://purl.unep.org/sdg/SDGIO_00020173",

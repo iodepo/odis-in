@@ -3,7 +3,7 @@
         "@vocab": "https://schema.org/"
     },
     "@type": "Map",
-    "@id": "https://example.org/id/XYZ",
+    "@id": "https://example.org/permanentUrlToThisJsonDoc",
     "name": "Name or title of the document",
     "description": "Description of the map to aid in searching",
     "url": "https://example.org/url/of/the/item",

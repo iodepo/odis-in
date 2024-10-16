@@ -3,7 +3,7 @@
     "@vocab": "https://schema.org/"
   },
   "@type": "ResearchProject",
-  "@id": "https://example.org/id/resproj/X",
+  "@id": "https://example.org/permanentUrlToThisJsonDoc",
   "legalName": "Example Data Repository",
   "name": "ExDaRepo",
   "url": "https://www.example-data-repository.org",

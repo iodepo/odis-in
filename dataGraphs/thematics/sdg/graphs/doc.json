@@ -3,7 +3,7 @@
     "@vocab": "https://schema.org/"
   },
   "@type": "CreativeWork",
-  "@id": "https://example.org/id/XYZ",
+  "@id": "https://example.org/permanentUrlToThisJsonDoc",
   "name": "Name or title of the document",
   "description": "Description of the resource to aid in searching",
   "distribution": {

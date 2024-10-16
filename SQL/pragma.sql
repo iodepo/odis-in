@@ -1,0 +1,1 @@
+SELECT * FROM PRAGMA_table_info('sup_time');
