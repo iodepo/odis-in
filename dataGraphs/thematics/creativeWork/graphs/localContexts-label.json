@@ -43,23 +43,33 @@
             "encodingFormat": "image/svg"
         }
     ],
-    "audio" : [
+    "audio": [
         {
             "@type": "AudioObject",
             "url": "{AUDIO_URL}",
             "encodingFormat": "audio/mpeg"
         }
     ],
-    "dateCreated" : "{date Label created}",
-    "dateModified" : "{date Label modified}",
-    "sdDatePublished": {"@type": "https://schema.org/Date"},
+    "dateCreated": "{date Label created}",
+    "dateModified": "{date Label modified}",
+    "sdDatePublished": {
+        "@type": "https://schema.org/Date"
+    },
     "sdLicense": [
-        {"@type": "https://schema.org/CreativeWork"},
-        {"@type": "https://schema.org/URL"}
+        {
+            "@type": "https://schema.org/CreativeWork"
+        },
+        {
+            "@type": "https://schema.org/URL"
+        }
     ],
     "sdPublisher": [
-        {"@type": "https://schema.org/Organization"},
-        {"@type": "https://schema.org/Person"}
+        {
+            "@type": "https://schema.org/Organization"
+        },
+        {
+            "@type": "https://schema.org/Person"
+        }
     ],
     "creditText": "text: recommended citation of this label"
 }

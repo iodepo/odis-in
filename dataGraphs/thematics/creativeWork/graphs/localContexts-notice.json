@@ -41,17 +41,27 @@
             "encodingFormat": "image/svg"
         }
     ],
-    "datePublished" : "{date Notice was added to Project}",
-    "dateModified": "{date Notice was updated}"
-    "sdDatePublished": {"@type": "https://schema.org/Date"},
+    "datePublished": "{date Notice was added to Project}",
+    "dateModified": "{date Notice was updated}",
+    "sdDatePublished": {
+        "@type": "https://schema.org/Date"
+    },
     "sdLicense": [
-        {"@type": "https://schema.org/CreativeWork"},
-        {"@type": "https://schema.org/URL"}
+        {
+            "@type": "https://schema.org/CreativeWork"
+        },
+        {
+            "@type": "https://schema.org/URL"
+        }
     ],
     "sdPublisher": [
-        {"@type": "https://schema.org/Organization"},
-        {"@type": "https://schema.org/Person"}
+        {
+            "@type": "https://schema.org/Organization"
+        },
+        {
+            "@type": "https://schema.org/Person"
+        }
     ],
-    "creditText": "text: recommended citation"
+    "creditText": "text: recommended citation",
     "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
 }
