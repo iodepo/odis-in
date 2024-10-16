@@ -41,7 +41,8 @@
             "encodingFormat": "image/svg"
         }
     ],
-    "dateCreated" : "{date Label created}",
+    "datePublished" : "{date Notice was added to Project}",
+    "dateModified": "{date Notice was updated}"
     "sdDatePublished": {"@type": "https://schema.org/Date"},
     "sdLicense": [
         {"@type": "https://schema.org/CreativeWork"},
