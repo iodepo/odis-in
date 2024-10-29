@@ -14,14 +14,8 @@
   "telephone": "(425) 123-4567",
   "url": "http://www.janedoe.com",
   "knowsAbout": [
-    {
-      "@type": "Text",
-      "description": "Invasive species in brackish water"
-    },
-    {
-      "@type": "URL",
-      "url": "https://www.wikidata.org/wiki/Q183368"
-    },
+    "Invasive species in brackish water",
+    "https://www.wikidata.org/wiki/Q183368",
     {
       "@id": "https://example.org/id/course/x",
       "@type": "Course",
@@ -36,19 +30,19 @@
     "url": "https://orcid.org/0000-0002-2257-9127",
     "description": "Optional description of this record..."
   },
-  "nationality": [
-    {
-      "@type": "Country",
-      "name": "Fiji"
-    },
-    {
-      "@type": "DefinedTerm",
-      "url": "https://unece.org/trade/cefact/unlocode-code-list-country-and-territory",
-      "inDefinedTermSet": "UN/LOCODE Code List by Country and Territory",
-      "name": "Fiji",
-      "termCode": "FJ"
+  "nationality": {
+    "@type": "Country",
+    "name": "Fiji",
+    "identifier": {
+      "@type": "PropertyValue",
+      "name": "ISO 3166-1 alpha-2 code",
+      "value": "FJ",
+      "propertyID": [
+        "https://unece.org/trade/cefact/unlocode-code-list-country-and-territory",
+        "ISO 3166-1:2020"
+      ]
     }
-  ],
+  },
   "knowsLanguage": {
     "@type": "Language",
     "name": "Spanish",
