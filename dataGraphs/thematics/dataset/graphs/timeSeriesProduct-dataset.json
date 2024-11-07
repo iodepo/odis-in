@@ -57,8 +57,8 @@
         "@type": "Place",
 		"description": "Global",
         "geo": {
-            "@type": "box",
-            "polygon": "-90 -180 90 -180"
+            "@type": "GeoShape",
+            "box": "-90 -180 90 -180"
         },
 		"additionalProperty":[ {
             "@type": "PropertyValue",
