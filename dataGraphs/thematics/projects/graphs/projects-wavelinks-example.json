@@ -1,0 +1,155 @@
+
+ { 
+    "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "ResearchProject",
+  "@id": "https://example.org/id/resproj/X",
+  "legalName": "Example Data Repository",
+  "name": "ExDaRepo", --> title
+  "url": [
+      "https://www.example-data-repository.org",
+      "https://www.example-data-repository.org"
+   ], --> CORDIS and generic website
+  "description": "Repo description ... ", --> Summary
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.example-data-repository.org/logo.jpg"
+  },'
+  "dissolutionDate": "2020-11-13" --> endDate,
+  "foundingDate": "2017-10-21", --> startDate
+  "identifier": {  --> "Project ID"
+    "@type": "PropertyValue",
+    "description": "CORDIS ID",
+    "propertyID": "https://registry.identifiers.org/registry/grid",
+    "url": "https://grid.ac/institutes/grid.475727.4"
+  },
+  "member": [
+      { "@type": "Organization",
+    "legalName": "Some Institute",
+    "name": "SI",
+    "url": "http://www.someinstitute.edu",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "234 Main St.",
+      "addressLocality": "Anytown",
+      "addressRegion": "ST",
+      "postalCode": "12345",
+      "addressCountry": "USA"},
+
+      { "@type": "Organization",
+    "legalName": "Some Institute",
+    "name": "SI",
+    "url": "http://www.someinstitute.edu",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "234 Main St.",
+      "addressLocality": "Anytown",
+      "addressRegion": "ST",
+      "postalCode": "12345",
+      "addressCountry": "USA"}
+  ]
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "name": "Support",
+    "email": "info@example-data-repository.org",
+    "url": "https://www.example-data-repository.org/about-us",
+    "contactType": "customer support"
+  },
+  "funder": { --> "Funder Source"
+    "@type": "FundingAgency",
+    "name": "National Science Foundation",
+    "legalName": "National Science Foundation",
+    "alternateName": "NSF",
+    "url": "https://www.nsf.gov/",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "https://registry.identifiers.org/registry/doi",
+      "value": "DOI value expressed as doi:{doi}",
+      "url": "https://dio.org/id/XYZ"
+    }
+  },
+  "additonalProperty": [
+      {
+          "@type": "PropertyValue",
+          "description": "Funding programme of the Project"
+          "propertyID": "https://schema.org/FundingScheme" --> TOOD - find corresponding property
+          "FundingScheme", --> Programme
+      },
+      {
+          "@type": "Mission Ocean Objective", --> Mission Ocean Objective 
+          "description": "The code for the Mission Ocean Objective...."
+          "propertyID": "MissionBlue_O1",
+          "value": "Protect and restore marine and freshwater ecosystems and biodiversity"
+      },
+      {
+          "@type": "Lighthouse", --> Lighthouse
+          "description": "The European Commission strategic locales...."
+          "url": "https://europa.eu/Lighthouses",
+          "value": "Arctic"
+      },
+  ]
+  "funding": [ --> ~ "Programme"
+    {
+      "@type": "MonetaryGrant",
+      "url": "http://www.someinstitute.edu",
+      "name": "{odo:hasAward -> odo:hasAwardNumber}",
+      "identifier": "{odo:hasAward -> odo:hasAwardNumber}",
+      "funder": [
+        {
+          "@id": "https://dx.doi.org/10.13039/10000001"
+        },
+        {
+          "@type": "FundingAgency",
+          "name": "Some other org",
+          "url": "https://example.funder.org/"
+        }
+      ]
+    }
+  ],
+  "ethicsPolicy": {
+    "@type": "CreativeWork",
+    "name": "Name or title of the document",
+    "description": "Description of the creative work ",
+    "url": "https://www.foo.org/creativework/ethicsPolicy.pdf"
+  },
+  "diversityPolicy": {
+    "@type": "CreativeWork",
+    "name": "Name or title of the document",
+    "description": "Description of the creative work",
+    "url": "https://www.foo.org/creativework/diversityPolicy.pdf"
+  },
+  "areaServed": [ --> Area
+    {
+      "@type": "Place",
+      "name": "Textual name for area served",
+      "description": "Textual description of area served",
+      "containsPlace": {
+           "@type": "Place", --> subArea
+           "description": "Textual description of area served",
+      },
+      "keywords": [
+           {
+            "@type": "DefinedTerm",
+            "identifier": "http://vocab.getty.edu/page/tgn/7013200",
+            "termCode": "7013200",
+            "name": "Baltic Sea"
+        },
+      ]
+    },
+  ],
+  "parentOrganization": {
+    "@type": "Organization",
+    "legalName": "Some Institute",
+    "name": "SI",
+    "url": "http://www.someinstitute.edu",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "234 Main St.",
+      "addressLocality": "Anytown",
+      "addressRegion": "ST",
+      "postalCode": "12345",
+      "addressCountry": "USA"
+    }
+  }
+}
