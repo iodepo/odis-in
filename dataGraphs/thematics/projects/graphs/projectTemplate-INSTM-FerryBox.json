@@ -1,0 +1,99 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "ResearchProject",
+  "@id": "https://example.org/permanentUrlToThisJsonDoc",
+  "legalName": "Tunisian FerryBox project",
+  "name": "Tunisian FerryBox project",
+  "url": " http://www.instm.agrinet.tn/",
+  "description": "The Tunisian FerryBox project is an initiative that’s targeting water masse tracking and measuring. It is materialized by a set of sensors that are implemented in Carthage ferry, at 5 meters depth. It is measuring, for each minute of the ferry’s trip, several parameters (Temperature, Salinity, Dissolved oxygen, Turbidity, pH…) The first launch of FerryBox data collecting campaigns was on 2016.",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.example-data-repository.org/logo.jpg"
+  },
+  "identifier": {
+    "@type": "PropertyValue",
+    "description": "UN Department of Economic and Social Affairs Sustainable Development",
+    "propertyID": "https://registry.identifiers.org/registry/grid",
+    "url": "https://grid.ac/institutes/grid.475727.4"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "name": "Support",
+    "email": "info@example-data-repository.org",
+    "url": "https://www.example-data-repository.org/about-us",
+    "contactType": "customer support"
+  },
+  "funder": {
+    "@type": "FundingAgency",
+    "name": "National Science Foundation",
+    "legalName": "National Science Foundation",
+    "alternateName": "NSF",
+    "url": "https://www.nsf.gov/",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "https://registry.identifiers.org/registry/doi",
+      "value": "DOI value expressed as doi:{doi}",
+      "url": "https://dio.org/id/XYZ"
+    }
+  },
+  "funding": [
+    {
+      "@type": "MonetaryGrant",
+      "url": "http://www.someinstitute.edu",
+      "name": "{odo:hasAward -> odo:hasAwardNumber}",
+      "identifier": "{odo:hasAward -> odo:hasAwardNumber}",
+      "funder": [
+        {
+          "@type": "FundingAgency",
+          "name": "Some other org",
+          "url": "https://example.funder.org/",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "https://registry.identifiers.org/registry/doi",
+            "value": "DOI value expressed as doi:{doi}",
+            "url": "https://dio.org/id/XYZ"
+          }
+        }
+      ]
+    }
+  ],
+  "ethicsPolicy": {
+    "@type": "CreativeWork",
+    "name": "Name or title of the document",
+    "description": "Description of the creative work ",
+    "url": "https://www.foo.org/creativework/ethicsPolicy.pdf"
+  },
+  "diversityPolicy": {
+    "@type": "CreativeWork",
+    "name": "Name or title of the document",
+    "description": "Description of the creative work",
+    "url": "https://www.foo.org/creativework/diversityPolicy.pdf"
+  },
+  "areaServed": [
+    {
+      "@type": "Place",
+      "geo": {
+        "@type": "GeoShape",
+        "box": "26.88 -1.88 48 31.11"
+      },
+      "name": "central Mediterranean Region",
+      "description": "central Mediterranean Region"
+    }
+  ],
+  "parentOrganization": {
+    "@type": "Organization",
+    "legalName": "National Institute of Sea Sciences and Technologies",
+    "name": "INSTM",
+    "url": "http://www.instm.agrinet.tn/ ",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "234 Main St.",
+      "addressLocality": "Anytown",
+      "addressRegion": "ST",
+      "postalCode": "12345",
+      "addressCountry": "Tunisia"
+    }
+  }
+}
