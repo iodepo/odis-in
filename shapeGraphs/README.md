@@ -57,3 +57,34 @@ Nice to have:
 * Taxonomic scope (I guess schema:taxonomicRange)
 * Measurement types (schema:variableMeasured)
 * Measurement methods (schema: measurementMethod)
+
+## ERDDAP
+
+This section address some of uses of SHACL for ERDDAP.
+
+
+We can pull the JSON-LD from a document with the 
+following cute UNIX command.
+
+```bash
+curl -s  --header "Accept: text/html"   https://osmc.noaa.gov/erddap/info/anibos_movement_data/index.html | sed -n '/<script type=\"application\/ld+json\">/,/<\/script>/p' | sed 's/<\/script>//' | sed 's/<script type=\"application\/ld+json\">//'
+```
+
+We can save this to a file like [erddap_anibos_example.json](erddap_anibos_example.json). Note that the context in this 
+file has been updated to 
+
+```json
+"@context": {
+    "@vocab": "https://schema.org/"
+  }
+```
+
+since the original context has some issues around the resolution of 
+the context name space. 
+
+We can use the pyshacl tool to test this.   A command like 
+
+```bash
+pyshacl -s ERDDAP.ttl -sf turtle -df json-ld -f table erddap_anibos_example.json
+```
+
