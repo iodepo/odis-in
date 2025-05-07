@@ -60,8 +60,8 @@ Nice to have:
 
 ## ERDDAP
 
-This section address some of uses of SHACL for ERDDAP.
-
+This section address some of uses of SHACL for ERDDAP.  Be sure you have installed
+[pyshacl](https://pypi.org/project/pyshacl/) first.   
 
 We can pull the JSON-LD from a document with the 
 following cute UNIX command.
@@ -70,8 +70,7 @@ following cute UNIX command.
 curl -s  --header "Accept: text/html"   https://osmc.noaa.gov/erddap/info/anibos_movement_data/index.html | sed -n '/<script type=\"application\/ld+json\">/,/<\/script>/p' | sed 's/<\/script>//' | sed 's/<script type=\"application\/ld+json\">//'
 ```
 
-We can save this to a file like [erddap_anibos_example.json](erddap_anibos_example.json). Note that the context in this 
-file has been updated to 
+We can save this to a file like [erddap_anibos_example.json](erddap_anibos_example.json). Note that the context in this file has been updated to 
 
 ```json
 "@context": {
@@ -87,4 +86,9 @@ We can use the pyshacl tool to test this.   A command like
 ```bash
 pyshacl -s ERDDAP.ttl -sf turtle -df json-ld -f table erddap_anibos_example.json
 ```
+
+will test erddap_anibos_example.json using the shape graph in ERDDAP.ttl and 
+provide the results in a table format.  
+
+
 

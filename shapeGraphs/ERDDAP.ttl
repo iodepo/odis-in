@@ -1,135 +1,178 @@
 @prefix schema: <https://schema.org/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix shacl: <http://www.w3.org/ns/shacl#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix oihval: <https://oceans.collaborium.io/voc/validation/1.0.1/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 
 oihval:IDShape
-    a shacl:NodeShape ;
-    shacl:targetClass schema:Dataset ;
-    shacl:severity shacl:Warning ;
-    shacl:message "Graph requires ID"@en ;
-    shacl:description "URL OIH shape guidance" ;
-    shacl:nodeKind shacl:IRI ;
+    a sh:NodeShape ;
+    sh:targetClass schema:Dataset ;
+    sh:severity sh:Warning ;
+    sh:message "Graph requires ID"@en ;
+    sh:description "URL OIH shape guidance" ;
+    sh:nodeKind sh:IRI ;
 .
 
 oihval:OIHCoreShape
-    a shacl:NodeShape ;
-    shacl:targetClass schema:Dataset ;
-    shacl:message "OIH Search by Course validation" ;
-    shacl:description "OIH shape guidance" ;
-    shacl:property
+    a sh:NodeShape ;
+    sh:targetClass schema:Dataset ;
+    sh:message "OIH Search by Course validation" ;
+    sh:description "OIH shape guidance" ;
+    sh:property
         oihval:coreName,
         oihval:coreDescription,
         oihval:coreContacts,
         oihval:coreLicense,
         oihval:coreCitation,
         oihval:recMesType,
+        oihval:recLatitude,
+        oihval:recLongitude,
         oihval:recMesMethod ; .
 
 oihval:coreName
-    a shacl:PropertyShape ;
-    shacl:path schema:name ;
-    shacl:severity shacl:Violation ;
-    shacl:message "Description of what this is should go here"@en ;
-    shacl:minCount 1 ;
-    shacl:description "https://book.odis.org/thematics/docs/index.html#" ; .
+    a sh:PropertyShape ;
+    sh:path schema:name ;
+    sh:severity sh:Violation ;
+    sh:message "Description of what this is should go here"@en ;
+    sh:minCount 1 ;
+    sh:description "https://book.odis.org/thematics/docs/index.html#" ; .
 
 oihval:coreDescription
-    a shacl:PropertyShape ;
-    shacl:path schema:description ;
-    shacl:severity shacl:Violation ;
-    shacl:message "Description of what this is should go here"@en ;
-    shacl:minCount 1 ;
-    shacl:description "https://book.odis.org/thematics/docs/index.html#" ; .
+    a sh:PropertyShape ;
+    sh:path schema:description ;
+    sh:severity sh:Violation ;
+    sh:message "Description of what this is should go here"@en ;
+    sh:minCount 1 ;
+    sh:description "https://book.odis.org/thematics/docs/index.html#" ; .
 
 oihval:coreContacts
-    a shacl:PropertyShape ;
-    shacl:path schema:contacts ;
-    shacl:severity shacl:Warning ;
-    shacl:message "Description of what this is should go here"@en ;
-    shacl:maxCount 1 ;
-    shacl:minCount 1 ;
-    shacl:description "https://foo.org" ; .
+    a sh:PropertyShape ;
+    sh:path schema:contacts ;
+    sh:severity sh:Warning ;
+    sh:message "Contact information should be provided"@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:description "https://foo.org" ; .
 
 oihval:coreLicense
-    a shacl:PropertyShape ;
-    shacl:path schema:license ;
-    shacl:severity shacl:Violation ;
-    shacl:message "Description of what this is should go here"@en ;
-    shacl:maxCount 1 ;
-    shacl:minCount 1 ;
-    shacl:description "https://foo.org" ; .
+    a sh:PropertyShape ;
+    sh:path schema:license ;
+    sh:severity sh:Violation ;
+    sh:message "License information should be provided"@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:description "https://foo.org" ; .
 
 oihval:coreCitation
-    a shacl:PropertyShape ;
-    shacl:path schema:citation ;
-    shacl:severity shacl:Warning ;
-    shacl:message "Description of what this is should go here"@en ;
-    shacl:maxCount 1 ;
-    shacl:minCount 1 ;
-    shacl:description "https://foo.org" ; .
+    a sh:PropertyShape ;
+    sh:path schema:citation ;
+    sh:severity sh:Warning ;
+    sh:message "Citation information should be provided"@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:description "https://foo.org" ; .
 
 oihval:recTemporal
-    a shacl:PropertyShape ;
-    shacl:path schema:temporalCoverage ;
-    shacl:severity shacl:Warning ;
-    shacl:message "Description of what this is should go here"@en ;
-    shacl:maxCount 1 ;
-    shacl:minCount 1 ;
-    shacl:description "https://foo.org" ; .
+    a sh:PropertyShape ;
+    sh:path schema:temporalCoverage ;
+    sh:severity sh:Warning ;
+    sh:message "Description of what this is should go here"@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:description "https://foo.org" ; .
 
 oihval:recTaxon
-    a shacl:PropertyShape ;
-    shacl:path schema:taxonomicRange ;
-    shacl:severity shacl:Warning ;
-    shacl:message "Description of what this is should go here"@en ;
-    shacl:maxCount 1 ;
-    shacl:minCount 1 ;
-    shacl:description "https://foo.org" ; .
+    a sh:PropertyShape ;
+    sh:path schema:taxonomicRange ;
+    sh:severity sh:Warning ;
+    sh:message "Description of what this is should go here"@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:description "https://foo.org" ; .
 
 oihval:recMesType
-    a shacl:PropertyShape ;
-    shacl:path schema:variableMeasured ;
-    shacl:severity shacl:Warning ;
-    shacl:message "variable measured check"@en ;
-    shacl:minCount 1 ;
-    shacl:description "https://book.odis.org/thematics/variables/index.html" ; .
+    a sh:PropertyShape ;
+    sh:path schema:variableMeasured ;
+    sh:severity sh:Warning ;
+    sh:message "variable measured check"@en ;
+    sh:minCount 1 ;
+    sh:description "https://book.odis.org/thematics/variables/index.html" ; .
 
 oihval:recMesMethod
-    a shacl:PropertyShape ;
-    shacl:path schema:measurementMethod ;
-    shacl:severity shacl:Warning ;
-    shacl:message "measurement method check"@en ;
-    shacl:minCount 1 ;
-    shacl:description "https://book.odis.org/thematics/variables/index.html" ; .
+    a sh:PropertyShape ;
+    sh:path schema:measurementMethod ;
+    sh:severity sh:Warning ;
+    sh:message "measurement method check"@en ;
+    sh:minCount 1 ;
+    sh:description "https://book.odis.org/thematics/variables/index.html" ; .
 
+oihval:recLongitude
+    sh:path schema:variableMeasured ;
+        sh:qualifiedValueShape [
+            a sh:NodeShape ;
+            sh:property [
+                sh:path rdf:type ;
+                sh:hasValue schema:PropertyValue ;
+                sh:minCount 1 ;
+                sh:message "The node must be of type schema:PropertyValue." ;
+            ] ;
+            sh:property [
+                sh:path schema:name ;
+                sh:hasValue "longitude" ;
+                sh:minCount 1 ;
+                sh:maxCount 1 ;
+                sh:message "The PropertyValue must have the name 'latitude'." ;
+            ] ;
+        ] ;
+        sh:qualifiedMinCount 1 ;  # Ensures at least one PropertyValue has name "latitude"
+        sh:message "At least one PropertyValue in variableMeasured must have the name 'latitude'." ; .
+
+oihval:recLatitude
+    sh:path schema:variableMeasured ;
+        sh:qualifiedValueShape [
+            a sh:NodeShape ;
+            sh:property [
+                sh:path rdf:type ;
+                sh:hasValue schema:PropertyValue ;
+                sh:minCount 1 ;
+                sh:message "The node must be of type schema:PropertyValue." ;
+            ] ;
+            sh:property [
+                sh:path schema:name ;
+                sh:hasValue "latitude" ;
+                sh:minCount 1 ;
+                sh:maxCount 1 ;
+                sh:message "The PropertyValue must have the name 'latitude'." ;
+            ] ;
+        ] ;
+        sh:qualifiedMinCount 1 ;  # Ensures at least one PropertyValue has name "latitude"
+        sh:message "At least one PropertyValue in variableMeasured must have the name 'latitude'." ; .
 
 oihval:OIHSpatialShape
-    a shacl:NodeShape ;
-    shacl:targetClass schema:GeoShape ;
-    shacl:message "OIH Resource to Query validation" ;
-    shacl:description "OIH shape guidance" ;
-    shacl:property
+    a sh:NodeShape ;
+    sh:targetClass schema:GeoShape ;
+    sh:message "OIH Resource to Query validation" ;
+    sh:description "OIH shape guidance" ;
+    sh:property
         oihval:polygonStringProperty,
         oihval:polygonCloseProperty ;
 .
 
 oihval:polygonStringProperty
-    a shacl:PropertyShape ;
-    shacl:path schema:polygon ;
-    shacl:message "The string must consists of numeric, space-separated items."@en ;
-    shacl:maxCount 1 ;
-    shacl:description "https://foo.org" ;
-    shacl:pattern "^(?:\\d+\\s+)*\\d+$" ; .
+    a sh:PropertyShape ;
+    sh:path schema:polygon ;
+    sh:message "The string must consists of numeric, space-separated items."@en ;
+    sh:maxCount 1 ;
+    sh:description "https://foo.org" ;
+    sh:pattern "^(?:\\d+\\s+)*\\d+$" ; .
 
 
 oihval:polygonCloseProperty
-    a shacl:PropertyShape ;
-    shacl:path schema:polygon ;
-    shacl:message "The polygon string must have the first and last items are the same"@en ;
-    shacl:maxCount 1 ;
-    shacl:description "https://foo.org" ;
-    shacl:pattern "^(\\d+)\\s+(\\d+)(?:\\s+\\d+)+\\s+\\1$" ;
+    a sh:PropertyShape ;
+    sh:path schema:polygon ;
+    sh:message "The polygon string must have the first and last items are the same"@en ;
+    sh:maxCount 1 ;
+    sh:description "https://foo.org" ;
+    sh:pattern "^(\\d+)\\s+(\\d+)(?:\\s+\\d+)+\\s+\\1$" ;
 .
