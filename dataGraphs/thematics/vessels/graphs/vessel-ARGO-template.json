@@ -1,0 +1,48 @@
+{
+    "@context": {
+        "@vocab": "https://schema.org/"
+    },
+    "@id": "https://example.org/id/X",
+    "@type": "Vehicle",
+    "name": "JOIDES Resolution",
+    "identifier": "4902112",
+    "model": "S2A",
+    "countryOfLastProcessing": "Angola",
+    "countryOfOrigin": {
+        "@type": "Country",
+        "name": "Fiji"
+    },
+    "additionalProperty": [
+        {
+            "@type": "PropertyValue",
+            "name": "data generated",
+            "propertyID": "data_type",
+            "value": "oceanicProfile",
+            "description": "This property describes the kind of data that this Argo float generates"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "associated data center",
+            "propertyID": "data_center",
+            "value": "AO",
+            "description": "This property describes ..."
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "ArgoVIS identifier",
+            "propertyID": "_id",
+            "value": "4902112_m0",
+            "description": "This property describes the kind of data that this Argo float generates"
+        }
+    ],
+    "subjectOf": {
+        "@type": "DataDownload",
+        "name": "external-metadata.xml",
+        "description": "Metadata describing the vessel",
+        "encodingFormat": [
+            "application/xml",
+            "https://foo.org/ship01"
+        ],
+        "dateModified": "2019-06-12T14:44:15Z"
+    }
+}
