@@ -88,7 +88,40 @@ pyshacl -s ERDDAP.ttl -sf turtle -df json-ld -f table erddap_anibos_example.json
 ```
 
 will test erddap_anibos_example.json using the shape graph in ERDDAP.ttl and 
-provide the results in a table format.  
+provide the results in a table format.   Example of the output can be seen below.  
+
+```bash
+(.venv) ➜  shapeGraphs git:(master) ✗ pyshacl -s ERDDAP.ttl -sf turtle -df json-ld -f table erddap_anibos_example.json
+
++----------+
+| Conforms |
++----------+
+|  False   |
++----------+
+
++-----+----------+---------------------------+---------------------------+---------------------------+---------------------------+---------------------------+---------------------------+
+| No. | Severity | Focus Node                | Result Path               | Message                   | Component                 | Shape                     | Value                     |
++-----+----------+---------------------------+---------------------------+---------------------------+---------------------------+---------------------------+---------------------------+
+| 1   | Warning  | N3fda2b31d0d5458b90a7a10f | https://schema.org/contac | Contact information shoul | MinCountConstraintCompone | https://oceans.collaboriu | -                         |
+|     |          | e1eb1f5d                  | ts                        | d be provided             | nt                        | m.io/voc/validation/1.0.1 |                           |
+|     |          |                           |                           |                           |                           | /shacl#coreContacts       |                           |
+|     |          |                           |                           |                           |                           |                           |                           |
+| 2   | Warning  | N3fda2b31d0d5458b90a7a10f | https://schema.org/citati | Citation information shou | MinCountConstraintCompone | https://oceans.collaboriu | -                         |
+|     |          | e1eb1f5d                  | on                        | ld be provided            | nt                        | m.io/voc/validation/1.0.1 |                           |
+|     |          |                           |                           |                           |                           | /shacl#coreCitation       |                           |
+|     |          |                           |                           |                           |                           |                           |                           |
+| 3   | Warning  | N3fda2b31d0d5458b90a7a10f | https://schema.org/measur | measurement method check  | MinCountConstraintCompone | https://oceans.collaboriu | -                         |
+|     |          | e1eb1f5d                  | ementMethod               |                           | nt                        | m.io/voc/validation/1.0.1 |                           |
+|     |          |                           |                           |                           |                           | /shacl#recMesMethod       |                           |
+|     |          |                           |                           |                           |                           |                           |                           |
+| 4   | Warning  | N3fda2b31d0d5458b90a7a10f | -                         | Graph requires ID         | NodeKindConstraintCompone | https://oceans.collaboriu | N3fda2b31d0d5458b90a7a10f |
+|     |          | e1eb1f5d                  |                           |                           | nt                        | m.io/voc/validation/1.0.1 | e1eb1f5d                  |
+|     |          |                           |                           |                           |                           | /shacl#IDShape            |                           |
+|     |          |                           |                           |                           |                           |                           |                           |
++-----+----------+---------------------------+---------------------------+---------------------------+---------------------------+---------------------------+---------------------------+%                             
+```
+       
+
 
 
 
