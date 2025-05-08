@@ -88,7 +88,18 @@ pyshacl -s ERDDAP.ttl -sf turtle -df json-ld -f table erddap_anibos_example.json
 ```
 
 will test erddap_anibos_example.json using the shape graph in ERDDAP.ttl and 
-provide the results in a table format.   Example of the output can be seen below.  
+provide the results in a table format. Example of the output can be seen below.  
+
+Note, this shape file was intentionally designed to return some warnings.  Just as 
+a demonstration.   It may well be that none of these _warnings_ are of concern. 
+Once we have a working process flow, we can work to generate the constraints in the
+shape file that are relevant.  
+
+For example, it does look for a variable _latitude_ and _longitude_ in this case. 
+Which this test passes.  If you remove or find an example without these, you should
+see those errors raised as well.  
+
+Errors can have three levels: WARNING, VIOLATION and RECOMMENDED.  So we can design the shape file with these various levels in mind.  
 
 ```bash
 (.venv) ➜  shapeGraphs git:(master) ✗ pyshacl -s ERDDAP.ttl -sf turtle -df json-ld -f table erddap_anibos_example.json
