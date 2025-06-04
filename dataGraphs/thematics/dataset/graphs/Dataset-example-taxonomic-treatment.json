@@ -1,0 +1,332 @@
+{
+    "@context": {
+        "@vocab": "https://schema.org/"
+    },
+    "@type": "Dataset",
+    "@id": "URL:  Optional. A URL that resolves to *this* JSON-LD document, NOT the URL of the Dataset that this JSON-LD document describes. To link to the Dataset itself, please use 'url' and/or 'identifier')",
+    "name": "Maera gujaratensis, Thacker & Myers & Trivedi, 2024",
+    "description": "A dataset representing a TreamentBank Treatment record of Maera gujaratensis, see https://plazi.org/treatmentbank/what-treatment/",
+    "url": "https://treatment.plazi.org/id/423BD146-4079-EE78-44C5-FE28FE592E10",
+    "identifier": [
+      {
+        "@type": "PropertyValue",
+        "name": "UUID",
+        "propertyID": "https://www.wikidata.org/wiki/Q195284",
+        "value": "423bd146-4079-ee78-44c5-fe28fe592e10"
+       },
+      {
+        "@type": "PropertyValue",
+        "name": "LSID",
+        "propertyID": "https://www.wikidata.org/wiki/Q6459954",
+        "value": "urn:lsid:plazi:treatment:423BD146-4079-EE78-44C5-FE28FE592E10"
+       }
+    ],
+   "includedInDataCatalog": {"@type": "https://schema.org/DataCatalog"},
+  
+    "about": {
+        "@type": "Taxon",
+        "name": "Maera gujaratensis",
+        "additionalProperty": [	
+         {
+          "@type": "PropertyValue",
+          "name": "scientificName",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/scientificName",
+          "value": "Maera gujaratensis"
+        },      
+        {
+          "@type": "PropertyValue",
+          "name": "kingdom",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/kingdom",
+          "value": "Animalia"
+        },           
+        {
+          "@type": "PropertyValue",
+          "name": "phylum",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/phylum",
+          "value": "Arthropoda"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "class",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/class",
+          "value": "Malacostraca"
+         },
+         {
+          "@type": "PropertyValue",
+          "name": "order",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/order",
+          "value": "Amphipoda"
+         },       
+        {
+          "@type": "PropertyValue",
+          "name": "family",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/family",
+          "value": "Maeridae"
+         },
+        {
+          "@type": "PropertyValue",
+          "name": "genus",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/genus",
+          "value": "Maera"
+         },
+        {
+          "@type": "PropertyValue",
+          "name": "species",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/species",
+          "value": "gujaratensis"
+         },
+        {
+          "@type": "PropertyValue",
+          "name": "taxonomicStatus",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/taxonomicStatus",
+          "value": "sp. nov."
+         },
+        {
+          "@type": "PropertyValue",
+          "name": "verbatimTaxonRank",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/verbatimTaxonRank",
+          "value": "species"
+         }
+            
+        ]  
+    },
+    "abstract": "Text: A descriptive summary of a CreativeWork",
+    "archivedAt": "https://plazi.org/treatmentbank/",
+    "citation": [
+        {
+        "@type": "Article",
+        "name": "Amphipodes provenant des campagnes de l'Hirondelle 1885 - 1888",
+        "datePublished": "1900",
+        "author": {
+            "@type": "Person",
+            "familyName": "Chevreux",
+            "givenName": "E."
+            
+        },
+        "creditText": "Chevreux, E. (1900) Amphipodes provenant des campagnes de l'Hirondelle 1885 - 1888. Resultats des campagnes scientifiques du Prince Albert I de Monaco, 1900, 1 - 195."
+        },
+        
+        {
+        "@type": "ImageObject",
+        "name": "FIGURE 1",
+        "caption": "FIGURE 1. (A) Ceradocus (Denticeradocus) alama Myers & Nithyanandan, 2016 male, (LFSC.ZRC-214): 10 mm, Shivrajpur; (B) Ceradomaera plumosa Ledoyer, 1973, male (LFSC.ZRC-215): 10 mm, Zanzmer; (C) Maera gujaratensis sp. nov., male paratype, (LFSC.ZRC-210): 7 mm, Gopnath; (D) Quadrimaera okha sp. nov., male paratype, (LFSC.ZRC-213): 4.5 mm, Shivrajpur, Gujarat, India.",
+        "identifier": "https://doi.org/10.5281/zenodo.12682132",
+        "url": "https://zenodo.org/record/12682132/files/figure.png"
+        },
+        {
+        
+        "@type": "CreativeWork",
+        "name": "TABLE 1. Comparison of character states of Maera gujaratensis sp. nov. and Maera hirondellei Chevreux, 1900."
+        }
+    ],
+    "comment": "Text: A textual comment on the CreativeWork",
+    "conditionsOfAccess": "No known copyright restrictions apply. See Agosti, D., Egloff, W., 2009. Taxonomic information exchange and copyright: the Plazi approach. BMC Research Notes 2009, 2:53 for further explanation.",
+    "contributor": [
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
+    ],
+    "copyrightHolder":  [
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
+    ],
+    "copyrightNotice": "No known copyright restrictions apply. See Agosti, D., Egloff, W., 2009. Taxonomic information exchange and copyright: the Plazi approach. BMC Research Notes 2009, 2:53 for further explanation.",
+    "copyrightYear": "",
+    "correction": [
+        "Text:  description of a correction to the CreativeWork",
+        "URL",
+        {"@type": "https://schema.org/CorrectionComment"}
+    ],
+    "countryOfOrigin": {"@type": "https://schema.org/Country"},
+    "creator": [
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
+    ],
+    "creditText": "Text: Text used to credit person(s) and/or organization(s) associated with this CreativeWork",
+    "dateCreated": [
+        {"@type": "https://schema.org/Date"},
+        {"@type": "https://schema.org/DateTime"}
+    ],
+    "dateModified": [
+        {"@type": "https://schema.org/Date"},
+        {"@type": "https://schema.org/DateTime"}
+    ],
+    "datePublished": [
+        {"@type": "https://schema.org/Date"},
+        {"@type": "https://schema.org/DateTime"}
+    ],
+    "editor": {"@type": "https://schema.org/Person"},
+    "encodingFormat": [
+        "Text: Textual description of the media type typically expressed using a MIME format (see IANA site [http://www.iana.org/assignments/media-types/media-types.xhtml] and MDN reference [https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types]), e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc. ",
+        "URL"
+    ],
+    "funder": [
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
+    ],
+    "funding": {"@type": "https://schema.org/Grant"},
+    "hasPart": {"@type": "https://schema.org/CreativeWork"},
+    "inLanguage": [
+        "Text: The language of the content or performance or used in an action.",
+        {"@type": "https://schema.org/Language"}
+    ],
+    "interpretedAsClaim": {"@type": "https://schema.org/Claim"},
+    "isAccessibleForFree": "True",
+    "isBasedOn": [
+      {
+        "@type": "Article",
+        "name": "On a small collection of Maeridae Krapp-Schickel, 2008 (Crustacea: Amphipoda) from Gujarat, India",
+        "alternateName": "zootaxa.5474.5.7.pdf",
+        "dateCreated": "2024",
+        "datePublished": "2024-07-02",
+        "url": "https://dx.doi.org/10.11646/zootaxa.5474.5.7",
+        "license": "CLOSED",
+        "creditText": "Zootaxa 5474 (5)",
+        "additionalProperty": [
+           {
+                "@type": "PropertyValue",
+                "name": "lastPageNumber",
+                "value": "583"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "pageNumber",
+                "value": "563"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "pageNumber",
+                "value": "563"
+            }
+        ],
+        "author": [
+          {
+            "@type": "Person",
+            "givenName": "Dimple",
+            "familyName": "Thacker"
+          },
+          {
+            "@type": "Person",
+            "givenName": "Alan",
+            "familyName": "Myers",
+            "additionalName": "A."
+          },
+          {
+            "@type": "Person",
+            "givenName": "Jigneshkumar",
+            "familyName": "Trivedi",
+            "additionalName": "N."
+          }
+        ],
+        "identifier": [
+            "BE02A93E4072EE764452FF82FFA9296F",
+            {
+                "@type": "PropertyValue",
+                "name": "Digital Object Identifier",
+                "propertyID": "https://registry.identifiers.org/registry/doi",
+                "url": "https://doi.org/10.11646/zootaxa.5474.5.7",
+                "value": "10.11646/zootaxa.5474.5.7"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "ChecklistBank ID",
+                "propertyID": "https://registry.identifiers.org/registry/clb",
+                "url": "https://www.checklistbank.org/dataset/299601",
+                "value": "299601"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "GBIF UUID",
+                "propertyID": "https://www.wikidata.org/wiki/Q195284",
+                "url": "https://www.gbif.org/dataset/0adc191b-8f3d-4270-8c14-c08f43b4619d",
+                "value": "0adc191b-8f3d-4270-8c14-c08f43b4619d"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "ISSN",
+                "propertyID": "https://registry.identifiers.org/registry/issn",
+                "url": "https://portal.issn.org/resource/ISSN/1175-5326",
+                "value": "1175-5326"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Zenodo ID",
+                "propertyID": "",
+                "url": "https://zenodo.org/records/12682122",
+                "value": "12682122"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "ZooBank ID",
+                "propertyID": "",
+                "url": "https://zoobank.org/References/7DAFD532-8FE8-4755-B664-57A7102E7E00",
+                "value": "7DAFD532-8FE8-4755-B664-57A7102E7E00"
+            }
+        ] 
+      }
+    ],
+    "isPartOf": [
+        {"@type": "https://schema.org/CreativeWork"},
+        "URL"
+    ],
+    "keywords": [
+        "Text: Keywords or tags used to describe the CreativeWork.",
+        {"@type": "https://schema.org/DefinedTerm"},
+        "URL"
+    ],
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "locationCreated": {"@type": "https://schema.org/Place"},
+    "mainEntity": {"@type": "https://schema.org/Thing"},
+    "maintainer":  {
+        "@type": "Organization",
+        "name": "Plazi"
+    },
+    "mentions": {"@type": "https://schema.org/Thing"},
+    "provider": {
+        "@type": "Organization",
+        "name": "Plazi",
+        "url": "https://plazi.org/about/"
+    },
+    "publication": {"@type": "https://schema.org/PublicationEvent"},
+    "publisher": [
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
+    ],
+    "publisherImprint": {
+        "@type": "Organization",
+        "name": "Plazi",
+        "url": "https://plazi.org/about/"
+    },
+    "publishingPrinciples": [
+        {"@type": "https://schema.org/CreativeWork"},
+        {"@type": "https://schema.org/URL"}
+    ],
+    "sdDatePublished": "2024-07-07T19:49:58.394Z",
+    "sdLicense": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sdPublisher": {
+        "@type": "Organization",
+        "name": "Plazi"
+    },
+    "sourceOrganization":  {"@type": "https://schema.org/Organization"},
+    "spatialCoverage": {"@type": "https://schema.org/Place"},
+    "temporalCoverage": [
+        {"@type": "https://schema.org/DateTime"},
+        "Text",
+        "URL"
+    ],
+    "text": "Text: The textual content of this CreativeWork.",
+    "thumbnail": {"@type": "https://schema.org/ImageObject"},
+    "thumbnailUrl": "URL",
+    "usageInfo":[
+        {"@type": "https://schema.org/CreativeWork"},
+        {"@type": "https://schema.org/URL"}
+    ],
+    "version": ["https://schema.org/Text", "https://schema.org/Number"],
+    
+    "additionalType": [
+        "Text: An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax.",
+        "URL"
+      ],
+      "disambiguatingDescription": "Text: A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation",
+      "mainEntityOfPage": "https://treatment.plazi.org/id/423BD146-4079-EE78-44C5-FE28FE592E10",
+      "subjectOf": "URL"
+}
