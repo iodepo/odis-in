@@ -18,9 +18,10 @@
     ],
       "author": {
         "@type": "Organization",
-        "identifier": {
+        "identifier": [
              "https://oceanexpert.org/institution/24830",
              "https://ror.org/03k8h3h23"
+        ],
         "legalName": "Local Contexts Inc.",
         "name": "Local Contexts",
         "url": "https://localcontexts.org/"
