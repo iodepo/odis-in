@@ -1,8 +1,10 @@
 {
     "@type": "CreativeWork",
     "identifier": {
-         "{Customized Label ID}",
-         "https://localcontextshub.org/labels/{Customized Label ID}"
+        "@type": "PropertyValue",
+        "propertyID": "Local Contexts Label Identifier",
+        "value": "{Customized Label ID}",
+        "url": "https://localcontextshub.org/labels/{Customized Label ID}"
     },
     "isBasedOn": "{LC Label Page URL}",
     "name": [
