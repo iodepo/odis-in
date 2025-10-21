@@ -111,10 +111,12 @@
   "publishingPrinciples": [
     {
       "@type": "CreativeWork",
-      "identifier": {
-           "{Notice ID}",
-           "https://localcontextshub.org/notices/{Notice ID}"
-      }
+    "identifier": {
+         "@type": "PropertyValue",
+         "propertyID": "Local Contexts Notice Identifier",
+         "value": "{Notice ID}",
+         "url": "https://localcontextshub.org/notices/{Notice ID}"
+    },
       "name": [
         {
           "@language": "{language_tag}",
