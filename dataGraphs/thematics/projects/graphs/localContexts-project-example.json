@@ -56,11 +56,18 @@
       }
     ],
     "actionStatus": "ActiveActionStatus",
-    "object": {
-      "@type": "person or organization",
-      "name": "name of person or org",
-      "description": "description of person or org"
-    }
+    "object": [
+	  {
+        "@type": "Organization",
+        "name": "Name of the Organization that is the object of this action",
+        "description": "description of the Organization that is the object of this action"
+      },
+	  {
+        "@type": "Person",
+        "name": "Name of the Person that is the object of this action",
+        "description": "description of the Person that is the object of this action"
+      }
+	]
   },
   "subjectOf": {
     "@type": "CorrectionComment",
@@ -108,15 +115,14 @@
     "dateCreated": "{date Label created}",
     "dateModified": "{date Label modified}"
   },
-  "publishingPrinciples": [
-    {
+  "publishingPrinciples": {
       "@type": "CreativeWork",
-    "identifier": {
+      "identifier": {
          "@type": "PropertyValue",
          "propertyID": "Local Contexts Notice Identifier",
          "value": "{Notice ID}",
          "url": "https://localcontextshub.org/notices/{Notice ID}"
-    },
+       },
       "name": [
         {
           "@language": "{language_tag}",
@@ -130,9 +136,9 @@
       "author": {
         "@type": "Organization",
         "identifier": [
-             "https://oceanexpert.org/institution/24830",
-             "https://ror.org/03k8h3h23"
-             ],
+          "https://oceanexpert.org/institution/24830",
+          "https://ror.org/03k8h3h23"
+        ],
         "legalName": "Local Contexts Inc.",
         "name": "Local Contexts",
         "url": "https://localcontexts.org/"
@@ -160,7 +166,8 @@
           "url": "{ICON_SVG}",
           "encodingFormat": "image/svg"
         }
-      ],
+      ]
+	},
   "areaServed": [
     {
       "@type": "Place",
