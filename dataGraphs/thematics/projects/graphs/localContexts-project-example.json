@@ -159,9 +159,7 @@
           "url": "{ICON_SVG}",
           "encodingFormat": "image/svg"
         }
-      ]
-    }
-  ],
+      ],
   "areaServed": [
     {
       "@type": "Place",
