@@ -1,0 +1,76 @@
+{
+    "@type": "CreativeWork",
+    "identifier": {
+         "@type": "PropertyValue",
+         "propertyID": "Local Contexts Notice Identifier",
+         "value": "{Notice ID}",
+         "url": "https://localcontextshub.org/notices/{Notice ID}"
+    },
+    "name": [
+        {
+            "@language": "{language_tag}",
+            "@value": "{Notice Title}"
+        },
+        {
+            "@language": "{language_tag}",
+            "@value": "{Notice Title}"
+        }
+    ],
+      "author": {
+        "@type": "Organization",
+        "identifier": [
+             "https://oceanexpert.org/institution/24830",
+             "https://ror.org/03k8h3h23"
+        ],
+        "legalName": "Local Contexts Inc.",
+        "name": "Local Contexts",
+        "url": "https://localcontexts.org/"
+      },
+    "text": [
+        {
+            "@language": "{language_tag}",
+            "@value": "{Notice Text}"
+        },
+        {
+            "@language": "{language_tag}",
+            "@value": "{Notice Text}"
+        }
+    ],
+    "url": "{NOTICE_PAGE_URL}",
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "{ICON_IMG}",
+            "encodingFormat": "image/png"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "{ICON_SVG}",
+            "encodingFormat": "image/svg"
+        }
+    ],
+    "datePublished": "{date Notice was added to Project}",
+    "dateModified": "{date Notice was updated}",
+    "sdDatePublished": {
+        "@type": "https://schema.org/Date"
+    },
+    "sdLicense": [
+        {
+            "@type": "https://schema.org/CreativeWork"
+        },
+        {
+            "@type": "https://schema.org/URL"
+        }
+    ],
+    "sdPublisher": [
+        {
+            "@type": "https://schema.org/Organization"
+        },
+        {
+            "@type": "https://schema.org/Person"
+        }
+    ],
+    "creditText": "text: recommended citation",
+    "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "copyrightNotice": "All Labels and Notices Icons and Template Texts © 2010 - 2025 Local Contexts. All Rights Reserved."
+}

@@ -1,0 +1,190 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Project",
+  "@id": "The URL of this JSON-LD file, if present",
+  "name": "Project Title",
+  "foundingDate": "2022-11-25",
+  "url": "https://localcontextshub.org/projects/{PROJECT_ID}]",
+  "description": "Project Description",
+  "identifier": [
+    "{PROJECT_ID}",
+    "provider_id_wr2=52dgtw"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "name": "Community C",
+    "email": "info@example-data-repository.org",
+    "url": "https://www.example-data-repository.org/about-us",
+    "contactType": "Community contact point"
+  },
+  "ethicsPolicy": {
+    "@type": "CreativeWork",
+    "name": [
+      {
+        "@language": "en",
+        "@value": "Label/Notice Title"
+      },
+      {
+        "@language": "es",
+        "@value": "Label/Notice Title"
+      }
+    ]
+  },
+  "potentialAction": {
+    "@type": "InviteAction",
+    "agent": "Org or person making invitation",
+    "name": [
+      {
+        "@language": "{language_tag}",
+        "@value": "{Label Title}"
+      },
+      {
+        "@language": "{language_tag}",
+        "@value": "{Label Title}"
+      }
+    ],
+    "description": [
+      {
+        "@language": "{language_tag}",
+        "@value": "{Label Text}"
+      },
+      {
+        "@language": "{language_tag}",
+        "@value": "{Label Text}"
+      }
+    ],
+    "actionStatus": "ActiveActionStatus",
+    "object": [
+	  {
+        "@type": "Organization",
+        "name": "Name of the Organization that is the object of this action",
+        "description": "description of the Organization that is the object of this action"
+      },
+	  {
+        "@type": "Person",
+        "name": "Name of the Person that is the object of this action",
+        "description": "description of the Person that is the object of this action"
+      }
+	]
+  },
+  "subjectOf": {
+    "@type": "CorrectionComment",
+    "name": [
+      {
+        "@language": "{language_tag}",
+        "@value": "{Label Title}"
+      },
+      {
+        "@language": "{language_tag}",
+        "@value": "{Label Title}"
+      }
+    ],
+    "author": "{Author Name}",
+    "text": [
+      {
+        "@language": "{language_tag}",
+        "@value": "{Label Text}"
+      },
+      {
+        "@language": "{language_tag}",
+        "@value": "{Label Text}"
+      }
+    ],
+    "url": "{PROJECT_PAGE_URL}",
+    "image": [
+      {
+        "@type": "ImageObject",
+        "url": "{ICON_IMG}",
+        "encodingFormat": "image/png"
+      },
+      {
+        "@type": "ImageObject",
+        "url": "{ICON_SVG}",
+        "encodingFormat": "image/svg"
+      }
+    ],
+    "audio": [
+      {
+        "@type": "AudioObject",
+        "url": "{AUDIO_URL}",
+        "encodingFormat": "audio/mpeg"
+      }
+    ],
+    "dateCreated": "{date Label created}",
+    "dateModified": "{date Label modified}"
+  },
+  "publishingPrinciples": {
+      "@type": "CreativeWork",
+      "identifier": {
+         "@type": "PropertyValue",
+         "propertyID": "Local Contexts Notice Identifier",
+         "value": "{Notice ID}",
+         "url": "https://localcontextshub.org/notices/{Notice ID}"
+       },
+      "name": [
+        {
+          "@language": "{language_tag}",
+          "@value": "{Notice Title}"
+        },
+        {
+          "@language": "{language_tag}",
+          "@value": "{Notice Title}"
+        }
+      ],
+      "author": {
+        "@type": "Organization",
+        "identifier": [
+          "https://oceanexpert.org/institution/24830",
+          "https://ror.org/03k8h3h23"
+        ],
+        "legalName": "Local Contexts Inc.",
+        "name": "Local Contexts",
+        "url": "https://localcontexts.org/"
+      },
+      "sourceOrganization": "{Instituion that applied Notice}",
+      "text": [
+        {
+          "@language": "{language_tag}",
+          "@value": "{Notice Text}"
+        },
+        {
+          "@language": "{language_tag}",
+          "@value": "{Notice Text}"
+        }
+      ],
+      "url": "{PROJECT_PAGE_URL}",
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "{ICON_IMG}",
+          "encodingFormat": "image/png"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "{ICON_SVG}",
+          "encodingFormat": "image/svg"
+        }
+      ]
+	},
+  "areaServed": [
+    {
+      "@type": "Place",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.3280,
+        "longitude": 120.1633
+      },
+      "name": "Textual name of the area served",
+      "description": "Description of the area served"
+    },
+    {
+      "@type": "Place",
+      "name": "Textual name of the area served",
+      "description": "Description of the area served, and measures needed to request access.",
+      "publicAccess": "False",
+      "isAccessibleForFree": "False"
+    }
+  ]
+}
