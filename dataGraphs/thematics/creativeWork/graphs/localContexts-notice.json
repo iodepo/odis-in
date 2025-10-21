@@ -1,6 +1,9 @@
 {
     "@type": "CreativeWork",
-    "identifier": "{Notice ID}",
+    "identifier": {
+         "{Notice ID}",
+         "https://localcontextshub.org/notices/{Notice ID}"
+    }
     "name": [
         {
             "@language": "{language_tag}",
