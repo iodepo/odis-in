@@ -1,0 +1,104 @@
+{
+    "@context": {
+        "@vocab": "https://schema.org/"
+    },
+    
+        "@type": "Claim",
+        "name": "A claim that Maera gujaratensis is the actual subject of a Taxonomic Treatment",
+        "appearance": [
+        {
+          "@id": "https://treatment.plazi.org/json-ld/url-to-a-json-ld-representation-of-some-treatments-metadata/"
+        },
+        {
+          "@type": "Dataset",
+          "@id": "URL:  Optional. A URL that resolves to *this* JSON-LD document, NOT the URL of the Dataset that this JSON-LD document describes. To link to the Dataset itself, please use 'url' and/or 'identifier')",
+          "name": "Maera gujaratensis, Thacker & Myers & Trivedi, 2024",
+          "description": "A dataset representing a TreamentBank Treatment record of Maera gujaratensis, see https://plazi.org/treatmentbank/what-treatment/",
+          "url": "https://treatment.plazi.org/id/423BD146-4079-EE78-44C5-FE28FE592E10",
+          "identifier": "423BD146-4079-EE78-44C5-FE28FE592E10"
+        },
+        {
+          "@type": "Dataset",
+          "@id": "URL:  Optional. A URL that resolves to *this* JSON-LD document, NOT the URL of the Dataset that this JSON-LD document describes. To link to the Dataset itself, please use 'url' and/or 'identifier')",
+          "name": "Maera gujaratensis, Smith & Jones & Li, 2024",
+          "description": "A dummy dataset representing another TreamentBank Treatment record of Maera gujaratensis, see https://plazi.org/treatmentbank/what-treatment/",
+          "url": "https://treatment.plazi.org/id/MADE-UP-423BD146-4079-EE78-44C5-FE28FE592E10",
+          "identifier": "MADE-UP-423BD146-4079-EE78-44C5-FE28FE592E10"
+        }
+        ],
+        "firstAppearance": {
+          "@type": "Dataset",
+          "@id": "URL:  Optional. A URL that resolves to *this* JSON-LD document, NOT the URL of the Dataset that this JSON-LD document describes. To link to the Dataset itself, please use 'url' and/or 'identifier')",
+          "name": "Maera gujaratensis, Duke, 1024",
+          "description": "A dummy dataset representing a TreamentBank Treatment record referencing the first claim of Maera gujaratensis, see https://plazi.org/treatmentbank/what-treatment/",
+          "url": "https://treatment.plazi.org/id/MADE-UP-AGAIN-423BD146-4079-EE78-44C5-FE28FE592E10",
+          "identifier": "MADE-UP-AGAIN-423BD146-4079-EE78-44C5-FE28FE592E10"
+        },
+        "about": {
+          "@type": "Taxon",
+          "name": "Maera gujaratensis",
+          "additionalProperty": [	
+         {
+          "@type": "PropertyValue",
+          "name": "scientificName",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/scientificName",
+          "value": "Maera gujaratensis"
+        },      
+        {
+          "@type": "PropertyValue",
+          "name": "kingdom",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/kingdom",
+          "value": "Animalia"
+        },           
+        {
+          "@type": "PropertyValue",
+          "name": "phylum",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/phylum",
+          "value": "Arthropoda"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "class",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/class",
+          "value": "Malacostraca"
+         },
+         {
+          "@type": "PropertyValue",
+          "name": "order",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/order",
+          "value": "Amphipoda"
+         },       
+        {
+          "@type": "PropertyValue",
+          "name": "family",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/family",
+          "value": "Maeridae"
+         },
+        {
+          "@type": "PropertyValue",
+          "name": "genus",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/genus",
+          "value": "Maera"
+         },
+        {
+          "@type": "PropertyValue",
+          "name": "species",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/species",
+          "value": "gujaratensis"
+         },
+        {
+          "@type": "PropertyValue",
+          "name": "taxonomicStatus",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/taxonomicStatus",
+          "value": "sp. nov."
+         },
+        {
+          "@type": "PropertyValue",
+          "name": "verbatimTaxonRank",
+          "propertyID": "http://rs.tdwg.org/dwc/terms/verbatimTaxonRank",
+          "value": "species"
+         }
+            
+        ]
+        }
+    }
